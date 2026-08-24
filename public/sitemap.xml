@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://uk-grade-calculator.vercel.app/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/module-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/weighted-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/btec-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/masters-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/degree-classification-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/final-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/gpa-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/percentage-grade-calculator/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/mmu/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/open-university/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/st-andrews/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/portsmouth/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/leeds/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/swansea/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/sheffield-hallam/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/exeter/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/uclan/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/universities/uwe/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/blog/uk-degree-classifications-explained/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/blog/how-university-grading-works-uk/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/blog/how-to-calculate-weighted-average/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uk-grade-calculator.vercel.app/about/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
