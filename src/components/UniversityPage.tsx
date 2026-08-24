@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -7,6 +8,41 @@ import ClassificationTable from "@/components/ClassificationTable";
 import Breadcrumb from "@/components/Breadcrumb";
 import { degreeClassifications } from "@/lib/grades";
 import type { UniversityData } from "@/data/universities";
+import { universities } from "@/data/universities";
+
+const regionGroups: Record<string, string[]> = {
+  "Northern England": ["mmu", "leeds", "sheffield-hallam", "uclan"],
+  "Southern & West England": ["portsmouth", "exeter", "swansea", "uwe"],
+  "Scotland": ["st-andrews"],
+  "Distance Learning": ["open-university"],
+};
+
+function getRelatedUnis(slug: string): { name: string; href: string }[] {
+  let ownRegion = "";
+  for (const [region, slugs] of Object.entries(regionGroups)) {
+    if (slugs.includes(slug)) { ownRegion = region; break; }
+  }
+  const results: { name: string; href: string }[] = [];
+  if (ownRegion) {
+    for (const s of regionGroups[ownRegion]) {
+      if (s !== slug) {
+        const u = universities.find((uni) => uni.slug === s);
+        if (u) results.push({ name: `${u.shortName} Grade Calculator`, href: `/universities/${u.slug}/` });
+      }
+    }
+  }
+  if (results.length < 3) {
+    for (const [region, slugs] of Object.entries(regionGroups)) {
+      if (region === ownRegion) continue;
+      for (const s of slugs) {
+        if (results.length >= 4) break;
+        const u = universities.find((uni) => uni.slug === s);
+        if (u) results.push({ name: `${u.shortName} Grade Calculator`, href: `/universities/${u.slug}/` });
+      }
+    }
+  }
+  return results.slice(0, 4);
+}
 
 const relatedLinks = [
  { title: "University Grade Calculator", href: "/", description: "General UK university grade calculator for any institution." },
@@ -95,10 +131,40 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  </ol>
  <p>
  For a more detailed calculation with year weightings, use our{" "}
- <a href="/weighted-grade-calculator/">weighted grade calculator</a> where you can set
+ <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> where you can set
  custom Year 2/Year 3 weightings to match {uni.shortName}&apos;s {uni.yearWeighting} split.
  </p>
+
+ <h2>Useful Tools for {uni.shortName} Students</h2>
+ <p>
+ Beyond the basic calculator above, we have several tools that {uni.shortName} students find helpful:
+ </p>
+ <ul>
+ <li>Use our <Link href="/">university grade calculator</Link> for a quick overall classification check across all your modules.</li>
+ <li>Break down individual module marks from coursework and exams with the <Link href="/module-grade-calculator/">module grade calculator</Link>.</li>
+ <li>Find out exactly what marks you need on remaining assessments with the <Link href="/final-grade-calculator/">target grade calculator</Link>.</li>
+ <li>Read our guide to <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications</Link> to understand what each class means for your career.</li>
+ <li>If you need to convert your percentage to a GPA for international applications, try the <Link href="/gpa-calculator/">GPA calculator</Link>.</li>
+ </ul>
  </div>
+
+ <section className="mt-12">
+ <h2 className="text-2xl font-bold text-slate-900 mb-6">Other University Grade Calculators</h2>
+ <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+ {getRelatedUnis(uni.slug).map((related) => (
+ <Link
+ key={related.href}
+ href={related.href}
+ className="group p-5 rounded-xl border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all"
+ >
+ <h3 className="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
+ {related.name}
+ </h3>
+ <p className="text-sm text-slate-500 mt-1">Free grade calculator tailored for this university.</p>
+ </Link>
+ ))}
+ </div>
+ </section>
 
  <FAQ items={uni.faqs} />
  <InternalLinks links={relatedLinks} />

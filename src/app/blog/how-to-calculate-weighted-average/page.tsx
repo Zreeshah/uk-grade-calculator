@@ -95,7 +95,7 @@ export default function WeightedAverageGuidePage() {
  This guide explains the weighted average formula step by step, walks through multiple examples of increasing complexity, shows you how to factor in year weightings, and covers the most common mistakes students make when calculating manually. If you just want the answer quickly, use our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to compute it automatically.
  </p>
 
- <nav className="my-8 p-5 rounded-xl bg-slate-50slate-800 border border-slate-200">
+ <nav className="my-8 p-5 rounded-xl bg-slate-50 border border-slate-200">
  <h2 className="text-lg font-semibold text-slate-900 mb-3">Table of Contents</h2>
  <ol className="space-y-1.5 text-sm">
  <li><a href="#what-is">What Is a Weighted Average?</a></li>
@@ -117,14 +117,14 @@ export default function WeightedAverageGuidePage() {
  A weighted average is a calculation where each value contributes to the final result in proportion to its assigned weight. In the context of UK university grades, the &quot;values&quot; are your module percentages and the &quot;weights&quot; are the credit values of each module.
  </p>
  <p>
- This is different from a simple (arithmetic) average, where every value counts equally. With a simple average of 65%, 70%, and 80%, the result is (65 + 70 + 80) / 3 = 71.67%, regardless of whether those modules were worth 10 credits or 60 credits. A weighted average corrects for this by giving higher-credit modules proportionally more influence.
+ This is different from a simple (arithmetic) average, where every value counts equally. With a simple average of 65%, 70%, and 80%, the result is (65 + 70 + 80) / 3 = 71.67%, regardless of whether those modules were worth 10 credits or 60 credits. A weighted average corrects for this by giving higher-credit modules proportionally more influence. You can also check our <Link href="/degree-classification-calculator/">degree classification calculator</Link> to see which band your weighted average corresponds to.
  </p>
 
  <h2 id="formula">The Weighted Average Formula</h2>
  <p>
  The formula for a credit-weighted average is:
  </p>
- <div className="my-6 p-5 rounded-xl bg-indigo-50indigo-950/30 border border-indigo-200 text-center">
+ <div className="my-6 p-5 rounded-xl bg-indigo-50 border border-indigo-200 text-center">
  <p className="text-lg font-bold text-indigo-900 mb-0">
  Weighted Average = &Sigma;(Grade &times; Credits) &divide; &Sigma;Credits
  </p>
@@ -156,7 +156,7 @@ export default function WeightedAverageGuidePage() {
  Weighted Average = 7,960 &divide; 120 = <strong>66.33%</strong> = Upper Second Class (2:1)
  </p>
  <p>
- When all modules have the same credit value, the weighted average equals the simple average. The distinction becomes important when credit values differ, as in the next example.
+ When all modules have the same credit value, the weighted average equals the simple average. The distinction becomes important when credit values differ, as in the next example. If you need to convert raw marks to percentages before plugging them in, our <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> can help.
  </p>
 
  <h2 id="example-mixed">Example 2: Mixed Credit Values</h2>
@@ -195,7 +195,7 @@ export default function WeightedAverageGuidePage() {
  <p>
  The formula becomes:
  </p>
- <div className="my-6 p-5 rounded-xl bg-indigo-50indigo-950/30 border border-indigo-200 text-center">
+ <div className="my-6 p-5 rounded-xl bg-indigo-50 border border-indigo-200 text-center">
  <p className="text-lg font-bold text-indigo-900 mb-0">
  Overall = (Year 2 Average &times; Year 2 Weight) + (Year 3 Average &times; Year 3 Weight)
  </p>
@@ -203,7 +203,7 @@ export default function WeightedAverageGuidePage() {
 
  <h2 id="example-years">Example 3: Full Degree Calculation with Year Weightings</h2>
  <p>
- Let&apos;s calculate a complete degree classification using a 33/67 year weighting (Year 2 = 33%, Year 3 = 67%):
+ Let&apos;s calculate a complete degree classification using a 33/67 year weighting (Year 2 = 33%, Year 3 = 67%). This is the most common split at UK universities, used by institutions such as <Link href="/universities/leeds/">Leeds</Link> and <Link href="/universities/mmu/">Manchester Metropolitan</Link>:
  </p>
  <h3>Year 2 Modules</h3>
  <table>
@@ -311,7 +311,7 @@ export default function WeightedAverageGuidePage() {
  </p>
  <h3>Study Abroad or Placement Year</h3>
  <p>
- If you completed a year abroad or a placement year, the marks from that year may be included, excluded, or weighted differently. Some universities treat the placement year as pass/fail, while others include it with a reduced weighting (e.g., 10%).
+ If you completed a year abroad or a placement year, the marks from that year may be included, excluded, or weighted differently. Some universities treat the placement year as pass/fail, while others include it with a reduced weighting (e.g., 10%). The same weighted average principle applies to <Link href="/masters-grade-calculator/">postgraduate degrees</Link>, though the pass mark is 50% rather than 40%.
  </p>
 
  <h2 id="tips">Tips for Using Weighted Averages Effectively</h2>
@@ -319,13 +319,13 @@ export default function WeightedAverageGuidePage() {
  <li><strong>Track your running average throughout the year.</strong> Do not wait until results day to calculate. Regular tracking helps you identify where to focus effort.</li>
  <li><strong>Use the target grade feature</strong> in our <Link href="/">grade calculator</Link> to find out exactly what marks you need on remaining modules to achieve a specific classification.</li>
  <li><strong>Prioritise high-credit modules.</strong> An improvement of 5% on a 40-credit module is worth the same as a 10% improvement on a 20-credit module.</li>
- <li><strong>Understand your university&apos;s specific algorithm.</strong> Some universities use additional rules, such as the best 100 out of 120 credits, or dual algorithms that take the higher of two calculations.</li>
+ <li><strong>Understand your university&apos;s specific algorithm.</strong> Some universities use additional rules, such as the best 100 out of 120 credits, or dual algorithms that take the higher of two calculations. Check our <Link href="/universities/leeds/">university-specific calculators</Link> for details on individual institutions.</li>
  <li><strong>Keep a record of all your marks.</strong> Module marks, credit values, and assessment component weightings should all be documented in one place for easy calculation.</li>
  </ul>
 
  <h2>Key Takeaways</h2>
  <ul>
- <li>A weighted average multiplies each grade by its credit value, giving higher-credit modules proportionally more influence.</li>
+ <li>A weighted average multiplies each grade by its credit value, giving higher-credit modules proportionally more influence. If you have a GPA requirement instead, use our <Link href="/gpa-calculator/">GPA calculator</Link> to convert.</li>
  <li>The formula is: &Sigma;(Grade &times; Credits) &divide; &Sigma;Credits.</li>
  <li>Year weightings add another layer: calculate each year&apos;s average separately, then combine using the year weights.</li>
  <li>The difference between a weighted and simple average can be large enough to change your classification.</li>

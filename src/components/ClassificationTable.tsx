@@ -17,7 +17,7 @@ export default function ClassificationTable({
  <div className="overflow-x-auto">
  <table className="w-full border-collapse">
  <thead>
- <tr className="bg-slate-50slate-800">
+ <tr className="bg-slate-50">
  <th className="px-4 py-3 text-left text-sm font-semibold text-slate-700 border-b-2 border-slate-200">
  Classification
  </th>

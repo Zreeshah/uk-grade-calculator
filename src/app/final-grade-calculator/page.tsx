@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -54,7 +55,7 @@ export default function FinalGradeCalculatorPage() {
  <div className="prose-custom mt-12">
  <h2>How to Use the Final Grade Calculator</h2>
  <p>
- This calculator answers the question every student asks at some point: &quot;What do I need to get on my remaining modules to achieve my target classification?&quot; Here is how to use it effectively:
+ This calculator answers the question every student asks at some point: &quot;What do I need to get on my remaining modules to achieve my target classification?&quot; Here is how to use it effectively. If you want to calculate your current overall average first, start with the <Link href="/">university grade calculator</Link>.
  </p>
  <ol>
  <li><strong>Enter your completed modules.</strong> Add every module you have received a mark for, including their percentage grade and credit value.</li>
@@ -100,7 +101,7 @@ export default function FinalGradeCalculatorPage() {
  </p>
  <h3>If You Are in Year 3</h3>
  <p>
- Year 3 is where your classification is largely determined. With 67% weighting on Year 3, every percentage point matters. A 1% improvement in your Year 3 average translates to a 0.67% improvement in your overall average. This is why consistent performance across all final-year modules is crucial.
+ Year 3 is where your classification is largely determined. With 67% weighting on Year 3, every percentage point matters. A 1% improvement in your Year 3 average translates to a 0.67% improvement in your overall average. Use our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to model year-weighted scenarios. This is why consistent performance across all final-year modules is crucial.
  </p>
 
  <h2>How Remaining Credits Affect Your Target</h2>
@@ -121,7 +122,7 @@ export default function FinalGradeCalculatorPage() {
  <li><strong>Prioritise by credit value.</strong> A 60-credit dissertation has three times the impact of a 20-credit module. Invest your time accordingly.</li>
  <li><strong>Identify your weakest assessment types.</strong> If you consistently lose marks in exams, invest in exam technique. If coursework is your weakness, start earlier and seek more feedback.</li>
  <li><strong>Use feedback from previous modules.</strong> Marker feedback tells you exactly where you lost marks and how to recover them. This is the most underused resource in higher education.</li>
- <li><strong>Attend all lectures and seminars.</strong> Students who attend regularly score 5-10% higher on average, according to multiple studies of UK university attendance data.</li>
+ <li><strong>Attend all lectures and seminars.</strong> Students who attend regularly score 5-10% higher on average. For more on how grades are determined, read <Link href="/blog/how-university-grading-works-uk/">how university grading works</Link>. Students who attend regularly score 5-10% higher on average, according to multiple studies of UK university attendance data.</li>
  <li><strong>Set interim targets.</strong> Rather than focusing only on the end-of-year target, set a target for each module and track your progress after each assessment.</li>
  </ol>
  </div>

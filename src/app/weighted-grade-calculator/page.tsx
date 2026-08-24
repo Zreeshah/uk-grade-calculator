@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -121,14 +122,14 @@ export default function WeightedGradeCalculatorPage() {
  <tr><td>Scottish 4-year degrees (Yr 3/4)</td><td>25-33%</td><td>67-75%</td></tr>
  </tbody>
  </table>
- <p>Always verify your specific programme&apos;s year weighting in your student handbook or academic regulations. Even within the same university, different departments may use different weightings.</p>
+ <p>Always verify your specific programme&apos;s year weighting in your student handbook or academic regulations. Even within the same university, different departments may use different weightings. Check our <Link href="/universities/portsmouth/">Portsmouth</Link>, <Link href="/universities/sheffield-hallam/">Sheffield Hallam</Link>, or <Link href="/universities/exeter/">Exeter</Link> calculator pages for more examples.</p>
 
  <h2>Strategic Implications of Weighted Grades</h2>
  <p>Understanding how weighting works gives you a strategic advantage in managing your academic performance:</p>
  <ul>
  <li><strong>Prioritise high-credit modules.</strong> If your dissertation is worth 60 credits (half your year), it deserves at least half your study time for that year.</li>
  <li><strong>Plan module choices wisely.</strong> If you have optional modules, consider which assessment methods suit your strengths. A student who excels at essays should not choose exam-heavy electives unless necessary.</li>
- <li><strong>Use the target calculator.</strong> Enter your completed modules and use our target grade feature to see exactly what marks you need on remaining assessments.</li>
+ <li><strong>Use our <Link href="/final-grade-calculator/">target grade calculator</Link>.</strong> Enter your completed modules and use our target grade feature to see exactly what marks you need on remaining assessments.</li>
  <li><strong>Do not panic about one bad module.</strong> A poor mark on a 20-credit module can be offset by strong performance on a 40 or 60-credit module. Use the calculator to see how much impact each module actually has.</li>
  </ul>
 
@@ -136,7 +137,7 @@ export default function WeightedGradeCalculatorPage() {
  <ul>
  <li><strong>Treating all modules equally.</strong> This is the most common error. A 20-credit and a 40-credit module do not have the same influence on your average.</li>
  <li><strong>Forgetting to include all modules.</strong> Every credited module in the relevant year contributes to your average. Do not leave out modules you did poorly on.</li>
- <li><strong>Using wrong credit values.</strong> Check your transcript for the exact credit value of each module. Do not assume all modules are 20 credits.</li>
+ <li><strong>Using wrong credit values.</strong> Check your transcript for the exact credit value of each module. Our <Link href="/module-grade-calculator/">module grade calculator</Link> can help you break down individual module marks. Do not assume all modules are 20 credits.</li>
  <li><strong>Not applying year weightings.</strong> If you calculate Year 2 and Year 3 averages separately, remember to apply the year weighting before comparing to classification boundaries.</li>
  </ul>
  </div>

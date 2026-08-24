@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -62,7 +63,7 @@ export default function BTECGradeCalculatorPage() {
  BTEC (Business and Technology Education Council) qualifications are vocational qualifications awarded by Pearson. They are designed to provide practical, work-related learning and are available in a wide range of subjects from business and IT to health and social care, sport, and engineering.
  </p>
  <p>
- BTECs are recognised by UK universities and employers as equivalent to A-Levels and other Level 3 qualifications. In 2023, over 250,000 students in England achieved BTEC qualifications, making them one of the most popular alternatives to traditional A-Levels.
+ BTECs are recognised by UK universities and employers as equivalent to A-Levels and other Level 3 qualifications. In 2023, over 250,000 students in England achieved BTEC qualifications, making them one of the most popular alternatives to traditional A-Levels. If you are progressing to university, our <Link href="/">university grade calculator</Link> will help you track your degree classification.
  </p>
 
  <h2>BTEC Qualification Sizes and Structure</h2>
@@ -86,7 +87,7 @@ export default function BTECGradeCalculatorPage() {
  <li><strong>Distinction (D):</strong> You have shown exceptional understanding. You can evaluate, justify, and make recommendations with detailed analysis.</li>
  </ul>
  <p>
- Your overall BTEC grade is determined by combining your unit grades according to a points system. Internal units are assessed by your teachers and moderated by Pearson, while external units are set and marked by Pearson directly.
+ Your overall BTEC grade is determined by combining your unit grades according to a points system. Internal units are assessed by your teachers and moderated by Pearson, while external units are set and marked by Pearson directly. To understand how this differs from university grading, see our guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works</Link>.
  </p>
 
  <h2>BTEC to UCAS Tariff Points Conversion</h2>
@@ -115,7 +116,7 @@ export default function BTECGradeCalculatorPage() {
  <li><strong>Go beyond description.</strong> The biggest difference between Pass and Distinction work is depth. Pass-level work describes; Merit-level work explains and analyses; Distinction-level work evaluates, justifies, and makes informed recommendations.</li>
  <li><strong>Use real-world examples.</strong> BTEC assessments reward practical application. Link your work to real businesses, organisations, or case studies to demonstrate understanding.</li>
  <li><strong>Reference your sources.</strong> Even though BTECs are vocational, proper referencing shows academic rigour and can lift your work from Merit to Distinction territory.</li>
- <li><strong>Do not leave assignments to the last minute.</strong> Unlike exams, BTEC assignments can be revised and resubmitted. Use this to your advantage by submitting drafts early and incorporating feedback.</li>
+ <li><strong>Do not leave assignments to the last minute. Once at university, the same principle applies; use our <Link href="/final-grade-calculator/">final grade calculator</Link> to stay ahead of deadlines.</strong> Unlike exams, BTEC assignments can be revised and resubmitted. Use this to your advantage by submitting drafts early and incorporating feedback.</li>
  </ol>
 
  <h2>Common Mistakes in BTEC Assessments</h2>

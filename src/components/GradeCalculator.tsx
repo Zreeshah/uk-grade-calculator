@@ -104,7 +104,7 @@ export default function GradeCalculator({
 
  {/* Progress bar */}
  <div className="mt-4">
- <div className="h-3 bg-slate-200slate-700 rounded-full overflow-hidden">
+ <div className="h-3 bg-slate-200 rounded-full overflow-hidden">
  <div
  className={`h-full rounded-full transition-all duration-500 ${
  average >= 70

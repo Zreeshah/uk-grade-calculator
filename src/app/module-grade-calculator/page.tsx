@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -94,7 +95,7 @@ export default function ModuleGradeCalculatorPage() {
  <div className="prose-custom mt-12">
  <h2>How to Calculate Your Module Grade</h2>
  <p>
- A module grade in the UK university system is calculated by combining all assessment components within that module according to their assigned weightings. This is not a simple average. Each assessment component contributes to your final module mark in proportion to its weighting, which is set out in your module handbook at the start of the academic year.
+ A module grade in the UK university system is calculated by combining all assessment components within that module according to their assigned weightings. This is not a simple average. Each assessment component contributes to your final module mark in proportion to its weighting, which is set out in your module handbook at the start of the academic year. Once you have your module grades, use our <Link href="/">university grade calculator</Link> to see your overall degree classification.
  </p>
  <p>
  For example, if a module has three assessment components:
@@ -132,7 +133,7 @@ export default function ModuleGradeCalculatorPage() {
  </tbody>
  </table>
  <p>
- A full academic year requires 120 credits (1,200 hours of study). A standard three-year undergraduate degree totals 360 credits. These study hours include lectures, seminars, independent reading, assessment preparation, and the assessments themselves.
+ A full academic year requires 120 credits (1,200 hours of study). A standard three-year undergraduate degree totals 360 credits. These study hours include lectures, seminars, independent reading, assessment preparation, and the assessments themselves. For a full explanation of how these credits feed into your degree result, read our guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
  </p>
 
  <h2>Why Credit Weighting Matters</h2>
@@ -140,7 +141,7 @@ export default function ModuleGradeCalculatorPage() {
  Not all modules contribute equally to your degree classification. A 40-credit dissertation has exactly twice the impact of a 20-credit module. This is by design: your dissertation represents a significant independent research project that demonstrates your ability to work autonomously at degree level.
  </p>
  <p>
- This means you should allocate your study time proportionally. If you have a 40-credit dissertation and a 20-credit elective, the dissertation deserves roughly twice as much of your time and effort. Students who treat all modules equally often underperform on high-credit assessments and overinvest in lower-credit ones.
+ This means you should allocate your study time proportionally. If you have a 40-credit dissertation and a 20-credit elective, the dissertation deserves roughly twice as much of your time and effort. Students who treat all modules equally often underperform on high-credit assessments and overinvest in lower-credit ones. Our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> shows you exactly how each module contributes to your overall average.
  </p>
 
  <h2>Module Grade Boundaries and What They Mean</h2>
@@ -189,7 +190,7 @@ export default function ModuleGradeCalculatorPage() {
  <ul>
  <li><strong>Read the marking criteria carefully.</strong> Every module has published assessment criteria that tell you exactly what markers are looking for at each classification level. Study these before starting your work.</li>
  <li><strong>Front-load high-weight assessments.</strong> If your exam is worth 60%, start revision early and treat it as the priority. Do not let coursework deadlines push exam preparation to the last minute.</li>
- <li><strong>Use past papers.</strong> For exam modules, past papers are the single most effective revision tool. They show you the question format, topic coverage, and expected depth of answer.</li>
+ <li><strong>Use past papers and our <Link href="/final-grade-calculator/">final grade calculator</Link> to set targets.</strong> For exam modules, past papers are the single most effective revision tool. They show you the question format, topic coverage, and expected depth of answer.</li>
  <li><strong>Seek formative feedback.</strong> Many lecturers offer draft feedback on coursework or hold office hours where you can discuss your approach. Use these opportunities.</li>
  <li><strong>Manage your time across modules.</strong> A 40-credit module deserves twice the time of a 20-credit module. Timetable your study proportionally.</li>
  </ul>

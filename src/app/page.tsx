@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -63,6 +64,8 @@ const relatedLinks = [
  { title: "Masters Grade Calculator", href: "/masters-grade-calculator/", description: "Calculate postgraduate grades with Distinction, Merit, and Pass boundaries." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what you need on your final exams to reach your target grade." },
  { title: "GPA Calculator UK", href: "/gpa-calculator/", description: "Convert UK percentage grades to GPA scale for international applications." },
+  { title: "Degree Classification Calculator", href: "/degree-classification-calculator/", description: "Check which classification band your percentage average falls into." },
+  { title: "Percentage Grade Calculator", href: "/percentage-grade-calculator/", description: "Convert raw marks to percentages and calculate overall percentage." },
 ];
 
 export default function HomePage() {
@@ -106,7 +109,7 @@ export default function HomePage() {
  <li><strong>View your result</strong> at the top of the calculator. It shows your credit-weighted average and corresponding degree classification.</li>
  </ol>
  <p>
- The calculator updates in real time as you enter grades, so you can experiment with different scenarios to see how each module affects your overall classification.
+ The calculator updates in real time as you enter grades, so you can experiment with different scenarios to see how each module affects your overall classification. If you want to break down individual modules into their assessment components first, use our <Link href="/module-grade-calculator/">module grade calculator</Link>.
  </p>
 
  <h2>Understanding UK Degree Classifications</h2>
@@ -123,7 +126,7 @@ export default function HomePage() {
  <div className="prose-custom">
  <h3>First Class Honours (1st) - 70% and Above</h3>
  <p>
- A First is the highest undergraduate degree classification in the UK. It demonstrates exceptional academic achievement and a deep understanding of your subject. In the 2022/23 academic year, approximately 32% of UK graduates achieved a First Class degree, according to HESA data. A First is highly valued by employers, particularly for competitive graduate schemes, and is typically required for academic research positions and PhD applications.
+ A First is the highest undergraduate degree classification in the UK. It demonstrates exceptional academic achievement and a deep understanding of your subject. In the 2022/23 academic year, approximately 32% of UK graduates achieved a First Class degree, according to HESA data. A First is highly valued by employers, particularly for competitive graduate schemes, and is typically required for academic research positions and PhD applications. For a complete breakdown of what each classification means and how employers view them, read our guide on <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications explained</Link>.
  </p>
 
  <h3>Upper Second Class Honours (2:1) - 60% to 69%</h3>
@@ -143,7 +146,7 @@ export default function HomePage() {
 
  <h2>How Degree Classification Is Calculated</h2>
  <p>
- Your degree classification depends on a credit-weighted average of your module marks. Here is the formula most UK universities use:
+ Your degree classification depends on a credit-weighted average of your module marks. For a detailed walkthrough with more examples, see our <Link href="/blog/how-to-calculate-weighted-average/">guide to calculating weighted averages</Link>. Here is the formula most UK universities use:
  </p>
  <p>
  <strong>Overall Average = (Sum of each Module Grade x Module Credits) / Total Credits</strong>
@@ -162,7 +165,7 @@ export default function HomePage() {
  Overall average: 5,460 / 80 = <strong>68.25%</strong> = Upper Second Class (2:1)
  </p>
  <p>
- Notice how the 40-credit dissertation has twice the influence of a 20-credit module. This is why credit weighting matters and why a simple average of your grades would not give an accurate classification.
+ Notice how the 40-credit dissertation has twice the influence of a 20-credit module. This is why credit weighting matters and why a simple average of your grades would not give an accurate classification. Our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> handles these calculations automatically.
  </p>
 
  <h2>Year Weightings in UK Universities</h2>
@@ -206,7 +209,7 @@ export default function HomePage() {
  </tbody>
  </table>
  <p>
- Year 1 typically does not count towards your final classification, but you usually need to pass all first-year modules to progress to Year 2. Always check your university&apos;s specific regulations, as policies vary between institutions and even between departments within the same university.
+ Year 1 typically does not count towards your final classification, but you usually need to pass all first-year modules to progress to Year 2. Always check your university&apos;s specific regulations, as policies vary between institutions and even between departments within the same university. We have tailored calculators for specific universities including <Link href="/universities/mmu/">Manchester Metropolitan University</Link>, <Link href="/universities/leeds/">University of Leeds</Link>, <Link href="/universities/open-university/">Open University</Link>, and <Link href="/universities/st-andrews/">University of St Andrews</Link>, each with their exact year weightings.
  </p>
 
  <h2>Tips for Improving Your Degree Classification</h2>
@@ -215,7 +218,7 @@ export default function HomePage() {
  </p>
  <ol>
  <li><strong>Focus on high-credit modules.</strong> A dissertation worth 40 credits has double the impact of a standard 20-credit module. Invest proportionally more time in higher-credit work.</li>
- <li><strong>Use the target grade feature.</strong> Enter your completed grades into the calculator and use the target feature to see exactly what you need on remaining modules. This removes guesswork and helps you prioritise.</li>
+ <li><strong>Use the target grade feature.</strong> Enter your completed grades into the calculator and use the target feature to see exactly what you need on remaining modules. You can also use our dedicated <Link href="/final-grade-calculator/">final grade calculator</Link> for detailed target planning.</li>
  <li><strong>Understand marking criteria.</strong> Read your module handbooks carefully. Knowing the difference between a 2:1 and a First in your marker&apos;s eyes helps you target your effort.</li>
  <li><strong>Attend feedback sessions.</strong> Module feedback from previous assessments is the most underused resource in higher education. It tells you exactly where you lost marks and how to recover them.</li>
  <li><strong>Plan your module choices strategically.</strong> If you have elective choices, consider modules where the assessment style suits your strengths (e.g., coursework-heavy vs exam-heavy).</li>
@@ -229,7 +232,7 @@ export default function HomePage() {
  <li><strong>Ignoring credit weighting.</strong> A simple average of your grades is not the same as a credit-weighted average. A 40-credit module counts twice as much as a 20-credit one.</li>
  <li><strong>Including Year 1 grades.</strong> At most universities, first-year marks do not count towards your classification. Check whether yours is an exception.</li>
  <li><strong>Forgetting year weightings.</strong> If your university weights Year 3 at 67%, your final-year performance is twice as important as Year 2.</li>
- <li><strong>Using the wrong scale.</strong> Some modules are marked on different scales (e.g., pass/fail, letter grades). Convert everything to the same percentage scale before calculating.</li>
+ <li><strong>Using the wrong scale.</strong> Some modules are marked on different scales (e.g., pass/fail, letter grades). Use our <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> to convert everything to the same scale before calculating.</li>
  <li><strong>Not accounting for capped marks.</strong> If you had a module mark capped due to a resit or late submission, use the capped mark, not the original mark.</li>
  </ul>
 
@@ -258,7 +261,7 @@ export default function HomePage() {
  This free UK university grade calculator was built for students who want a fast, accurate, and ad-light way to check their degree classification. Unlike other grade calculators that are cluttered with ads or require registration, this tool is completely free, works instantly in your browser, and does not store any of your data.
  </p>
  <p>
- Whether you are a first-year student planning ahead, a second-year trying to work out what you need for a 2:1, or a finalist checking whether a First is within reach, this calculator gives you the answer in seconds. Use our <a href="/module-grade-calculator/">module grade calculator</a> for individual module breakdowns, or the <a href="/weighted-grade-calculator/">weighted grade calculator</a> for multi-year calculations with custom year weightings.
+ Whether you are a first-year student planning ahead, a second-year trying to work out what you need for a 2:1, or a finalist checking whether a First is within reach, this calculator gives you the answer in seconds. Use our <Link href="/module-grade-calculator/">module grade calculator</Link> for individual module breakdowns, or the <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> for multi-year calculations with custom year weightings.
  </p>
  </div>
  </div>

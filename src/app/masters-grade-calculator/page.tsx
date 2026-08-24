@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -58,7 +59,7 @@ export default function MastersGradeCalculatorPage() {
  <div className="prose-custom mt-12">
  <h2>How Masters Degree Classification Works in the UK</h2>
  <p>
- UK masters degrees use a three-tier classification system: Distinction, Merit, and Pass. This is different from the four-tier undergraduate system (First, 2:1, 2:2, Third). The pass threshold is also higher at 50% compared to 40% for undergraduate degrees, reflecting the greater academic demands of postgraduate study.
+ UK masters degrees use a three-tier classification system: Distinction, Merit, and Pass. This is different from the four-tier undergraduate system (First, 2:1, 2:2, Third). The pass threshold is also higher at 50% compared to 40% for undergraduate degrees, reflecting the greater academic demands of postgraduate study. For a comparison with the undergraduate system, see our guide on <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications explained</Link>.
  </p>
  <p>
  Your masters classification is determined by the credit-weighted average of all assessed components, including taught modules and your dissertation or major project. The standard structure for a taught masters degree is 180 credits over one year (full-time) or two years (part-time), broken down as:
@@ -100,7 +101,7 @@ export default function MastersGradeCalculatorPage() {
  </table>
  <p>Total: 12,820 / 180 = <strong>71.2%</strong> = Distinction</p>
  <p>
- If the dissertation had been 65% instead of 75%, the overall would drop to (12,820 - 4,500 + 3,900) / 180 = 67.9%, which is a Merit. This ten-percentage-point difference on the dissertation swings the entire classification.
+ If the dissertation had been 65% instead of 75%, the overall would drop to (12,820 - 4,500 + 3,900) / 180 = 67.9%, which is a Merit. This ten-percentage-point difference on the dissertation swings the entire classification. Use our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to experiment with different dissertation marks.
  </p>
 
  <h2>Key Differences Between Masters and Undergraduate Grading</h2>
@@ -122,7 +123,7 @@ export default function MastersGradeCalculatorPage() {
  <li><strong>Target 70%+ on every module.</strong> With only 6 taught modules, each one counts. There is less room to average out poor performance than at undergraduate level.</li>
  <li><strong>Engage with your supervisor regularly.</strong> Your dissertation supervisor can guide you toward higher marks through regular feedback on drafts and research direction.</li>
  <li><strong>Read current research.</strong> Masters-level work is expected to engage with recent journal articles and primary sources, not just textbooks. Demonstrating awareness of current debates adds significant depth.</li>
- <li><strong>Use the calculator strategically.</strong> After your first semester results, enter them here to see where you stand and what you need on remaining modules.</li>
+ <li><strong>Use the calculator strategically.</strong> After your first semester results, enter them here to see where you stand. Our <Link href="/final-grade-calculator/">final grade calculator</Link> can show you exactly what marks you need on remaining modules.</li>
  </ol>
 
  <h2>Types of UK Masters Degrees</h2>

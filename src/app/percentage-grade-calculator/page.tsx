@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -59,7 +60,7 @@ export default function PercentageGradeCalculatorPage() {
  The UK university grading system operates on a 0-100 percentage scale, but the way this scale is used differs significantly from school-level grading and from grading systems in other countries. Understanding these differences is essential for accurately interpreting your marks and setting realistic targets.
  </p>
  <p>
- In practice, the UK university marking scale functions more like a 40-80 scale. Marks below 40% typically represent a fail, and marks above 80% are exceptionally rare. The most commonly awarded marks fall between 55% and 75%, with the majority of students achieving averages in the 60-69% range (2:1 classification).
+ In practice, the UK university marking scale functions more like a 40-80 scale. Marks below 40% typically represent a fail, and marks above 80% are exceptionally rare. The most commonly awarded marks fall between 55% and 75%, with the majority of students achieving averages in the 60-69% range (2:1 classification). For a full breakdown of what each classification means, see our <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications guide</Link>.
  </p>
 
  <h2>How to Convert Raw Marks to Percentages</h2>
@@ -105,7 +106,7 @@ export default function PercentageGradeCalculatorPage() {
  <ul>
  <li><strong>Using raw marks instead of percentages.</strong> If different assessments have different total marks (e.g., one out of 50 and another out of 100), you must convert both to percentages before calculating your weighted average.</li>
  <li><strong>Forgetting assessment weightings within a module.</strong> A module might be 60% exam and 40% coursework. You cannot simply average the two marks; you must weight them according to the split.</li>
- <li><strong>Rounding too early.</strong> Keep decimal places throughout your calculation and only round the final result. Rounding intermediate values can shift your result by several percentage points.</li>
+ <li><strong>Rounding too early.</strong> Keep decimal places throughout your calculation and only round the final result. Rounding intermediate values can shift your result by several percentage points. Let our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> handle the maths for you. Or for your overall result, go straight to the <Link href="/">university grade calculator</Link>.</li>
  <li><strong>Confusing percentile rank with percentage grade.</strong> Being in the &quot;top 30%&quot; of your cohort is not the same as scoring 70%. Your position relative to classmates is different from your absolute percentage mark.</li>
  </ul>
  </div>

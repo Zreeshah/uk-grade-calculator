@@ -102,7 +102,7 @@ export default function UKDegreeClassificationsPage() {
  This guide covers every aspect of the system: what each classification means, the exact percentage boundaries, how universities calculate them, what employers really think about each level, how classifications compare internationally, and the ongoing debate about grade inflation. If you want to check your own classification right now, use our free <Link href="/">university grade calculator</Link>.
  </p>
 
- <nav className="my-8 p-5 rounded-xl bg-slate-50slate-800 border border-slate-200">
+ <nav className="my-8 p-5 rounded-xl bg-slate-50 border border-slate-200">
  <h2 className="text-lg font-semibold text-slate-900 mb-3">Table of Contents</h2>
  <ol className="space-y-1.5 text-sm">
  <li><a href="#what-are-degree-classifications">What Are UK Degree Classifications?</a></li>
@@ -129,15 +129,15 @@ export default function UKDegreeClassificationsPage() {
  UK degree classifications are the grading system used to rank undergraduate Honours degrees at universities across England, Scotland, Wales, and Northern Ireland. Instead of a cumulative GPA like the American system, UK universities assign a single classification based on your overall weighted average mark across the qualifying years of study.
  </p>
  <p>
- The system dates back to the early 19th century at the University of Oxford and has since been adopted by virtually every UK higher education institution. There are four main Honours classifications, plus an Ordinary (unclassified) degree for students who do not reach the Honours threshold.
+ The system dates back to the early 19th century at the University of Oxford and has since been adopted by virtually every UK higher education institution. There are four main Honours classifications, plus an Ordinary (unclassified) degree for students who do not reach the Honours threshold. For a deeper look at the grading process itself, including moderation, external examiners, and exam boards, see our guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
  </p>
  <p>
- Your degree classification matters because it appears on your degree certificate, your academic transcript, and is often requested by employers, professional bodies, and postgraduate admissions teams. It serves as a standardised shorthand for your academic performance throughout your degree.
+ Your degree classification matters because it appears on your degree certificate, your academic transcript, and is often requested by employers, professional bodies, and postgraduate admissions teams. It serves as a standardised shorthand for your academic performance throughout your degree. Use our <Link href="/degree-classification-calculator/">degree classification calculator</Link> to check which band your current average falls into.
  </p>
 
  <h2 id="classification-boundaries">Classification Boundaries and Percentages</h2>
  <p>
- The following table shows the standard percentage boundaries used by the vast majority of UK universities. While most institutions follow these exact thresholds, some may apply slight variations, so always check your own university&apos;s academic regulations.
+ The following table shows the standard percentage boundaries used by the vast majority of UK universities. While most institutions follow these exact thresholds, some may apply slight variations. For instance, <Link href="/universities/mmu/">Manchester Metropolitan University</Link> and the <Link href="/universities/leeds/">University of Leeds</Link> both follow these standard boundaries but differ in their year weighting policies. Always check your own university&apos;s academic regulations.
  </p>
  </article>
 
@@ -185,7 +185,7 @@ export default function UKDegreeClassificationsPage() {
  A Third Class Honours degree requires an average between 40% and 49%. It is the lowest Honours classification, achieved by approximately 4-5% of graduates.
  </p>
  <p>
- A Third is still a university degree and carries value. While it may limit access to some structured graduate programmes, many career paths do not have formal academic entry requirements. Entrepreneurship, sales, property, trades, and many creative fields focus on skills and experience rather than classification. Many highly successful business leaders and public figures graduated with a Third.
+ A Third is still a university degree and carries value. While it may limit access to some structured graduate programmes, many career paths do not have formal academic entry requirements. Entrepreneurship, sales, property, trades, and many creative fields focus on skills and experience rather than classification. Many highly successful business leaders and public figures graduated with a Third. Students with vocational qualifications like a BTEC can use our <Link href="/btec-grade-calculator/">BTEC grade calculator</Link> to check how their pre-university grades translate.
  </p>
  <p>
  If you are currently tracking towards a Third and want to improve, our <Link href="/final-grade-calculator/">final grade calculator</Link> can help you work out exactly what marks you need on your remaining assessments to reach a higher classification.
@@ -292,7 +292,7 @@ export default function UKDegreeClassificationsPage() {
  </tbody>
  </table>
  <p>
- These are rough guidelines. Different credential evaluation services (such as UK ENIC, WES, or NACES members) may produce slightly different equivalences. If you need a formal comparison, request an official credential evaluation from a recognised agency.
+ These are rough guidelines. Different credential evaluation services (such as UK ENIC, WES, or NACES members) may produce slightly different equivalences. If you need a formal comparison, request an official credential evaluation from a recognised agency. You can also use our <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> to convert raw marks to percentages before doing any conversion.
  </p>
  <p>
  For a more precise conversion, our <Link href="/gpa-calculator/">GPA calculator</Link> can convert your UK percentage grades to the 4.0 GPA scale.

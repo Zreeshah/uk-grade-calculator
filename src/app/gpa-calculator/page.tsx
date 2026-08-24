@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -72,7 +73,7 @@ export default function GPACalculatorPage() {
 
  <h2>Why UK and US Grades Are Not Directly Comparable</h2>
  <p>
- The UK and US grading systems are fundamentally different in how they use the percentage scale. Understanding these differences is essential for accurate conversion:
+ The UK and US grading systems are fundamentally different in how they use the percentage scale. Understanding these differences is essential for accurate conversion. For a complete guide to the UK system specifically, see our article on <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications explained</Link>.
  </p>
  <ul>
  <li><strong>UK grading is compressed.</strong> In the UK, marks above 80% are rare, and marks above 90% are almost never given. A UK 75% represents outstanding work. In the US, 90%+ (an A) is commonly achieved.</li>
@@ -88,7 +89,7 @@ export default function GPACalculatorPage() {
  <li><strong>Study abroad and exchange programmes.</strong> If you are spending a semester at a US, Canadian, or Australian university, your grades may need to be converted.</li>
  <li><strong>International job applications.</strong> Multinational companies, particularly US-based firms, may ask for GPA on applications.</li>
  <li><strong>Professional qualifications.</strong> Some international professional certifications require a minimum GPA.</li>
- <li><strong>Scholarship applications.</strong> Many international scholarships state minimum GPA requirements.</li>
+ <li><strong>Scholarship applications.</strong> Many international scholarships state minimum GPA requirements. Calculate your UK percentage first with our <Link href="/">university grade calculator</Link>, then convert here.</li>
  </ol>
 
  <h2>GPA Conversion for Popular International Destinations</h2>
@@ -131,7 +132,7 @@ export default function GPACalculatorPage() {
  </tbody>
  </table>
  <p>
- This UK-specific GPA scale provides more granularity than the traditional classification system, allowing employers and institutions to distinguish between, say, a student with 72% and one with 85% (both currently classified as a First). However, adoption remains limited, and the traditional classification system continues to be the primary method used by most UK universities.
+ This UK-specific GPA scale provides more granularity than the traditional classification system, allowing employers and institutions to distinguish between, say, a student with 72% and one with 85% (both currently classified as a First). However, adoption remains limited, and the traditional classification system continues to be the primary method used by most UK universities. To understand how your percentage maps to a classification, use our <Link href="/degree-classification-calculator/">degree classification calculator</Link>.
  </p>
  </div>
 

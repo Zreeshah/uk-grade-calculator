@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -61,7 +62,7 @@ export default function DegreeClassificationCalculatorPage() {
  Your UK degree classification is the culmination of your academic performance across your entire degree programme. It is the grade that appears on your degree certificate and the one employers, postgraduate admissions teams, and professional bodies use to assess your academic achievement.
  </p>
  <p>
- The process for determining your classification involves several steps, and understanding each one helps you plan your study strategy effectively.
+ The process for determining your classification involves several steps, and understanding each one helps you plan your study strategy effectively. For the full explanation, see our guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
  </p>
 
  <h3>Step 1: Module Marks Are Recorded</h3>
@@ -128,9 +129,9 @@ export default function DegreeClassificationCalculatorPage() {
 
  <h2>Practical Tips for Tracking Your Classification</h2>
  <ul>
- <li><strong>Update your calculation after every module result.</strong> Do not wait until the end of the year. Regular tracking lets you identify problems early and adjust your study strategy.</li>
+ <li><strong>Update your calculation after every module result.</strong> Do not wait until the end of the year. Regular tracking lets you identify problems early. Use our <Link href="/">university grade calculator</Link> after every result to adjust your strategy.</li>
  <li><strong>Focus on modules where you have the most room for improvement.</strong> If you consistently score 72-75% in some modules and 58-62% in others, the lower-scoring modules offer more potential for grade improvement.</li>
- <li><strong>Plan your final year strategically.</strong> If your Year 2 average is 62% and your university uses 33/67 weighting, you would need a 72.5% Year 3 average to reach an overall 69%. Use the target grade calculator to run these scenarios.</li>
+ <li><strong>Plan your final year strategically.</strong> If your Year 2 average is 62% and your university uses 33/67 weighting, you would need a 72.5% Year 3 average to reach an overall 69%. Use our <Link href="/final-grade-calculator/">final grade calculator</Link> to run these scenarios.</li>
  <li><strong>Know your borderline policy.</strong> If you are near a boundary, understanding your university&apos;s borderline rules could make the difference. Some policies reward strong performance in specific areas rather than just the overall average.</li>
  </ul>
  </div>

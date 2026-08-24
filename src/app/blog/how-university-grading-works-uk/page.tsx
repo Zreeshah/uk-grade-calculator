@@ -102,7 +102,7 @@ export default function HowGradingWorksPage() {
  This guide walks you through the entire UK grading process from start to finish, so you know exactly how your work is assessed, how marks are moderated, and how your final <Link href="/blog/uk-degree-classifications-explained/">degree classification</Link> is determined. If you want to calculate your current standing right now, use our free <Link href="/">university grade calculator</Link>.
  </p>
 
- <nav className="my-8 p-5 rounded-xl bg-slate-50slate-800 border border-slate-200">
+ <nav className="my-8 p-5 rounded-xl bg-slate-50 border border-slate-200">
  <h2 className="text-lg font-semibold text-slate-900 mb-3">Table of Contents</h2>
  <ol className="space-y-1.5 text-sm">
  <li><a href="#credit-frameworks">UK Credit Frameworks: FHEQ and SCQF</a></li>
@@ -129,10 +129,10 @@ export default function HowGradingWorksPage() {
  <strong>FHEQ (Framework for Higher Education Qualifications)</strong> is used in England, Wales, and Northern Ireland. It is maintained by the Quality Assurance Agency (QAA) and defines levels 4 through 8, covering certificates of higher education through to doctoral degrees.
  </p>
  <p>
- <strong>SCQF (Scottish Credit and Qualifications Framework)</strong> is used in Scotland. It is a broader framework covering all levels of education from school to doctorate, with levels 7 through 12 covering higher education.
+ <strong>SCQF (Scottish Credit and Qualifications Framework)</strong> is used in Scotland. It is a broader framework covering all levels of education from school to doctorate, with levels 7 through 12 covering higher education. For an example of how SCQF works in practice, see our <Link href="/universities/st-andrews/">St Andrews grade calculator</Link>, which covers the four-year Scottish Honours structure.
  </p>
  <p>
- Both frameworks align with the European Qualifications Framework (EQF) and the European Credit Transfer and Accumulation System (ECTS). One FHEQ credit is equivalent to 0.5 ECTS credits, so a 120-credit UK year equals 60 ECTS credits.
+ Both frameworks align with the European Qualifications Framework (EQF) and the European Credit Transfer and Accumulation System (ECTS). One FHEQ credit is equivalent to 0.5 ECTS credits, so a 120-credit UK year equals 60 ECTS credits. If you need to express your UK grades on an international scale, our <Link href="/gpa-calculator/">GPA calculator</Link> can help convert your percentages.
  </p>
 
  <h2 id="credit-structure">Credit Structure and Levels</h2>
@@ -240,7 +240,7 @@ export default function HowGradingWorksPage() {
 
  <h2 id="classification-calculation">How Classification Is Calculated</h2>
  <p>
- Your degree classification is determined by a credit-weighted average of your qualifying module marks. The standard formula is:
+ Your <Link href="/degree-classification-calculator/">degree classification</Link> is determined by a credit-weighted average of your qualifying module marks. This same method is used for <Link href="/masters-grade-calculator/">masters degree classifications</Link> (Distinction, Merit, Pass), though the pass threshold is 50% rather than 40%. The standard formula is:
  </p>
  <p>
  <strong>Overall Average = &Sigma;(Module Mark &times; Module Credits) &divide; Total Credits</strong>
@@ -261,7 +261,7 @@ export default function HowGradingWorksPage() {
  Most universities do not weight Year 2 and Year 3 equally. The rationale is that final-year work represents a higher level of academic achievement and should therefore carry more weight. Common weighting patterns are:
  </p>
  <ul>
- <li><strong>33/67:</strong> Year 2 counts for one-third, Year 3 for two-thirds. This is the most common split.</li>
+ <li><strong>33/67:</strong> Year 2 counts for one-third, Year 3 for two-thirds. This is the most common split, used by universities including <Link href="/universities/leeds/">Leeds</Link>, <Link href="/universities/portsmouth/">Portsmouth</Link>, and <Link href="/universities/sheffield-hallam/">Sheffield Hallam</Link>.</li>
  <li><strong>40/60:</strong> A slightly more balanced approach used by some institutions.</li>
  <li><strong>25/75:</strong> Gives maximum weight to the final year.</li>
  <li><strong>50/50:</strong> Equal weighting, used by some universities.</li>
@@ -283,7 +283,7 @@ export default function HowGradingWorksPage() {
 
  <h2 id="extenuating-circumstances">Extenuating Circumstances</h2>
  <p>
- If your academic performance has been affected by circumstances beyond your control, you can submit an extenuating circumstances (EC) claim. Common grounds include:
+ If your academic performance has been affected by circumstances beyond your control, you can submit an extenuating circumstances (EC) claim. Students affected by ECs should also use our <Link href="/final-grade-calculator/">final grade calculator</Link> to model how capped or excluded modules might change their overall average. Common grounds include:
  </p>
  <ul>
  <li>Serious illness or injury (with medical evidence)</li>
