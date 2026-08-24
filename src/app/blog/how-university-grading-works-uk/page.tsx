@@ -364,6 +364,13 @@ export default function HowGradingWorksPage() {
  <li>Appeals are possible for procedural issues but not for academic judgement disagreements.</li>
  <li>The system is externally quality-assured by the QAA, OfS, and external examiners.</li>
  </ul>
+ <h2>From University Marking Scheme to Confirmed Degree Result</h2>
+ <p>
+ The university grading system UK students experience has a clear sequence: assessment marks become a module mark, module marks are combined with credits, and the relevant years are combined under course regulations. Moderation, second marking, external examining, and the exam board sit around that process to confirm standards and results.
+ </p>
+ <p>
+ If you are asking how grades are calculated at university, use the <Link href="/module-grade-calculator/">module grade calculator</Link> for assessment components and the <Link href="/weighted-grade-calculator/">weighted average calculator</Link> for credit values. Those tools model the maths; your university&apos;s published marking scheme remains authoritative.
+ </p>
  </div>
 
  <FAQ items={faqs} />

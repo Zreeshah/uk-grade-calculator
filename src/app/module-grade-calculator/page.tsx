@@ -230,6 +230,13 @@ export default function ModuleGradeCalculatorPage() {
  <li><strong>Seek formative feedback.</strong> Many lecturers offer draft feedback on coursework or hold office hours where you can discuss your approach. Use these opportunities.</li>
  <li><strong>Manage your time across modules.</strong> A 40-credit module deserves twice the time of a 20-credit module. Timetable your study proportionally.</li>
  </ul>
+ <h2>Module Calculator: From Assessment Marks to a Module Result</h2>
+ <p>
+ Students also search for a uni module calculator, university module calculator, module mark calculator, or module percentage calculator. They all describe the same first step: combine the weighted marks for coursework, exams, presentations, and practicals into one module percentage. Use this tool before adding that result to your wider degree calculation.
+ </p>
+ <p>
+ Keep assessment weighting separate from module credits. An exam worth 60% changes the mark inside one module; a 40-credit module changes how much that completed module affects your degree average. Once you have a confirmed module grade, use the <Link href="/weighted-grade-calculator/">weighted average calculator</Link> for the credit-weighted stage.
+ </p>
  </div>
 
  <FAQ items={faqs} />

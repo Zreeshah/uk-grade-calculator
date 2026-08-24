@@ -186,6 +186,13 @@ export default function BTECGradeCalculatorPage() {
  <p>
  The key to crossing the BTEC distinction boundaries is moving beyond description into analysis and evaluation. When your assignment asks you to &quot;evaluate,&quot; you must weigh evidence for and against, consider multiple perspectives, and arrive at a justified conclusion. Simply describing a topic, no matter how thoroughly, will not reach Distinction level.
  </p>
+ <h2>Pearson BTEC Results: Check the Right Qualification Rules</h2>
+ <p>
+ Searchers also use terms such as Pearson BTEC grade calculator, BTEC calculator, BTEC results, BTEC Business grade calculator, and BTEC Applied Science grade calculator. The qualification title and specification matter: unit rules, external assessment, and grade-to-tariff treatment can differ between programmes and versions.
+ </p>
+ <p>
+ Use this BTEC grade calculator to understand the broad Distinction*, Distinction, Merit, and Pass pathway, then confirm any result, progression decision, or UCAS application with your current Pearson specification and your college&apos;s assessment team.
+ </p>
  </div>
 
  <FAQ items={faqs} />

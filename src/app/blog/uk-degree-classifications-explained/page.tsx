@@ -403,6 +403,13 @@ export default function UKDegreeClassificationsPage() {
  <li>International equivalences exist but are approximate. Use our <Link href="/gpa-calculator/">GPA calculator</Link> for a quick conversion.</li>
  <li>The proportion of Firsts has risen significantly, prompting grade inflation debates.</li>
  </ul>
+ <h2>Degree Classification UK: What to Do With Your Average</h2>
+ <p>
+ When people search for UK degree classification, degree grades, or uni grade boundaries, they usually need a practical next step rather than another definition. First check which modules and years your regulations include. Then calculate the credit-weighted average and compare it with the published classification boundaries. A borderline result may trigger a university-specific review, but an online estimate cannot award an honours degree classification.
+ </p>
+ <p>
+ Use the <Link href="/degree-classification-calculator/">degree classification calculator</Link> when you have an average to interpret, or the <Link href="/final-grade-calculator/">final grade calculator</Link> when you need to model remaining marks.
+ </p>
  </div>
 
  <FAQ items={faqs} />

@@ -285,6 +285,13 @@ export default function HomePage() {
  <p>
  For a deep understanding of how the entire UK grading system works, from assessment types to external examiners, read our comprehensive guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
  </p>
+ <h2>UK Uni Grade Calculator: From Marks to an Overall Result</h2>
+ <p>
+ Searchers use university grade calculator, uni grade calculator UK, UK uni grade calculator, grade calculator uni, and overall uni grade calculator to describe the same core task: turning confirmed module marks and credits into a provisional degree average. Start with the grades that your course says count, use each module&apos;s actual credit value, and check your final course regulations before treating the result as official.
+ </p>
+ <p>
+ If you only have raw assessment marks, first use the <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> or <Link href="/module-grade-calculator/">module grade calculator</Link>. If you already have an average and need a required mark, use the <Link href="/final-grade-calculator/">final grade calculator</Link> instead of trying to estimate it manually.
+ </p>
  </div>
 
  <FAQ items={faqs} />

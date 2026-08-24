@@ -186,6 +186,13 @@ export default function WeightedGradeCalculatorPage() {
  <li><strong>Rounding intermediate results.</strong> Keep full decimal precision throughout. Rounding after each step can shift your final credit-weighted average by enough to cross a classification boundary.</li>
  <li><strong>Confusing module weight with year weight.</strong> Module credits (e.g., 20 or 40) determine the weight within a single year. Year weightings (e.g., 33/67) determine how Year 2 and Year 3 combine. These are two separate layers of weighting, both handled by this weighted average calculator.</li>
  </ul>
+ <h2>UK University Weighting Calculator: Credits and Years</h2>
+ <p>
+ This weighted grade calculator also works as a uni weighting calculator or weighting calculator for university students. Use credit values to calculate one year&apos;s average, then apply your course&apos;s published year weighting only when you combine Years 2 and 3. These are separate calculations, so do not use the Year 3 percentage as though it were a module credit value.
+ </p>
+ <p>
+ If you need the mark required for a particular outcome rather than your current average, move to the <Link href="/final-grade-calculator/">final grade calculator</Link>. It uses your completed credits and target percentage to model the remaining average you need.
+ </p>
  </div>
 
  <FAQ items={faqs} />

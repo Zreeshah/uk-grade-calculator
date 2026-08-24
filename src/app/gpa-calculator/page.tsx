@@ -182,6 +182,13 @@ export default function GPACalculatorPage() {
  <p>
  These are guidelines, not hard cutoffs. Many programmes consider your full application, including research experience, references, personal statement, and standardised test scores. A slightly lower GPA can be compensated by exceptional strength in other areas.
  </p>
+ <h2>UK University GPA Calculator: Use a Receiving Institution&apos;s Rules</h2>
+ <p>
+ UK GPA calculator, GPA calculator UK university, and UK university GPA calculator are closely related searches. They do not guarantee one universal conversion: universities, credential evaluators, employers, and scholarship providers can each use a different interpretation of UK grades to GPA.
+ </p>
+ <p>
+ Use the conversion above for planning, retain your official transcript and classification, and follow the method stated by the receiving institution. For your UK result itself, use the <Link href="/degree-classification-calculator/">degree classification calculator</Link> rather than treating a GPA as an official replacement.
+ </p>
  </div>
 
  <FAQ items={faqs} />

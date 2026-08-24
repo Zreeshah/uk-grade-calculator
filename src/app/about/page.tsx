@@ -32,7 +32,7 @@ export default function AboutPage() {
 
  <div className="prose-custom">
  <p>
- UK Grade Calculator is a free suite of tools built specifically for UK university and college students who want to calculate their grades quickly and accurately. We believe grade calculation tools should be fast, clean, and completely free, without requiring registration or collecting personal data.
+ UK Grade Calculator is a free suite of university grade calculator tools for UK students who want a clear, provisional way to calculate grades. The site is designed to make common calculations easier without requiring an account or asking you to enter personal identity details.
  </p>
 
  <h2>Why We Built This</h2>
@@ -46,12 +46,20 @@ export default function AboutPage() {
  <h2>What We Offer</h2>
  <ul>
  <li><strong>Instant calculations.</strong> All calculations happen in your browser. There is no server processing, no loading times, and no data sent anywhere.</li>
- <li><strong>Credit-weighted accuracy.</strong> Our calculators use the same <Link href="/blog/how-to-calculate-weighted-average/">credit-weighted average formula</Link> that UK universities use, giving you accurate results.</li>
+ <li><strong>Credit-weighted calculations.</strong> Our tools use the standard <Link href="/blog/how-to-calculate-weighted-average/">credit-weighted average formula</Link> used in many UK degree calculations. Your course regulations determine the official method and result.</li>
  <li><strong>Target grade planning.</strong> Every calculator includes a target grade feature, and our dedicated <Link href="/final-grade-calculator/">final grade calculator</Link> lets you plan exactly what you need on remaining assessments.</li>
  <li><strong>Comprehensive guides.</strong> Each calculator page includes detailed explanations, worked examples, and frequently asked questions.</li>
  <li><strong>University-specific tools.</strong> We have tailored calculators for specific UK universities like <Link href="/universities/mmu/">Manchester Metropolitan</Link>, <Link href="/universities/leeds/">Leeds</Link>, and <Link href="/universities/open-university/">Open University</Link>, each with their exact grading scales and year weightings.</li>
  <li><strong>Completely free.</strong> No registration, no paywalls, no premium tiers. Every feature is available to every student.</li>
  </ul>
+
+ <h2>How to Use a Grade Calculator Responsibly</h2>
+ <p>
+ A free grade calculator is best used as a planning tool. Enter confirmed marks, use the credit values in your module handbook, and keep any intermediate rounding to a minimum. If your course has a resit cap, a placement year, a special classification algorithm, or a borderline policy, check the academic regulations before acting on an estimate.
+ </p>
+ <p>
+ Use the <Link href="/module-grade-calculator/">module grade calculator</Link> for assessment components, the <Link href="/weighted-grade-calculator/">weighted average calculator</Link> for unequal credits, and the <Link href="/degree-classification-calculator/">degree classification calculator</Link> to interpret an overall percentage. This sequence helps avoid mixing raw marks, module marks, and final degree averages.
+ </p>
 
  <h2>Privacy and Data</h2>
  <p>
@@ -60,7 +68,7 @@ export default function AboutPage() {
 
  <h2>Accuracy Disclaimer</h2>
  <p>
- While our calculators use the standard UK degree classification boundaries and credit-weighted average formula, individual universities may have specific policies that affect your classification. These include borderline rules, module capping, year weighting variations, and alternative classification algorithms. Always verify your final classification with your university&apos;s academic office or student records department.
+ While the calculators use common UK degree-classification boundaries and credit-weighted formulas, individual universities and programmes can use rules that affect the result. These include borderline rules, module capping, year-weighting variations, and alternative classification algorithms. Always verify a final classification with your university&apos;s published regulations or student records team.
  </p>
 
  <h2>Contact</h2>

@@ -178,6 +178,13 @@ export default function PercentageGradeCalculatorPage() {
  <li><strong>Confusing percentile rank with percentage grade.</strong> Being in the &quot;top 30%&quot; of your cohort is not the same as scoring 70%. Your position relative to classmates is different from your absolute percentage mark.</li>
  <li><strong>Not converting letter grades.</strong> If any of your modules use letter grades (uncommon in the UK but not unheard of), you need to convert them to the percentage scale before using a percentage grade calculator. Check your university&apos;s grade to percentage converter table for the official mapping.</li>
  </ul>
+ <h2>University Percentage Calculator: Use It Before a Module Calculation</h2>
+ <p>
+ A percentage grade calculator is also called a marks-to-percentage calculator, grade-to-percentage converter, or university percentage calculator. It converts a raw score into a percentage only. It does not decide a module result when multiple assessments have different weights, and it does not apply degree credits or year weighting.
+ </p>
+ <p>
+ After you convert marks to percentage, use the <Link href="/module-grade-calculator/">module grade calculator</Link> for weighted assessment components. Then use the homepage or weighted calculator when you need to combine completed modules.
+ </p>
  </div>
 
  <FAQ items={faqs} />

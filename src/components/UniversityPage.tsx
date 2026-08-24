@@ -68,7 +68,7 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  {uni.shortName} Grade Calculator
  </h1>
  <p className="text-lg text-slate-600 max-w-2xl mx-auto">
- Calculate your {uni.name} degree classification. Enter your module grades and credits below.
+ Use this {uni.shortName} grade calculator to estimate your {uni.name} degree classification. Enter confirmed module grades and credits below.
  </p>
  </div>
 
@@ -137,7 +137,7 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
 
  <h2>When to Use This {uni.shortName} Grade Calculator</h2>
  <p>
- Use this {uni.shortName} grade calculator when you have module percentages and credit values and want a clear, provisional view of your current average. It is most useful after a set of results has been released, before choosing how to prioritise remaining assessments, or when you are checking a target for your final year. Your university&apos;s exam board and academic regulations remain the source of your official classification.
+ Use this {uni.shortName} grade calculator, also described as a {uni.name} grade calculator, when you have module percentages and credit values and want a clear, provisional view of your current average. It is most useful after a set of results has been released, before choosing how to prioritise remaining assessments, or when you are checking a target for your final year. Your university&apos;s exam board and academic regulations remain the source of your official classification.
  </p>
  <p>
  Start by calculating each module from its coursework, practical and exam components if needed. Then add the module result here with its credit value. If you are still waiting for results, use the target option to model a range of marks rather than relying on a single prediction. This gives {uni.shortName} students a practical route from individual assessment marks to an overall degree-classification estimate.

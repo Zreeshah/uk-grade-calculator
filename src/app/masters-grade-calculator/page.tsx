@@ -174,6 +174,13 @@ export default function MastersGradeCalculatorPage() {
  <p>
  An MSc grade calculator and an MA grade calculator use the same formula and boundaries. The difference is in the type of work being assessed, not the calculation method. Our postgraduate grade calculator works for both.
  </p>
+ <h2>UK Masters Grade Calculator: MA, MSc and Other Postgraduate Awards</h2>
+ <p>
+ You may also be looking for a masters degree calculator, MSc grade calculator, UK masters grade calculator, or masters degree classification calculator. These searches all need the same starting point: the marks and credit values that your own postgraduate award regulations say count towards Distinction, Merit, or Pass.
+ </p>
+ <p>
+ A calculator gives you a transparent estimate, but individual programmes can treat a dissertation, a failed component, or a resit differently. Check your course handbook before relying on a calculated masters result for an application or progression decision.
+ </p>
  </div>
 
  <FAQ items={faqs} />

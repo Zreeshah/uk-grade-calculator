@@ -360,6 +360,13 @@ export default function WeightedAverageGuidePage() {
  <li>Common mistakes include using simple averages, wrong credit values, and including Year 1 marks.</li>
  <li>Use our free <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to avoid manual calculation errors.</li>
  </ul>
+ <h2>How to Work Out University Grades Without Mixing Up Weights</h2>
+ <p>
+ To work out university grades accurately, complete the calculation in order: convert raw assessment marks where necessary, calculate each module mark, apply credits to get each year&apos;s credit-weighted average, and only then apply year weighting. A credit weighted average formula and a year-weighting formula solve different stages of the problem.
+ </p>
+ <p>
+ The <Link href="/weighted-grade-calculator/">weighted average calculator</Link> handles the credit stage, while the <Link href="/final-grade-calculator/">final grade calculator</Link> helps when you need a remaining-mark target. Keep your programme regulations beside you for special rules on capped resits, excluded modules, or classification algorithms.
+ </p>
  </article>
 
  <FAQ items={faqs} />

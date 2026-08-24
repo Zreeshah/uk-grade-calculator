@@ -194,6 +194,13 @@ export default function DegreeClassificationCalculatorPage() {
  <li><strong>Plan your final year strategically.</strong> If your Year 2 average is 62% and your university uses 33/67 weighting, you would need a 72.5% Year 3 average to reach an overall 69%. Use our <Link href="/final-grade-calculator/">final grade calculator</Link> to run these scenarios.</li>
  <li><strong>Know your borderline policy.</strong> If you are near a boundary, understanding your university&apos;s borderline rules could make the difference. Some policies reward strong performance in specific areas rather than just the overall average.</li>
  </ul>
+ <h2>How to Calculate Degree Classification</h2>
+ <p>
+ A degree classification calculator is useful once you have the right average. Students also search for a degree calculator, uni classification calculator, UK degree classification, or degree grades. The terminology varies, but your final result normally depends on the credit-weighted marks and the classification rules in your programme regulations.
+ </p>
+ <p>
+ For a reliable estimate, calculate each module first, include only the levels and credits your course counts, and then compare the result with the relevant uni grade boundaries. If your result is close to a boundary, your university&apos;s exam board applies the official borderline policy.
+ </p>
  </div>
 
  <FAQ items={faqs} />
