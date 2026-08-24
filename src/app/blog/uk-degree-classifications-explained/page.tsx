@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
@@ -13,6 +14,7 @@ export const metadata: Metadata = generateSEO({
  "Complete guide to UK degree classifications and uni grade boundaries. Understand First, 2:1, 2:2, and Third class degree grades, how they are calculated, and what employers think.",
  path: "/blog/uk-degree-classifications-explained/",
  type: "article",
+ image: "/images/blog/uk-degree-classifications-explained.webp",
  publishedTime: "2025-01-15T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });
@@ -94,6 +96,16 @@ export default function UKDegreeClassificationsPage() {
  <p className="text-lg text-slate-500 mb-8">
  Last updated: August 2025 &middot; 12 min read
  </p>
+
+ <Image
+ src="/images/blog/uk-degree-classifications-explained.webp"
+ alt="Chart of UK degree classification boundaries showing First at 70% and above, 2:1 at 60 to 69%, 2:2 at 50 to 59%, and Third at 40 to 49%"
+ width={1200}
+ height={630}
+ priority
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl mb-8"
+ />
 
  <p>
  The UK degree classification system is one of the most recognisable academic grading frameworks in the world. Whether you are a current student tracking your progress, a prospective student wondering what to aim for, or a graduate explaining your qualification abroad, understanding how UK degree classifications work is essential.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
@@ -13,6 +14,7 @@ export const metadata: Metadata = generateSEO({
  "Understand how UK university grading works from start to finish. Covers credit frameworks (FHEQ, SCQF), assessment types, marking processes, moderation, external examiners, appeals, and how your final degree classification is determined.",
  path: "/blog/how-university-grading-works-uk/",
  type: "article",
+ image: "/images/blog/how-university-grading-works-uk.webp",
  publishedTime: "2025-02-10T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });
@@ -94,6 +96,16 @@ export default function HowGradingWorksPage() {
  <p className="text-lg text-slate-500 mb-8">
  Last updated: August 2025 &middot; 14 min read
  </p>
+
+ <Image
+ src="/images/blog/how-university-grading-works-uk.webp"
+ alt="Illustration of the UK university grading journey from marked exam papers through a calculator showing 65% to a degree certificate with graduation cap"
+ width={1200}
+ height={630}
+ priority
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl mb-8"
+ />
 
  <p>
  Understanding how UK university grading works is essential for every student. The process involves much more than just sitting exams and receiving marks. From credit frameworks and assessment design to anonymous marking, moderation, external examining, and examination boards, there is a structured system designed to ensure your grades are fair, consistent, and comparable across institutions.

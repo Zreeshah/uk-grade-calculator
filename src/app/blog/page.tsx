@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateSEO } from "@/lib/seo";
 
@@ -13,6 +14,8 @@ export const metadata: Metadata = generateSEO({
 const guides = [
  {
  title: "UK Degree Classifications Explained",
+ image: "/images/blog/uk-degree-classifications-explained.webp",
+ alt: "UK degree classification bands chart from First at 70%+ down to Third at 40-49%",
  description:
  "What First, 2:1, 2:2, and Third class degrees mean, the percentage boundaries behind them, employer expectations, borderline policies, and international equivalents.",
  href: "/blog/uk-degree-classifications-explained/",
@@ -21,6 +24,8 @@ const guides = [
  },
  {
  title: "How University Grading Works in the UK",
+ image: "/images/blog/how-university-grading-works-uk.webp",
+ alt: "Journey illustration from marked exam papers through a calculator to a degree certificate",
  description:
  "The full journey from assessment marks to confirmed degree result: FHEQ and SCQF credit frameworks, marking and moderation, external examiners, year weightings, and appeals.",
  href: "/blog/how-university-grading-works-uk/",
@@ -29,6 +34,8 @@ const guides = [
  },
  {
  title: "How to Calculate a Weighted Average",
+ image: "/images/blog/how-to-calculate-weighted-average.webp",
+ alt: "Balanced scale showing a 40-credit book equal to two 20-credit books for weighted averages",
  description:
  "Step-by-step weighted average formula with worked examples, year weighting, Excel method, capped resits, and every common mistake that changes a classification.",
  href: "/blog/how-to-calculate-weighted-average/",
@@ -66,6 +73,14 @@ export default function BlogIndexPage() {
  className="group flex flex-col p-6 rounded-xl border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all"
  >
  <span className="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-2">Guide · {guide.readTime}</span>
+ <Image
+ src={guide.image}
+ alt={guide.alt}
+ width={600}
+ height={315}
+ sizes="(max-width: 768px) 100vw, 400px"
+ className="w-full h-auto rounded-lg mb-3"
+ />
  <h2 className="font-bold text-lg text-slate-900 group-hover:text-indigo-600 transition-colors mb-2">
  {guide.title}
  </h2>

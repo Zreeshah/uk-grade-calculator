@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
@@ -11,6 +12,7 @@ export const metadata: Metadata = generateSEO({
  "Learn how to calculate a weighted average for UK university grades. Includes the weighted average formula, credit-based examples, Excel steps, year weightings, and a free calculator.",
  path: "/blog/how-to-calculate-weighted-average/",
  type: "article",
+ image: "/images/blog/how-to-calculate-weighted-average.webp",
  publishedTime: "2025-03-05T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });
@@ -87,6 +89,16 @@ export default function WeightedAverageGuidePage() {
  <p className="text-lg text-slate-500 mb-8">
  Last updated: August 2025 &middot; 10 min read
  </p>
+
+ <Image
+ src="/images/blog/how-to-calculate-weighted-average.webp"
+ alt="Balanced scale illustration showing a 40-credit book weighing the same as two 20-credit books to explain weighted university averages"
+ width={1200}
+ height={630}
+ priority
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl mb-8"
+ />
 
  <p>
  A weighted average is the most accurate way to calculate your overall university grade because it accounts for the fact that different modules carry different credit values. A 40-credit dissertation should have twice the impact on your final average as a 20-credit elective, and a weighted average ensures that is exactly what happens.

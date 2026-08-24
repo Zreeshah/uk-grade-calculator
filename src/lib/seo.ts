@@ -7,6 +7,7 @@ interface SEOProps {
  type?: "website" | "article";
  publishedTime?: string;
  modifiedTime?: string;
+ image?: string;
 }
 
 const SITE_NAME = "UK Grade Calculator";
@@ -19,6 +20,7 @@ export function generateSEO({
  type = "website",
  publishedTime,
  modifiedTime,
+ image,
 }: SEOProps): Metadata {
  const url = `${BASE_URL}${path}`;
  const fullTitle = path === "/" ? title : `${title} | ${SITE_NAME}`;
@@ -39,11 +41,15 @@ export function generateSEO({
  locale: "en_GB",
  ...(publishedTime && { publishedTime }),
  ...(modifiedTime && { modifiedTime }),
+ ...(image && {
+ images: [{ url: `${BASE_URL}${image}`, width: 1200, height: 630, alt: title }],
+ }),
  },
  twitter: {
- card: "summary_large_image",
+ card: image ? "summary_large_image" : "summary",
  title: fullTitle,
  description,
+ ...(image && { images: [`${BASE_URL}${image}`] }),
  },
  robots: {
  index: true,
