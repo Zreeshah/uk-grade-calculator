@@ -10,7 +10,7 @@ const navItems = [
  { label: "BTEC", href: "/btec-grade-calculator/" },
  { label: "Masters", href: "/masters-grade-calculator/" },
  { label: "GPA", href: "/gpa-calculator/" },
- { label: "Blog", href: "/blog/uk-degree-classifications-explained/" },
+ { label: "Blog", href: "/blog/" },
 ];
 
 export default function Header() {
