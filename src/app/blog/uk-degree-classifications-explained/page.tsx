@@ -10,7 +10,7 @@ import { generateSEO, generateFAQSchema, generateArticleSchema } from "@/lib/seo
 export const metadata: Metadata = generateSEO({
  title: "UK Degree Classifications Explained - First, 2:1, 2:2, Third",
  description:
- "Complete guide to UK degree classifications. Understand the difference between a First, 2:1, 2:2, and Third class degree, how they are calculated, what employers think, and international equivalents.",
+ "Complete guide to UK degree classifications and uni grade boundaries. Understand First, 2:1, 2:2, and Third class degree grades, how they are calculated, and what employers think.",
  path: "/blog/uk-degree-classifications-explained/",
  type: "article",
  publishedTime: "2025-01-15T00:00:00Z",
@@ -366,6 +366,33 @@ export default function UKDegreeClassificationsPage() {
  <li><strong>Engage with academic support.</strong> Writing centres, study skills workshops, and personal tutors are underused resources that can help you develop the academic practices associated with higher grades.</li>
  <li><strong>Manage your time across the year.</strong> Consistent effort produces better results than last-minute cramming. Plan your semester around assessment deadlines and allocate time proportional to credit values.</li>
  </ol>
+
+ <h2>Uni Grade Boundaries and Classification Thresholds</h2>
+ <p>
+ Uni grade boundaries are the percentage thresholds used to award UK honours degree classifications. For most undergraduate courses, an overall credit-weighted average of 70% earns a First, 60% earns a 2:1, 50% earns a 2:2, and 40% earns a Third. Your university&apos;s regulations determine which years count and how they are weighted, so use the boundaries as a reliable guide rather than a substitute for your official degree results.
+ </p>
+ <table>
+ <thead><tr><th>Honours degree classification</th><th>Typical boundary</th><th>What it means</th></tr></thead>
+ <tbody>
+ <tr><td>First Class</td><td>70%+</td><td>Highest of the UK degree classes</td></tr>
+ <tr><td>Upper Second (2:1)</td><td>60% to 69%</td><td>Common benchmark for graduate schemes</td></tr>
+ <tr><td>Lower Second (2:2)</td><td>50% to 59%</td><td>A strong undergraduate qualification</td></tr>
+ <tr><td>Third Class</td><td>40% to 49%</td><td>Honours degree awarded at the pass threshold</td></tr>
+ </tbody>
+ </table>
+ <p>
+ The classification boundaries do not automatically decide every close case. Many universities review students near a boundary, often around 68-69% for a First or 58-59% for a 2:1, and may consider the profile of final-year marks. Check your programme handbook for its exact borderline rule, then use the <Link href="/degree-classification-calculator/">degree classification calculator</Link> to model your own average.
+ </p>
+
+ <h3>What Is a 2:1 Degree?</h3>
+ <p>
+ A 2:1 degree, formally an Upper Second Class Honours degree, means your final average is normally between 60% and 69%. It is the most common outcome in UK higher education and is frequently listed as the minimum academic requirement for competitive graduate jobs and many taught masters courses. A 2:1 is not a single mark: a student graduating with 61% and one graduating with 69% both receive the same classification, although their module profiles may differ.
+ </p>
+
+ <h3>First Class Degree Percentage: What Marks Do You Need?</h3>
+ <p>
+ The usual First class degree percentage is 70% or above across the marks that count towards classification. Because credits and year weightings matter, a 70% average does not mean scoring 70% in every module. High marks in larger final-year modules can offset a lower mark elsewhere, while a low mark in a dissertation can carry substantial weight. Track the inputs with our <Link href="/weighted-grade-calculator/">weighted average calculator</Link> instead of relying on a simple average.
+ </p>
 
  <h2>Key Takeaways</h2>
  <ul>

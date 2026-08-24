@@ -135,6 +135,45 @@ export default function MastersGradeCalculatorPage() {
  <li><strong>MRes (Master of Research):</strong> Research-focused, with a larger dissertation component (often 120 credits for research).</li>
  <li><strong>LLM (Master of Laws):</strong> Legal studies. Standard 180-credit structure.</li>
  </ul>
+
+ <h2>Masters Degree Grades and Classification</h2>
+ <p>
+ Masters degree grades in the UK follow a simpler structure than undergraduate classifications, but the standards are higher. The masters degree classification system has three tiers: Distinction (70%+), Merit (60-69%), and Pass (50-59%). Anything below 50% is a Fail at postgraduate level, compared to 40% at undergraduate level.
+ </p>
+ <p>
+ The most important thing to understand about masters degree grades is that achieving the same percentage at postgraduate level requires significantly stronger work than at undergraduate level. A piece of coursework that would receive 72% (a comfortable First) at undergraduate level might only receive 64-66% (a Merit) when assessed against masters-level criteria. Markers expect deeper engagement with primary sources, more sophisticated critical analysis, and original contribution to the academic discussion.
+ </p>
+ <p>
+ This is why postgraduate grading can feel harsh to students who achieved strong Firsts as undergraduates. The grade boundaries are the same numbers, but the bar for reaching them is considerably higher.
+ </p>
+
+ <h2>Postgraduate Grade Calculator: How to Use It</h2>
+ <p>
+ Our postgraduate grade calculator works exactly like the undergraduate version but with the correct classification boundaries for masters degrees. Here is how to get the most out of it:
+ </p>
+ <ol>
+ <li><strong>Enter taught modules first.</strong> After your first semester, enter all completed module grades with their credit values (typically 20 credits each for six modules).</li>
+ <li><strong>Check your running average.</strong> With 60-80 credits completed, you will have a good picture of your standing. If your average is below 65%, you know you need to push harder on remaining modules and the dissertation.</li>
+ <li><strong>Model your dissertation impact.</strong> Add your dissertation as a 60-credit module and experiment with different marks. Try entering 65%, 70%, and 75% to see how each shifts your overall classification.</li>
+ <li><strong>Use the target feature.</strong> Enable the target grade option and set 70% as your goal. The calculator will tell you the exact average you need across remaining credits to reach a Distinction.</li>
+ </ol>
+
+ <h2>MSc vs MA Grade Expectations</h2>
+ <p>
+ While both MSc and MA programmes use the same Distinction/Merit/Pass classification, there are practical differences in how grades are distributed:
+ </p>
+ <table>
+ <thead><tr><th>Aspect</th><th>MSc (Master of Science)</th><th>MA (Master of Arts)</th></tr></thead>
+ <tbody>
+ <tr><td>Assessment style</td><td>Problem sets, lab reports, data analysis, exams</td><td>Essays, critical reviews, portfolios, presentations</td></tr>
+ <tr><td>Marking range</td><td>Wider spread (40-90% possible on quantitative work)</td><td>Tighter range (typically 50-78%)</td></tr>
+ <tr><td>Dissertation</td><td>Empirical research, data collection, analysis</td><td>Literature-based analysis, theoretical argument</td></tr>
+ <tr><td>Distinction rate</td><td>Varies by subject (30-40% in many programmes)</td><td>Typically 25-35%</td></tr>
+ </tbody>
+ </table>
+ <p>
+ An MSc grade calculator and an MA grade calculator use the same formula and boundaries. The difference is in the type of work being assessed, not the calculation method. Our postgraduate grade calculator works for both.
+ </p>
  </div>
 
  <FAQ items={faqs} />

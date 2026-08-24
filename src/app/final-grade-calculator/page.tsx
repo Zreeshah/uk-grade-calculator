@@ -80,6 +80,32 @@ export default function FinalGradeCalculatorPage() {
  <strong>Answer:</strong> You need an average of 76.9% across your remaining 60 credits (including your dissertation) to achieve a First. That is challenging but achievable, especially if your dissertation is strong.
  </p>
 
+ <h2>What Grade Do I Need? How to Find Out</h2>
+ <p>
+ To answer &quot;what grade do I need?&quot;, the target grade calculator starts with your completed credit-weighted marks, your target percentage, and the credits still available. The calculation is: <strong>(target percentage × total credits − points already earned) ÷ remaining credits</strong>. Your points already earned are the sum of each completed module mark multiplied by its credits.
+ </p>
+ <p>
+ As a quick example, if 60 completed credits average 64%, you have 60 credits left, and you want a 68% final-year average, you need (68 × 120 − 64 × 60) ÷ 60 = 72%. The required grade changes immediately as new marks arrive, so recalculate after every result rather than guessing.
+ </p>
+
+ <h2>Target Grade Calculator: Planning Your Study Strategy</h2>
+ <p>
+ A target grade calculator is most useful when it helps you make a realistic study plan. Separate the remaining credits by module value, note which assessments are exams, coursework, or a dissertation, then prioritise high-credit work. A 5% improvement on a 40-credit module contributes as much as a 10% improvement on a 20-credit module.
+ </p>
+ <table>
+ <thead><tr><th>Where you are now</th><th>What to calculate</th><th>Practical next step</th></tr></thead>
+ <tbody>
+ <tr><td>Mid-Year 2</td><td>Your likely Year 2 average and the Year 3 average needed</td><td>Use feedback now to improve before final-year weighting applies</td></tr>
+ <tr><td>Start of Year 3</td><td>Target mark for each semester&apos;s credits</td><td>Set module targets based on assessment type and credit value</td></tr>
+ <tr><td>Before a dissertation</td><td>How the 40- or 60-credit mark changes your classification</td><td>Protect time for proposal, supervision, drafting, and revision</td></tr>
+ </tbody>
+ </table>
+
+ <h2>Calculate Final Grade With Year Weightings</h2>
+ <p>
+ Many students need to calculate final grade results across more than one year. With a 33/67 split, the formula is <strong>(Year 2 average × 0.33) + (Year 3 average × 0.67)</strong>. For example, a 63% Year 2 average and 69% Year 3 average gives (63 × 0.33) + (69 × 0.67) = 67.02%, typically a high 2:1. Confirm your course&apos;s rules because some programmes use different splits, the best 100 credits, or special dissertation conditions.
+ </p>
+
  <h2>What If My Target Is Unreachable?</h2>
  <p>
  If the calculator shows you need more than 100% on your remaining modules, your target classification is mathematically impossible with the credits you have left. Do not panic. Here are your options:
@@ -122,7 +148,7 @@ export default function FinalGradeCalculatorPage() {
  <li><strong>Prioritise by credit value.</strong> A 60-credit dissertation has three times the impact of a 20-credit module. Invest your time accordingly.</li>
  <li><strong>Identify your weakest assessment types.</strong> If you consistently lose marks in exams, invest in exam technique. If coursework is your weakness, start earlier and seek more feedback.</li>
  <li><strong>Use feedback from previous modules.</strong> Marker feedback tells you exactly where you lost marks and how to recover them. This is the most underused resource in higher education.</li>
- <li><strong>Attend all lectures and seminars.</strong> Students who attend regularly score 5-10% higher on average. For more on how grades are determined, read <Link href="/blog/how-university-grading-works-uk/">how university grading works</Link>. Students who attend regularly score 5-10% higher on average, according to multiple studies of UK university attendance data.</li>
+ <li><strong>Attend all lectures and seminars.</strong> Regular attendance keeps you connected to assessment guidance, examples, and opportunities to ask questions. For more on how marks are confirmed, read <Link href="/blog/how-university-grading-works-uk/">how university grading works</Link>.</li>
  <li><strong>Set interim targets.</strong> Rather than focusing only on the end-of-year target, set a target for each module and track your progress after each assessment.</li>
  </ol>
  </div>

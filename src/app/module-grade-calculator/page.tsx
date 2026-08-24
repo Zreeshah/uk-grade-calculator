@@ -186,6 +186,42 @@ export default function ModuleGradeCalculatorPage() {
  <li><strong>Use it as a learning opportunity.</strong> Identify which assessment component pulled your grade down and focus on improving that skill for future modules.</li>
  </ol>
 
+ <h2>Module Calculator: Breaking Down Your Individual Marks</h2>
+ <p>
+ A module calculator is an essential tool for any UK university student who wants to understand how individual marks contribute to their overall module grade. Rather than waiting until the end of the semester, you can enter each assessment component as you receive marks and see your running module grade in real time.
+ </p>
+ <p>
+ This is particularly useful for modules with multiple assessment components. For example, a module might include a 2,000-word essay (30%), a group presentation (20%), and a two-hour exam (50%). As you receive each mark, enter it into the calculator to see how your individual module grade is shaping up and whether you need to adjust your effort for remaining assessments.
+ </p>
+ <p>
+ Here is an example showing how different module marks combine:
+ </p>
+ <table>
+ <thead><tr><th>Assessment</th><th>Weight</th><th>Your Mark</th><th>Weighted Contribution</th></tr></thead>
+ <tbody>
+ <tr><td>Literature Review Essay</td><td>25%</td><td>68%</td><td>17.0</td></tr>
+ <tr><td>Lab Report</td><td>25%</td><td>72%</td><td>18.0</td></tr>
+ <tr><td>Final Exam</td><td>50%</td><td>Not yet taken</td><td>?</td></tr>
+ </tbody>
+ </table>
+ <p>
+ With 35.0 out of a possible 50 already secured, this student knows they need at least 10% on the exam (out of 50% weight) to pass the module at 45%, or 40% on the exam to reach a module grade of 55% (a 2:2). This kind of forward planning turns the module calculator from a passive tool into an active study strategy.
+ </p>
+
+ <h2>How Module Grades Feed Into Your Degree Classification</h2>
+ <p>
+ Your individual module grade does not exist in isolation. It feeds into a larger calculation that determines your degree classification. Understanding this pipeline helps you prioritise effectively:
+ </p>
+ <ol>
+ <li><strong>Assessment marks combine into a module grade.</strong> Each assessment within a module is weighted according to the module specification. The module calculator handles this step.</li>
+ <li><strong>Module grades combine into a year average.</strong> All module grades within an academic year are combined using credit weighting. A 40-credit module counts twice as much as a 20-credit one.</li>
+ <li><strong>Year averages combine into an overall degree average.</strong> Most universities weight Year 3 more heavily than Year 2 (commonly 67% vs 33%). Year 1 usually does not count.</li>
+ <li><strong>The overall average determines your classification.</strong> 70%+ is a First, 60-69% is a 2:1, 50-59% is a 2:2, and 40-49% is a Third.</li>
+ </ol>
+ <p>
+ This means a single poor module mark is not the end of the world, but a pattern of underperformance across multiple modules will drag your average down. Use the module calculator for each module, then feed the results into our <Link href="/">university grade calculator</Link> to see the bigger picture.
+ </p>
+
  <h2>Tips for Maximising Your Module Grades</h2>
  <ul>
  <li><strong>Read the marking criteria carefully.</strong> Every module has published assessment criteria that tell you exactly what markers are looking for at each classification level. Study these before starting your work.</li>

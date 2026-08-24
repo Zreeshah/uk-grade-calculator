@@ -6,9 +6,9 @@ import InternalLinks from "@/components/InternalLinks";
 import { generateSEO, generateFAQSchema, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "How to Calculate a Weighted Average for University Grades (UK)",
+ title: "How to Calculate Weighted Average | Weighted Average Calculator Guide",
  description:
- "Step-by-step guide to calculating a credit-weighted average for UK university grades. Includes the formula, worked examples, year weightings, common mistakes, and an Excel method.",
+ "Learn how to calculate a weighted average for UK university grades. Includes the weighted average formula, credit-based examples, Excel steps, year weightings, and a free calculator.",
  path: "/blog/how-to-calculate-weighted-average/",
  type: "article",
  publishedTime: "2025-03-05T00:00:00Z",
@@ -322,6 +322,34 @@ export default function WeightedAverageGuidePage() {
  <li><strong>Understand your university&apos;s specific algorithm.</strong> Some universities use additional rules, such as the best 100 out of 120 credits, or dual algorithms that take the higher of two calculations. Check our <Link href="/universities/leeds/">university-specific calculators</Link> for details on individual institutions.</li>
  <li><strong>Keep a record of all your marks.</strong> Module marks, credit values, and assessment component weightings should all be documented in one place for easy calculation.</li>
  </ul>
+
+ <h2>Weighted Average Formula Explained</h2>
+ <p>
+ The weighted average formula is: <strong>sum of (each grade × its weight) ÷ sum of weights</strong>. For a credit-weighted university average, the weight is each module&apos;s credits. This is also called a weighted mean. The credit weighted average formula prevents a small module from influencing your result as much as a dissertation or double module.
+ </p>
+ <p>
+ For example, imagine two modules: 64% on a 20-credit module and 72% on a 40-credit module. Multiply first: 64 × 20 = 1,280 and 72 × 40 = 2,880. Add the products (4,160), then divide by 60 credits. The answer is 69.33%, not the 68% simple average. This is the method to use whenever you need to calculate a weighted grade with unequal credits.
+ </p>
+
+ <h2>Weighted Average Calculator: Automate the Calculation</h2>
+ <p>
+ A weighted average calculator makes the same calculation without the risk of arithmetic or rounding mistakes. Enter every completed module once, add its percentage and credit value, and check that the total credits match your transcript. Our free <Link href="/weighted-grade-calculator/">weighted average calculator</Link> shows the result immediately and can help you model target marks for remaining work. A weighted mean calculator is especially useful when you have a 40- or 60-credit dissertation, optional modules with different values, or a mix of assessed components.
+ </p>
+ <p>
+ Use a calculator as a planning tool, not as official confirmation. Universities can apply special rules for resits, condonement, study abroad, and borderline classification decisions. Always compare the result with your course regulations.
+ </p>
+
+ <h2>How to Work Out a Weighted Average in Excel</h2>
+ <p>
+ A spreadsheet is useful if you want to keep a running record of results. Put percentage marks in cells A2:A10 and the corresponding credits in B2:B10. In a new cell, enter <code>=SUMPRODUCT(A2:A10,B2:B10)/SUM(B2:B10)</code>. SUMPRODUCT multiplies each mark by its credit value and adds the products; dividing by total credits gives the weighted average.
+ </p>
+ <ol>
+ <li>Enter each module once, with no pass/fail modules unless your regulations give them a numeric value.</li>
+ <li>Verify the credits total 120 for a typical full-time year, or use your actual programme total.</li>
+ <li>Use the recorded capped mark for a resit, even if the raw resit score was higher.</li>
+ <li>Calculate Years 2 and 3 separately before applying year weighting, if your university uses it.</li>
+ <li>Keep decimals in the spreadsheet and round only the final displayed value.</li>
+ </ol>
 
  <h2>Key Takeaways</h2>
  <ul>

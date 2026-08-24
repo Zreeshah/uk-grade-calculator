@@ -110,6 +110,50 @@ export default function BTECGradeCalculatorPage() {
  </tbody>
  </table>
 
+ <h2>BTEC Grading System Explained</h2>
+ <p>
+ The Pearson BTEC grading system differs fundamentally from A-Level grading. While A-Levels assign letter grades (A*-E) based primarily on exam performance, the BTEC grading system is criterion-referenced: each unit has published assessment criteria for Pass, Merit, and Distinction levels, and your work is judged against those specific criteria rather than ranked against other students.
+ </p>
+ <p>
+ Within each unit, your assessors evaluate whether your work meets the learning outcomes at each level. A Pass requires that you demonstrate basic understanding by describing, identifying, and outlining key concepts. A Merit requires deeper engagement: explaining, comparing, and analysing. A Distinction requires you to evaluate, justify, and synthesise, producing work that demonstrates comprehensive mastery of the subject area.
+ </p>
+ <p>
+ Your overall BTEC grades are then determined by combining your unit-level performance across all units in the qualification. Pearson BTEC uses a points-based system where each unit grade converts to points, and the total points across all units determines your final qualification grade (such as PPP, DMM, or D*D*D* for an Extended Diploma).
+ </p>
+
+ <h2>BTEC Extended Diploma Grades and What They Mean</h2>
+ <p>
+ The BTEC National Extended Diploma is the most common full-time BTEC qualification, equivalent to three A-Levels. Understanding what each combination of grades means helps you set realistic targets:
+ </p>
+ <table>
+ <thead><tr><th>Grade Combination</th><th>What It Means</th><th>Typical University Entry</th></tr></thead>
+ <tbody>
+ <tr><td>D*D*D* (Triple Distinction Star)</td><td>Outstanding performance across all units. Rare and highly competitive.</td><td>Top Russell Group universities, competitive courses</td></tr>
+ <tr><td>DDD (Triple Distinction)</td><td>Consistently excellent work at the highest standard across all units.</td><td>Most Russell Group universities, strong applications</td></tr>
+ <tr><td>DDM</td><td>Excellent overall with some units at Merit level. Still a strong result.</td><td>Many good universities, most courses</td></tr>
+ <tr><td>DMM</td><td>Good overall performance. Two Merits and a Distinction.</td><td>Wide range of universities</td></tr>
+ <tr><td>MMM (Triple Merit)</td><td>Solid, competent performance meeting all Merit criteria consistently.</td><td>Many universities, particularly for vocational subjects</td></tr>
+ <tr><td>MMP or below</td><td>Mixed performance. May limit university options but still valid for entry.</td><td>Some universities, foundation years</td></tr>
+ </tbody>
+ </table>
+ <p>
+ The BTEC National Certificate (equivalent to one A-Level) and BTEC National Diploma (equivalent to two A-Levels) follow the same grading principles but with fewer units and correspondingly simpler grade combinations.
+ </p>
+
+ <h2>BTEC vs A-Levels: Which Universities Accept BTECs?</h2>
+ <p>
+ A common concern among BTEC students is whether universities will accept their qualifications. The answer is overwhelmingly yes. According to UCAS data, the vast majority of UK universities accept BTEC qualifications, and the number of BTEC students entering higher education has grown steadily over the past decade.
+ </p>
+ <ul>
+ <li><strong>Russell Group universities:</strong> All 24 Russell Group universities accept BTECs for at least some courses. Some, like Leeds, Manchester, and Exeter, explicitly welcome BTEC applications for vocational and applied subjects.</li>
+ <li><strong>Subject alignment matters:</strong> Universities prefer BTECs that align with the degree subject. A BTEC in Health and Social Care is ideal for a Nursing degree, while a BTEC in Business is well-suited to Business Management programmes.</li>
+ <li><strong>Combined qualifications are strong:</strong> Many students combine a BTEC with one or two A-Levels. This combination is widely accepted and can demonstrate both vocational and academic skills.</li>
+ <li><strong>Entry requirements are stated in BTEC grades:</strong> Most university course pages now list BTEC entry requirements alongside A-Level requirements (e.g., &quot;ABB or DDM&quot;).</li>
+ </ul>
+ <p>
+ If you hold a BTEC and plan to apply to university, calculate your BTEC UCAS points using the conversion table above, then check each university&apos;s course page for their specific BTEC entry requirements.
+ </p>
+
  <h2>Tips for Achieving Higher BTEC Grades</h2>
  <ol>
  <li><strong>Understand the grading criteria.</strong> Each unit has specific Pass, Merit, and Distinction criteria published in the unit specification. Read these before starting your assignments to know exactly what is expected at each level.</li>
@@ -126,6 +170,22 @@ export default function BTECGradeCalculatorPage() {
  <li><strong>Not checking the command verbs.</strong> Each criterion uses specific command verbs (describe, explain, evaluate, justify). Your answer must match the verb used.</li>
  <li><strong>Submitting late without an extension.</strong> Late submissions may be capped or rejected. If you need more time, request an extension before the deadline.</li>
  </ul>
+
+ <h2>BTEC Distinction Boundaries and How to Cross Them</h2>
+ <p>
+ The boundary between Merit and Distinction is where most BTEC students want to improve. Here is what markers typically look for at each level:
+ </p>
+ <table>
+ <thead><tr><th>Criteria Level</th><th>Command Verbs</th><th>What Markers Expect</th></tr></thead>
+ <tbody>
+ <tr><td>Pass</td><td>Describe, identify, outline, state</td><td>Factual recall, basic understanding, surface-level coverage of the topic</td></tr>
+ <tr><td>Merit</td><td>Explain, compare, analyse, discuss</td><td>Deeper reasoning, cause-and-effect connections, comparison between concepts</td></tr>
+ <tr><td>Distinction</td><td>Evaluate, justify, recommend, assess</td><td>Critical thinking, evidence-based judgements, original synthesis, professional-level recommendations</td></tr>
+ </tbody>
+ </table>
+ <p>
+ The key to crossing the BTEC distinction boundaries is moving beyond description into analysis and evaluation. When your assignment asks you to &quot;evaluate,&quot; you must weigh evidence for and against, consider multiple perspectives, and arrive at a justified conclusion. Simply describing a topic, no matter how thoroughly, will not reach Distinction level.
+ </p>
  </div>
 
  <FAQ items={faqs} />

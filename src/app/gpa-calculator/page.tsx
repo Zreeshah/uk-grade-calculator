@@ -134,6 +134,54 @@ export default function GPACalculatorPage() {
  <p>
  This UK-specific GPA scale provides more granularity than the traditional classification system, allowing employers and institutions to distinguish between, say, a student with 72% and one with 85% (both currently classified as a First). However, adoption remains limited, and the traditional classification system continues to be the primary method used by most UK universities. To understand how your percentage maps to a classification, use our <Link href="/degree-classification-calculator/">degree classification calculator</Link>.
  </p>
+
+ <h2>GPA Conversion UK: Complete Guide</h2>
+ <p>
+ GPA conversion from UK grades requires more than a simple lookup table. The accuracy of your GPA conversion UK result depends on the specific institution you are applying to, the subject area, and whether they want a module-by-module conversion or an overall degree conversion.
+ </p>
+ <p>
+ There are two approaches to GPA conversion:
+ </p>
+ <ul>
+ <li><strong>Overall conversion:</strong> Take your final UK degree percentage and convert it to GPA using the table above. This is the simplest method and sufficient for most applications. For example, a UK percentage of 67% converts to approximately 3.3-3.7 GPA.</li>
+ <li><strong>Module-by-module conversion:</strong> Convert each module percentage to a GPA value, then calculate the credit-weighted GPA average. This method is more granular and preferred by some US graduate schools. Enter each module into our grade point average calculator above to get this result.</li>
+ </ul>
+ <p>
+ Many UK students find that their module-by-module GPA is slightly different from their overall conversion, because the distribution of grades across modules matters. A student with very consistent marks (all 65-68%) will have a different GPA profile from a student with the same 66% average but achieved through a mix of 55% and 78% marks.
+ </p>
+
+ <h2>UK Grades to GPA: Step-by-Step</h2>
+ <p>
+ Here is how to convert your UK grades to GPA systematically:
+ </p>
+ <ol>
+ <li><strong>Gather your transcript.</strong> You need the percentage grade and credit value for each module. Request an official transcript from your university if you do not have one.</li>
+ <li><strong>Convert each percentage to GPA.</strong> Use the conversion table: 70%+ = 4.0, 65-69% = 3.7, 60-64% = 3.3, 55-59% = 3.0, 50-54% = 2.7, 45-49% = 2.3, 40-44% = 2.0.</li>
+ <li><strong>Multiply each GPA by credits.</strong> For a module worth 20 credits with 68% (GPA 3.7): 3.7 x 20 = 74.</li>
+ <li><strong>Sum and divide.</strong> Add all the weighted GPA values and divide by total credits. This is your credit-weighted GPA.</li>
+ <li><strong>Or use our calculator.</strong> Enter your module percentages and credits above, and the calculator shows both your UK classification and GPA equivalent automatically.</li>
+ </ol>
+
+ <h2>What GPA Do I Need? Common Programme Requirements</h2>
+ <p>
+ If you are applying to international programmes, here are the typical GPA requirements:
+ </p>
+ <table>
+ <thead><tr><th>Programme Type</th><th>Typical Minimum GPA</th><th>UK Equivalent</th></tr></thead>
+ <tbody>
+ <tr><td>US top-20 MBA (Harvard, Wharton)</td><td>3.5+</td><td>Strong 2:1 (67%+)</td></tr>
+ <tr><td>US top-50 MBA</td><td>3.0-3.3</td><td>Mid 2:1 (62-65%)</td></tr>
+ <tr><td>US PhD programmes (STEM)</td><td>3.5+</td><td>Strong 2:1 or First</td></tr>
+ <tr><td>US PhD programmes (humanities)</td><td>3.3+</td><td>2:1 (62%+)</td></tr>
+ <tr><td>Canadian graduate schools</td><td>3.0+ (on 4.0 scale)</td><td>2:1 (60%+)</td></tr>
+ <tr><td>Australian Honours year</td><td>5.0+ (on 7.0 scale)</td><td>2:1 (60%+)</td></tr>
+ <tr><td>Fulbright Scholarship</td><td>3.7+</td><td>First or near-First (68%+)</td></tr>
+ <tr><td>Rhodes Scholarship</td><td>3.7+</td><td>First (70%+) strongly preferred</td></tr>
+ </tbody>
+ </table>
+ <p>
+ These are guidelines, not hard cutoffs. Many programmes consider your full application, including research experience, references, personal statement, and standardised test scores. A slightly lower GPA can be compensated by exceptional strength in other areas.
+ </p>
  </div>
 
  <FAQ items={faqs} />

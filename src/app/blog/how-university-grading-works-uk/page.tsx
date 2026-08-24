@@ -329,6 +329,30 @@ export default function HowGradingWorksPage() {
  This multi-layered system is why UK degrees are recognised and respected internationally. When you receive a grade from a UK university, it has been through a rigorous process of marking, moderation, external scrutiny, and board approval.
  </p>
 
+ <h2>How Grades Are Calculated at University</h2>
+ <p>
+ How grades are calculated at university depends on two layers: first, your university combines each module&apos;s assessments using its published weighting; then it combines the module marks using credit and year weightings. For example, a module may be 40% coursework and 60% exam, while your final degree may give Year 2 one-third and Year 3 two-thirds of the total. This is why a simple average of every mark on your transcript may not match your official result.
+ </p>
+ <p>
+ To calculate a likely result, work out each module mark, calculate each year&apos;s credit-weighted average, and then apply the programme&apos;s year weights. Our <Link href="/module-grade-calculator/">module grade calculator</Link> handles assessment components, while the <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> helps combine credit values. Your exam board, not an online tool, confirms final degree results.
+ </p>
+
+ <h2>University Marking Scheme Standards</h2>
+ <p>
+ A university marking scheme sets the criteria markers use to distinguish, for example, a 58% answer from a 68% answer. Written work is commonly anonymous, and universities use second marking or double marking for selected assessments and moderation for a representative sample. If markers disagree materially, the department may review the work or the whole cohort&apos;s marks. An external examiner from another institution then checks that standards are comparable across the sector before the exam board confirms results.
+ </p>
+ <p>
+ These safeguards explain why a mark can sometimes change after initial feedback, and why a provisional result is not final until the exam board has met. If you are unsure how a specific assessment is marked, use its rubric and module handbook as the authoritative source.
+ </p>
+
+ <h2>UK Grading System: How It Differs From Other Countries</h2>
+ <p>
+ The UK grading system is percentage-based but reports undergraduate outcomes as honours classifications rather than a cumulative 4.0 GPA. A score of 70% is excellent in most UK university marking schemes, whereas it would look ordinary on some North American scales. Universities in England, Wales, and Northern Ireland typically work within FHEQ; Scottish institutions use SCQF and often offer four-year honours degrees. The shared labels of First, 2:1, 2:2, and Third make the UK university grading scale recognisable, but credit rules and borderline policies are institution-specific.
+ </p>
+ <p>
+ So, how are degrees classified? Usually by a credit-weighted average of the specified later years, followed by any permitted borderline review. For international applications, use a <Link href="/gpa-calculator/">UK GPA conversion calculator</Link> as a planning aid and follow the receiving institution&apos;s own conversion guidance.
+ </p>
+
  <h2>Key Takeaways</h2>
  <ul>
  <li>UK universities use structured credit frameworks (FHEQ or SCQF) to define the volume and level of learning.</li>

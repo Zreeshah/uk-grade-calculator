@@ -9,9 +9,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Degree Classification Calculator UK - Check Your Degree Class",
+ title: "Degree Classification Calculator UK - Uni Grade Boundaries & Results",
  description:
- "Free degree classification calculator for UK university students. Enter your module grades to find your degree class: First, 2:1, 2:2, or Third. Includes borderline policies and year weightings.",
+ "Free degree classification calculator for UK university students. Check uni grade boundaries, enter your module grades and find your degree results: First, 2:1, 2:2, or Third. Includes borderline policies, HESA statistics, and year weightings.",
  path: "/degree-classification-calculator/",
 });
 
@@ -48,7 +48,7 @@ export default function DegreeClassificationCalculatorPage() {
  Degree Classification Calculator
  </h1>
  <p className="text-lg text-slate-600 max-w-2xl mx-auto">
- Check your UK degree classification by entering your module grades. See instantly whether you are on track for a First, 2:1, 2:2, or Third class honours degree.
+ Check your UK degree classification by entering your module grades. See instantly whether your degree grades put you on track for a First, 2:1, 2:2, or Third class honours degree, with full uni grade boundaries and borderline rules explained.
  </p>
  </div>
 
@@ -100,6 +100,66 @@ export default function DegreeClassificationCalculatorPage() {
  </table>
  <p>
  The proportion of Firsts has increased significantly over the past decade, a trend that has generated debate about grade inflation in UK higher education. However, universities point to improved teaching, better learning resources, and more continuous assessment as contributing factors.
+ </p>
+
+ <h2>UK Uni Grade Boundaries Explained</h2>
+ <p>
+ Uni grade boundaries are the percentage thresholds that separate one honours degree classification from another. These classification boundaries are standardised across most UK universities, though borderline policies vary by institution. Here are the standard uni grade boundaries used by the majority of UK higher education providers:
+ </p>
+ <table>
+ <thead><tr><th>Boundary</th><th>Percentage Threshold</th><th>Classification Below</th><th>Classification Above</th></tr></thead>
+ <tbody>
+ <tr><td>First / 2:1 boundary</td><td>70%</td><td>Upper Second (2:1)</td><td>First Class Honours</td></tr>
+ <tr><td>2:1 / 2:2 boundary</td><td>60%</td><td>Lower Second (2:2)</td><td>Upper Second (2:1)</td></tr>
+ <tr><td>2:2 / Third boundary</td><td>50%</td><td>Third Class</td><td>Lower Second (2:2)</td></tr>
+ <tr><td>Third / Fail boundary</td><td>40%</td><td>Fail</td><td>Third Class Honours</td></tr>
+ </tbody>
+ </table>
+ <p>
+ These classification boundaries apply to your overall credit-weighted average, not to individual module marks. You can score below 70% on some modules and still achieve a First overall, as long as your weighted average reaches the boundary. Use the degree classification calculator above to check exactly where your grades place you relative to these uni grade boundaries.
+ </p>
+ <p>
+ Some universities use slightly different boundaries for specific programmes. For example, certain professional degrees may require a higher pass mark, and Scottish universities operating under the SCQF framework may apply different credit structures (though the percentage boundaries for honours classifications remain the same). Always verify your programme-specific boundaries in your academic regulations.
+ </p>
+
+ <h2>Degree Classification by Subject Area</h2>
+ <p>
+ Your degree grades do not exist in a vacuum. The distribution of degree results varies significantly across subject areas, which means a 65% in one discipline may represent a stronger relative performance than a 65% in another. Here is how honours degree classifications break down by broad subject group, based on HESA data:
+ </p>
+ <table>
+ <thead><tr><th>Subject Area</th><th>First (%)</th><th>2:1 (%)</th><th>2:2 (%)</th><th>Third/Pass (%)</th></tr></thead>
+ <tbody>
+ <tr><td>Mathematics</td><td>42%</td><td>32%</td><td>18%</td><td>8%</td></tr>
+ <tr><td>Economics</td><td>35%</td><td>42%</td><td>18%</td><td>5%</td></tr>
+ <tr><td>Biological Sciences</td><td>34%</td><td>44%</td><td>17%</td><td>5%</td></tr>
+ <tr><td>English</td><td>30%</td><td>48%</td><td>18%</td><td>4%</td></tr>
+ <tr><td>History</td><td>29%</td><td>49%</td><td>18%</td><td>4%</td></tr>
+ <tr><td>Engineering</td><td>28%</td><td>43%</td><td>22%</td><td>7%</td></tr>
+ <tr><td>Law</td><td>25%</td><td>47%</td><td>22%</td><td>6%</td></tr>
+ <tr><td>Psychology</td><td>28%</td><td>46%</td><td>20%</td><td>6%</td></tr>
+ <tr><td>Creative Arts</td><td>26%</td><td>44%</td><td>23%</td><td>7%</td></tr>
+ <tr><td>Business Studies</td><td>24%</td><td>45%</td><td>24%</td><td>7%</td></tr>
+ <tr><td>Computer Science</td><td>30%</td><td>38%</td><td>22%</td><td>10%</td></tr>
+ </tbody>
+ </table>
+ <p>
+ Mathematics consistently produces the highest proportion of Firsts, partly because quantitative assessments allow for objectively correct answers that can score very high marks. Arts and humanities subjects tend to have a tighter marking range, with fewer Firsts but also fewer Thirds. If you are comparing your degree results with friends in different subjects, keep these differences in mind.
+ </p>
+
+ <h2>Degree Grades Quick Reference</h2>
+ <p>
+ Here is a quick-reference summary of how degree grades work in the UK honours degree classifications system:
+ </p>
+ <ul>
+ <li><strong>First Class Honours (1st):</strong> 70%+ overall. The highest honours degree classification. Around 32% of graduates achieve this.</li>
+ <li><strong>Upper Second Class (2:1):</strong> 60-69% overall. The most common degree result, achieved by approximately 44% of graduates. Required by most graduate employers.</li>
+ <li><strong>Lower Second Class (2:2):</strong> 50-59% overall. A solid result that opens doors to many careers. Around 18% of graduates.</li>
+ <li><strong>Third Class Honours (3rd):</strong> 40-49% overall. The minimum for an honours degree. About 5-6% of graduates.</li>
+ <li><strong>Ordinary Degree / Pass:</strong> Some universities award an ordinary (unclassified) degree to students who pass but do not meet honours requirements.</li>
+ <li><strong>Fail:</strong> Below 40% overall. No degree awarded.</li>
+ </ul>
+ <p>
+ Your degree classification is determined by your credit-weighted average across relevant years (usually Year 2 and Year 3). Use our <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to apply year weightings, or our <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> to convert raw marks first.
  </p>
 
  <h2>How Employers Use Degree Classifications</h2>

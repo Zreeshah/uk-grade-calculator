@@ -8,9 +8,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "University Grade Calculator UK - Free Degree Classification Calculator",
+ title: "University Grade Calculator UK - Free Uni Grade Calculator & Degree Classification",
  description:
- "Free UK university grade calculator. Calculate your degree classification, module grades, and weighted average instantly. Supports First, 2:1, 2:2, and Third class. Trusted by UK students.",
+ "Free UK university grade calculator for students. Calculate your degree classification, uni grades, weighted average, and module marks instantly. Supports First, 2:1, 2:2, and Third class honours. Used by students across UK universities.",
  path: "/",
 });
 
@@ -88,7 +88,7 @@ export default function HomePage() {
  University Grade Calculator
  </h1>
  <p className="text-lg text-slate-600 max-w-2xl mx-auto">
- Calculate your UK degree classification instantly. Enter your module grades and credits to find out whether you are on track for a First, 2:1, 2:2, or Third.
+ The free uni grade calculator for UK students. Enter your module grades and credits to calculate your degree classification instantly, whether you are tracking a First, 2:1, 2:2, or Third.
  </p>
  </div>
 
@@ -247,7 +247,43 @@ export default function HomePage() {
  <li><strong>Discretionary upgrade:</strong> Some exam boards have the authority to upgrade borderline candidates based on trajectory, extenuating circumstances, or overall performance profile.</li>
  </ul>
  <p>
- These policies vary significantly between institutions, so if you are near a boundary, check your university&apos;s academic regulations or speak with your personal tutor.
+ These policies vary significantly between institutions, so if you are near a boundary, check your university&apos;s academic regulations or speak with your personal tutor. Our <Link href="/degree-classification-calculator/">degree classification calculator</Link> explains these borderline policies in more detail.
+ </p>
+
+ <h2>Uni Grade Boundaries: Quick Reference</h2>
+ <p>
+ Uni grade boundaries determine which classification band your overall percentage falls into. These boundaries are standardised across most UK universities, making it straightforward to check where you stand:
+ </p>
+ <table>
+ <thead>
+ <tr><th>Classification</th><th>Grade Boundary</th><th>Borderline Zone</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>First Class (1st)</td><td>70.00% and above</td><td>68.00% - 69.99%</td></tr>
+ <tr><td>Upper Second (2:1)</td><td>60.00% - 69.99%</td><td>58.00% - 59.99%</td></tr>
+ <tr><td>Lower Second (2:2)</td><td>50.00% - 59.99%</td><td>48.00% - 49.99%</td></tr>
+ <tr><td>Third Class (3rd)</td><td>40.00% - 49.99%</td><td>38.00% - 39.99%</td></tr>
+ <tr><td>Fail</td><td>Below 40.00%</td><td>N/A</td></tr>
+ </tbody>
+ </table>
+ <p>
+ If your average falls in a borderline zone, your university&apos;s exam board will apply its specific borderline policy. Some institutions upgrade students automatically if 50% or more of their final-year credits fall in the higher band. Others use a &quot;best of&quot; calculation or discretionary review.
+ </p>
+
+ <h2>How This Grade Calculator Compares</h2>
+ <p>
+ This is not just a basic grade calculator or simple UG calculator. Unlike simple tools that only output a number, this uni grade calculator provides a full breakdown with classification display, visual progress tracking, and a target grade planner. The grade calculator works for all UK universities and supports any combination of credit values.
+ </p>
+ <p>
+ Students at specific universities can use our tailored calculators with pre-loaded year weightings. Our <Link href="/universities/mmu/">MMU grade calculator</Link> uses Manchester Met&apos;s 30/70 split, while the <Link href="/universities/leeds/">Leeds grade calculator</Link> uses 33/67. These university-specific tools remove guesswork about how your institution calculates university grades and uni grades.
+ </p>
+
+ <h2>Specialist Grade Calculators</h2>
+ <p>
+ Beyond the standard undergraduate grade calculator, we offer tools for every qualification type. BTEC students can use the <Link href="/btec-grade-calculator/">BTEC grade calculator</Link> with Distinction*, Distinction, Merit, and Pass boundaries. Postgraduate students can calculate their masters classification with the <Link href="/masters-grade-calculator/">masters grade calculator</Link>. For international applications, the <Link href="/gpa-calculator/">GPA calculator</Link> converts UK percentages to the 4.0 GPA scale.
+ </p>
+ <p>
+ For a deep understanding of how the entire UK grading system works, from assessment types to external examiners, read our comprehensive guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
  </p>
  </div>
 
