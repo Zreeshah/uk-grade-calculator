@@ -30,7 +30,7 @@ const relatedLinks = [
 ];
 
 export default function FinalGradeCalculatorPage() {
- const toolSchema = generateToolSchema("Final Grade Calculator UK", "Calculate what grades you need on remaining modules to achieve your target degree classification.", "https://uk-grade-calculator.vercel.app/final-grade-calculator/");
+ const toolSchema = generateToolSchema("Final Grade Calculator UK", "Calculate what grades you need on remaining modules to achieve your target degree classification.", "https://unigradecalculator.co.uk/final-grade-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

@@ -11,7 +11,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = "UK Grade Calculator";
-const BASE_URL = "https://uk-grade-calculator.vercel.app";
+const BASE_URL = "https://unigradecalculator.co.uk";
 
 export function generateSEO({
  title,

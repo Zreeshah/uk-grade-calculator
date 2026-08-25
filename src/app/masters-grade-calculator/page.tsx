@@ -32,7 +32,7 @@ const relatedLinks = [
 ];
 
 export default function MastersGradeCalculatorPage() {
- const toolSchema = generateToolSchema("Masters Grade Calculator UK", "Free calculator for UK postgraduate students to determine masters degree classification.", "https://uk-grade-calculator.vercel.app/masters-grade-calculator/");
+ const toolSchema = generateToolSchema("Masters Grade Calculator UK", "Free calculator for UK postgraduate students to determine masters degree classification.", "https://unigradecalculator.co.uk/masters-grade-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

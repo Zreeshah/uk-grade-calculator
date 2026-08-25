@@ -31,7 +31,7 @@ const relatedLinks = [
 ];
 
 export default function WeightedGradeCalculatorPage() {
- const toolSchema = generateToolSchema("Weighted Grade Calculator UK", "Free calculator to compute credit-weighted grade averages for UK university students.", "https://uk-grade-calculator.vercel.app/weighted-grade-calculator/");
+ const toolSchema = generateToolSchema("Weighted Grade Calculator UK", "Free calculator to compute credit-weighted grade averages for UK university students.", "https://unigradecalculator.co.uk/weighted-grade-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

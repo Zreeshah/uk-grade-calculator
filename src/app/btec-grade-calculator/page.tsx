@@ -34,7 +34,7 @@ const relatedLinks = [
 ];
 
 export default function BTECGradeCalculatorPage() {
- const toolSchema = generateToolSchema("BTEC Grade Calculator", "Free calculator for BTEC National, Extended Diploma, and Foundation Diploma grades.", "https://uk-grade-calculator.vercel.app/btec-grade-calculator/");
+ const toolSchema = generateToolSchema("BTEC Grade Calculator", "Free calculator for BTEC National, Extended Diploma, and Foundation Diploma grades.", "https://unigradecalculator.co.uk/btec-grade-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

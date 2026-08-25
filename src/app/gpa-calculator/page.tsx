@@ -30,7 +30,7 @@ const relatedLinks = [
 ];
 
 export default function GPACalculatorPage() {
- const toolSchema = generateToolSchema("GPA Calculator UK", "Convert UK university percentage grades to GPA scale for international applications.", "https://uk-grade-calculator.vercel.app/gpa-calculator/");
+ const toolSchema = generateToolSchema("GPA Calculator UK", "Convert UK university percentage grades to GPA scale for international applications.", "https://unigradecalculator.co.uk/gpa-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

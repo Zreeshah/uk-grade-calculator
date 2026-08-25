@@ -70,7 +70,7 @@ export default function ModuleGradeCalculatorPage() {
  const toolSchema = generateToolSchema(
  "Module Grade Calculator UK",
  "Free calculator for UK university students to calculate individual module grades with credit weightings.",
- "https://uk-grade-calculator.vercel.app/module-grade-calculator/"
+ "https://unigradecalculator.co.uk/module-grade-calculator/"
  );
  const faqSchema = generateFAQSchema(faqs);
 

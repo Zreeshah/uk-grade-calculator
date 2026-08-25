@@ -10,9 +10,9 @@ export const metadata: Metadata = {
  title: "UK Grade Calculator - Free University Grade Calculator",
  description:
  "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC grades, GPA, and more. Trusted by thousands of UK students.",
- metadataBase: new URL("https://uk-grade-calculator.vercel.app"),
+ metadataBase: new URL("https://unigradecalculator.co.uk"),
  alternates: {
- canonical: "https://uk-grade-calculator.vercel.app",
+ canonical: "https://unigradecalculator.co.uk",
  },
  openGraph: {
  title: "UK Grade Calculator - Free University Grade Calculator",

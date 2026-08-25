@@ -32,7 +32,7 @@ const relatedLinks = [
 ];
 
 export default function DegreeClassificationCalculatorPage() {
- const toolSchema = generateToolSchema("Degree Classification Calculator UK", "Free tool to determine your UK degree classification from module grades.", "https://uk-grade-calculator.vercel.app/degree-classification-calculator/");
+ const toolSchema = generateToolSchema("Degree Classification Calculator UK", "Free tool to determine your UK degree classification from module grades.", "https://unigradecalculator.co.uk/degree-classification-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (

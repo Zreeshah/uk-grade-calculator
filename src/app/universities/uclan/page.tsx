@@ -12,7 +12,7 @@ export const metadata: Metadata = generateSEO({
 });
 
 export default function Page() {
- const toolSchema = generateToolSchema(uni.name + " Grade Calculator", uni.description, "https://uk-grade-calculator.vercel.app/universities/uclan/");
+ const toolSchema = generateToolSchema(uni.name + " Grade Calculator", uni.description, "https://unigradecalculator.co.uk/universities/uclan/");
  const faqSchema = generateFAQSchema(uni.faqs);
  return (
  <>

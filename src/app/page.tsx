@@ -73,7 +73,7 @@ export default function HomePage() {
  const toolSchema = generateToolSchema(
  "UK University Grade Calculator",
  "Free calculator to determine UK university degree classification based on module grades and credit weightings.",
- "https://uk-grade-calculator.vercel.app/"
+ "https://unigradecalculator.co.uk/"
  );
  const faqSchema = generateFAQSchema(faqs);
 

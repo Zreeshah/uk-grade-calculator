@@ -30,7 +30,7 @@ const relatedLinks = [
 ];
 
 export default function PercentageGradeCalculatorPage() {
- const toolSchema = generateToolSchema("Percentage Grade Calculator UK", "Convert raw marks to percentages and calculate overall percentage grades.", "https://uk-grade-calculator.vercel.app/percentage-grade-calculator/");
+ const toolSchema = generateToolSchema("Percentage Grade Calculator UK", "Convert raw marks to percentages and calculate overall percentage grades.", "https://unigradecalculator.co.uk/percentage-grade-calculator/");
  const faqSchema = generateFAQSchema(faqs);
 
  return (
