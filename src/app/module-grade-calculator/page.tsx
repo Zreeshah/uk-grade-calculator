@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -238,6 +239,21 @@ export default function ModuleGradeCalculatorPage() {
  Keep assessment weighting separate from module credits. An exam worth 60% changes the mark inside one module; a 40-credit module changes how much that completed module affects your degree average. Once you have a confirmed module grade, use the <Link href="/weighted-grade-calculator/">weighted average calculator</Link> for the credit-weighted stage.
  </p>
  </div>
+
+ <figure className="my-10">
+ <Image
+ src="/images/infographics/how-to-calculate-a-module-grade.webp"
+ alt="Step-by-step infographic calculating a module grade: coursework 65% weighted at 30% plus exam 72% weighted at 70% gives a final module mark of 69.9%"
+ width={900}
+ height={1897}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ Worked example: turning assessment marks into one module grade.
+ </figcaption>
+ </figure>
 
  <FAQ items={faqs} />
  <InternalLinks links={relatedLinks} />

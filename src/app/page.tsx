@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -293,6 +294,21 @@ export default function HomePage() {
  If you only have raw assessment marks, first use the <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> or <Link href="/module-grade-calculator/">module grade calculator</Link>. If you already have an average and need a required mark, use the <Link href="/final-grade-calculator/">final grade calculator</Link> instead of trying to estimate it manually.
  </p>
  </div>
+
+ <figure className="my-10">
+ <Image
+ src="/images/infographics/how-degree-classification-is-calculated.webp"
+ alt="Infographic showing how a UK degree classification is calculated: module marks are credit-weighted, years are weighted 33/67, and the total maps to First, 2:1, 2:2, or Third class bands"
+ width={900}
+ height={1897}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ How your module marks become a UK degree classification, step by step.
+ </figcaption>
+ </figure>
 
  <FAQ items={faqs} />
 

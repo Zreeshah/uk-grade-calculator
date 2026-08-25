@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -194,6 +195,21 @@ export default function WeightedGradeCalculatorPage() {
  If you need the mark required for a particular outcome rather than your current average, move to the <Link href="/final-grade-calculator/">final grade calculator</Link>. It uses your completed credits and target percentage to model the remaining average you need.
  </p>
  </div>
+
+ <figure className="my-10">
+ <Image
+ src="/images/infographics/weighted-vs-simple-average.webp"
+ alt="Comparison infographic showing a weighted average of 69.7% versus a simple average of 68.5% for modules worth different credits, with the formula sum of grade times credits divided by total credits"
+ width={900}
+ height={1616}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ Why credit weighting changes your average, with the formula.
+ </figcaption>
+ </figure>
 
  <FAQ items={faqs} />
  <InternalLinks links={relatedLinks} />

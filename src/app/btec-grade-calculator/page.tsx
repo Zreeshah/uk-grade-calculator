@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -194,6 +195,21 @@ export default function BTECGradeCalculatorPage() {
  Use this BTEC grade calculator to understand the broad Distinction*, Distinction, Merit, and Pass pathway, then confirm any result, progression decision, or UCAS application with your current Pearson specification and your college&apos;s assessment team.
  </p>
  </div>
+
+ <figure className="my-10">
+ <Image
+ src="/images/infographics/btec-grade-boundaries.webp"
+ alt="BTEC grade boundaries infographic listing Distinction star, Distinction, Merit and Pass bands with typical unit percentage ranges and a UCAS tariff points note"
+ width={900}
+ height={1616}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 800px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ BTEC grades at a glance, with UCAS points context.
+ </figcaption>
+ </figure>
 
  <FAQ items={faqs} />
  <InternalLinks links={relatedLinks} />
