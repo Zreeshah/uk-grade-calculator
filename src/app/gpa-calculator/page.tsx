@@ -4,7 +4,7 @@ import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import Breadcrumb from "@/components/Breadcrumb";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "GPA Calculator UK - Convert UK Grades to GPA Scale",
@@ -31,12 +31,10 @@ const relatedLinks = [
 
 export default function GPACalculatorPage() {
  const toolSchema = generateToolSchema("GPA Calculator UK", "Convert UK university percentage grades to GPA scale for international applications.", "https://unigradecalculator.co.uk/gpa-calculator/");
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  <Breadcrumb items={[{ label: "GPA Calculator" }]} />

@@ -7,7 +7,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
 import Breadcrumb from "@/components/Breadcrumb";
 import { btecClassifications } from "@/lib/grades";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "BTEC Grade Calculator - Calculate BTEC Distinction, Merit & Pass",
@@ -35,12 +35,10 @@ const relatedLinks = [
 
 export default function BTECGradeCalculatorPage() {
  const toolSchema = generateToolSchema("BTEC Grade Calculator", "Free calculator for BTEC National, Extended Diploma, and Foundation Diploma grades.", "https://unigradecalculator.co.uk/btec-grade-calculator/");
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  <Breadcrumb items={[{ label: "BTEC Grade Calculator" }]} />

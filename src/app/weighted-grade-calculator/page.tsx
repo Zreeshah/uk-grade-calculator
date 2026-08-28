@@ -5,7 +5,7 @@ import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import Breadcrumb from "@/components/Breadcrumb";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "Weighted Average Calculator UK - Free Weighted Grade Calculator",
@@ -32,12 +32,10 @@ const relatedLinks = [
 
 export default function WeightedGradeCalculatorPage() {
  const toolSchema = generateToolSchema("Weighted Grade Calculator UK", "Free calculator to compute credit-weighted grade averages for UK university students.", "https://unigradecalculator.co.uk/weighted-grade-calculator/");
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  <Breadcrumb items={[{ label: "Weighted Grade Calculator" }]} />

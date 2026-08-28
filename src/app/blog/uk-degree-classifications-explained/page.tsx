@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
 import { degreeClassifications, mastersClassifications } from "@/lib/grades";
-import { generateSEO, generateFAQSchema, generateArticleSchema } from "@/lib/seo";
+import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "UK Degree Classifications Explained - First, 2:1, 2:2, Third",
@@ -72,8 +72,7 @@ const relatedLinks = [
 ];
 
 export default function UKDegreeClassificationsPage() {
- const faqSchema = generateFAQSchema(faqs);
- const articleSchema = generateArticleSchema(
+  const articleSchema = generateArticleSchema(
  "UK Degree Classifications Explained - First, 2:1, 2:2, Third",
  "Complete guide to UK degree classifications including boundaries, employer expectations, calculation methods, history, and international equivalents.",
  "/blog/uk-degree-classifications-explained/",
@@ -83,7 +82,6 @@ export default function UKDegreeClassificationsPage() {
 
  return (
  <>
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
  <div className="container-main py-8">

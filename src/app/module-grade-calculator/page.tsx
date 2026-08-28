@@ -7,7 +7,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
 import Breadcrumb from "@/components/Breadcrumb";
 import { degreeClassifications } from "@/lib/grades";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "Module Grade Calculator UK - Calculate Individual Module Grades",
@@ -72,12 +72,10 @@ export default function ModuleGradeCalculatorPage() {
  "Free calculator for UK university students to calculate individual module grades with credit weightings.",
  "https://unigradecalculator.co.uk/module-grade-calculator/"
  );
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  <Breadcrumb items={[{ label: "Module Grade Calculator" }]} />

@@ -4,7 +4,7 @@ import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import Breadcrumb from "@/components/Breadcrumb";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "Final Grade Calculator UK - What Grade Do I Need?",
@@ -31,12 +31,10 @@ const relatedLinks = [
 
 export default function FinalGradeCalculatorPage() {
  const toolSchema = generateToolSchema("Final Grade Calculator UK", "Calculate what grades you need on remaining modules to achieve your target degree classification.", "https://unigradecalculator.co.uk/final-grade-calculator/");
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  <Breadcrumb items={[{ label: "Final Grade Calculator" }]} />

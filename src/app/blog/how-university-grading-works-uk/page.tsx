@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
 import { degreeClassifications } from "@/lib/grades";
-import { generateSEO, generateFAQSchema, generateArticleSchema } from "@/lib/seo";
+import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "How University Grading Works in the UK - Complete Guide",
@@ -72,8 +72,7 @@ const relatedLinks = [
 ];
 
 export default function HowGradingWorksPage() {
- const faqSchema = generateFAQSchema(faqs);
- const articleSchema = generateArticleSchema(
+  const articleSchema = generateArticleSchema(
  "How University Grading Works in the UK",
  "Complete guide to the UK university grading system covering credit frameworks, assessment types, marking, moderation, external examiners, and degree classification calculation.",
  "/blog/how-university-grading-works-uk/",
@@ -83,7 +82,6 @@ export default function HowGradingWorksPage() {
 
  return (
  <>
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
  <div className="container-main py-8">

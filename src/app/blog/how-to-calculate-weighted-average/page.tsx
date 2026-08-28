@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
-import { generateSEO, generateFAQSchema, generateArticleSchema } from "@/lib/seo";
+import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "How to Calculate Weighted Average | Weighted Average Calculator Guide",
@@ -65,8 +65,7 @@ const relatedLinks = [
 ];
 
 export default function WeightedAverageGuidePage() {
- const faqSchema = generateFAQSchema(faqs);
- const articleSchema = generateArticleSchema(
+  const articleSchema = generateArticleSchema(
  "How to Calculate a Weighted Average for University Grades",
  "Step-by-step guide to calculating credit-weighted averages for UK university degrees, including formulas, examples, year weightings, and common mistakes.",
  "/blog/how-to-calculate-weighted-average/",
@@ -76,7 +75,6 @@ export default function WeightedAverageGuidePage() {
 
  return (
  <>
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
  <div className="container-main py-8">

@@ -6,7 +6,7 @@ import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
 import { degreeClassifications } from "@/lib/grades";
-import { generateSEO, generateFAQSchema, generateToolSchema } from "@/lib/seo";
+import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
  title: "University Grade Calculator UK - Free Uni Grade Calculator & Degree Classification",
@@ -75,12 +75,10 @@ export default function HomePage() {
  "Free calculator to determine UK university degree classification based on module grades and credit weightings.",
  "https://unigradecalculator.co.uk/"
  );
- const faqSchema = generateFAQSchema(faqs);
-
+ 
  return (
  <>
  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }} />
- <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
  <div className="container-main py-8">
  {/* Hero */}
