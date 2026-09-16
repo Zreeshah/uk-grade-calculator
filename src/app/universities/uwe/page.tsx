@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[9];
 
 export const metadata: Metadata = generateSEO({
- title: "UWE Grade Calculator - University of the West of England",
+ title: "UWE Grade Calculator - Free Tool",
  description: "Free UWE Bristol grade calculator. Calculate your University of the West of England degree classification.",
  path: "/universities/uwe/",
 });

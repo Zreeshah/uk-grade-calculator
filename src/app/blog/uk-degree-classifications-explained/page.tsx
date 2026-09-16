@@ -9,9 +9,9 @@ import { degreeClassifications, mastersClassifications } from "@/lib/grades";
 import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "UK Degree Classifications Explained - First, 2:1, 2:2, Third",
+ title: "UK Degree Classifications Explained",
  description:
- "Complete guide to UK degree classifications and uni grade boundaries. Understand First, 2:1, 2:2, and Third class degree grades, how they are calculated, and what employers think.",
+ "UK degree classifications explained: First, 2:1, 2:2 and Third. Learn grade boundaries, how they are calculated and what employers think.",
  path: "/blog/uk-degree-classifications-explained/",
  type: "article",
  image: "/images/blog/uk-degree-classifications-explained.webp",

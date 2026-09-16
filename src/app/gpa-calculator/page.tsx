@@ -7,9 +7,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "GPA Calculator UK - Convert UK Grades to GPA Scale",
+ title: "GPA Calculator UK - Convert to GPA",
  description:
- "Free GPA calculator for UK students. Convert UK university percentage grades to GPA (Grade Point Average) scale. Essential for international applications, exchanges, and postgraduate study abroad.",
+ "Free UK GPA calculator. Convert university percentage grades to the GPA scale for international applications and postgraduate study.",
  path: "/gpa-calculator/",
 });
 

@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[0];
 
 export const metadata: Metadata = generateSEO({
- title: "MMU Grade Calculator - Manchester Metropolitan University",
+ title: "MMU Grade Calculator - Free Tool",
  description: "Free MMU grade calculator for Manchester Metropolitan University students. Calculate your degree classification using MMU's 30/70 year weighting system.",
  path: "/universities/mmu/",
 });

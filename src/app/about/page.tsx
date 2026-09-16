@@ -5,9 +5,9 @@ import InternalLinks from "@/components/InternalLinks";
 import { generateSEO } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "About UK Grade Calculator - Free Tools for UK Students",
+ title: "About - Free Grade Tools for Students",
  description:
- "Learn about UK Grade Calculator, a free suite of grade calculation tools designed for UK university and college students. No ads, no registration, no data collection.",
+ "About UK Grade Calculator, free grade tools for UK university and college students. No ads, no registration, no data collection.",
  path: "/about/",
 });
 

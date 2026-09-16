@@ -9,9 +9,9 @@ import { mastersClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Masters Grade Calculator UK - Distinction, Merit & Pass Calculator",
+ title: "Masters Grade Calculator UK - Free",
  description:
- "Free masters degree grade calculator for UK postgraduate students. Calculate whether you are on track for a Distinction, Merit, or Pass. Supports MA, MSc, MBA, and other postgraduate degrees.",
+ "Free masters grade calculator for UK postgraduates. Check if you are on track for Distinction, Merit or Pass. Supports MA, MSc and MBA.",
  path: "/masters-grade-calculator/",
 });
 

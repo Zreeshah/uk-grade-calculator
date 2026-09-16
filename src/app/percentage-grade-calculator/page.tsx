@@ -9,9 +9,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Percentage Grade Calculator UK - Convert Marks to Percentages",
+ title: "Percentage Grade Calculator UK",
  description:
- "Free percentage grade calculator for UK students. Convert raw marks to percentages, calculate overall percentage grades across modules, and see your degree classification. Grade to percentage converter for all UK universities.",
+ "Free percentage grade calculator for UK students. Convert raw marks to percentages and see your degree classification instantly.",
  path: "/percentage-grade-calculator/",
 });
 

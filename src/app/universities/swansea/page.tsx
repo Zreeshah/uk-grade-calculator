@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[5];
 
 export const metadata: Metadata = generateSEO({
- title: "Swansea Grade Calculator - Swansea University",
+ title: "Swansea Grade Calculator - Free",
  description: "Free Swansea University grade calculator. Calculate your degree classification using Swansea's year weighting system.",
  path: "/universities/swansea/",
 });

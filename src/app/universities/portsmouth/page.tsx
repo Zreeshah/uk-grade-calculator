@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[3];
 
 export const metadata: Metadata = generateSEO({
- title: "Portsmouth Grade Calculator - University of Portsmouth",
+ title: "Portsmouth Grade Calculator - Free",
  description: "Free University of Portsmouth grade calculator. Calculate your degree classification using Portsmouth's 33/67 year weighting system.",
  path: "/universities/portsmouth/",
 });

@@ -7,9 +7,9 @@ import InternalLinks from "@/components/InternalLinks";
 import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "How to Calculate Weighted Average | Weighted Average Calculator Guide",
+ title: "How to Calculate Weighted Average",
  description:
- "Learn how to calculate a weighted average for UK university grades. Includes the weighted average formula, credit-based examples, Excel steps, year weightings, and a free calculator.",
+ "Learn how to calculate weighted averages for UK university grades. Includes formulas, credit-based examples and a free calculator.",
  path: "/blog/how-to-calculate-weighted-average/",
  type: "article",
  image: "/images/blog/how-to-calculate-weighted-average.webp",

@@ -8,9 +8,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Weighted Average Calculator UK - Free Weighted Grade Calculator",
+ title: "Weighted Grade Calculator UK - Free",
  description:
- "Free weighted average calculator for UK university students. Calculate credit-weighted grade averages with custom module and year weightings. Works as a grade weight calculator for all UK universities.",
+ "Free weighted average calculator for UK students. Calculate credit-weighted grade averages with custom module and year weightings.",
  path: "/weighted-grade-calculator/",
 });
 

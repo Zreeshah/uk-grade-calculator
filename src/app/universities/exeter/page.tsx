@@ -6,8 +6,8 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[7];
 
 export const metadata: Metadata = generateSEO({
- title: "Exeter Grade Calculator - University of Exeter",
- description: "Free University of Exeter grade calculator. Calculate your degree classification at this Russell Group university.",
+ title: "Exeter Grade Calculator - Free Tool",
+ description: "Free University of Exeter grade calculator. Calculate your degree classification at this Russell Group university with custom weightings.",
  path: "/universities/exeter/",
 });
 

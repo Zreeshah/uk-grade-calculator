@@ -10,9 +10,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Module Grade Calculator UK - Calculate Individual Module Grades",
+ title: "Module Grade Calculator UK - Free",
  description:
- "Free module grade calculator for UK university students. Calculate your individual module marks with credit weightings. Works for all UK universities with 20, 30, and 40-credit modules.",
+ "Free module grade calculator for UK students. Calculate individual module marks with credit weightings for 20, 30 and 40-credit modules.",
  path: "/module-grade-calculator/",
 });
 

@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[6];
 
 export const metadata: Metadata = generateSEO({
- title: "Sheffield Hallam Grade Calculator - SHU Degree Classification",
+ title: "Sheffield Hallam Grade Calculator",
  description: "Free Sheffield Hallam University grade calculator. Calculate your SHU degree classification using the 33/67 year weighting system.",
  path: "/universities/sheffield-hallam/",
 });

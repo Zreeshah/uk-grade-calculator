@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateSEO } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "UK University Grading Guides - Degree Classifications & Weighted Averages",
+ title: "UK University Grading Guides & Tips",
  description:
- "Free guides to UK university grading. Understand degree classifications, uni grade boundaries, and how to calculate credit-weighted averages, with calculators for every step.",
+ "Free guides to UK university grading. Understand degree classifications, grade boundaries, and how to calculate credit-weighted averages.",
  path: "/blog/",
 });
 

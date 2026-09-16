@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[1];
 
 export const metadata: Metadata = generateSEO({
- title: "Open University Grade Calculator - OU Degree Classification",
+ title: "Open University Grade Calculator",
  description: "Free Open University grade calculator. Calculate your OU degree classification with credit accumulation across modules and levels.",
  path: "/universities/open-university/",
 });

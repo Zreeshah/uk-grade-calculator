@@ -10,9 +10,9 @@ import { btecClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "BTEC Grade Calculator - Calculate BTEC Distinction, Merit & Pass",
+ title: "Free BTEC Grade Calculator Online",
  description:
- "Free BTEC grade calculator. Calculate your BTEC National, Extended Diploma, or Foundation Diploma grades instantly. Supports Distinction*, Distinction, Merit, and Pass boundaries.",
+ "Free BTEC grade calculator. Calculate your BTEC National, Extended Diploma or Foundation Diploma grades. Supports Distinction, Merit and Pass.",
  path: "/btec-grade-calculator/",
 });
 

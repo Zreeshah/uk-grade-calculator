@@ -9,9 +9,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "How University Grading Works in the UK - Complete Guide",
+ title: "How UK University Grading Works",
  description:
- "Understand how UK university grading works from start to finish. Covers credit frameworks (FHEQ, SCQF), assessment types, marking processes, moderation, external examiners, appeals, and how your final degree classification is determined.",
+ "Complete guide to how UK university grading works. Covers credit frameworks, assessment types, moderation and degree classification.",
  path: "/blog/how-university-grading-works-uk/",
  type: "article",
  image: "/images/blog/how-university-grading-works-uk.webp",

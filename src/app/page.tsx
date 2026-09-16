@@ -9,9 +9,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "University Grade Calculator UK - Free Uni Grade Calculator & Degree Classification",
+ title: "University Grade Calculator UK | Free Online Tool",
  description:
- "Free UK university grade calculator for students. Calculate your degree classification, uni grades, weighted average, and module marks instantly. Supports First, 2:1, 2:2, and Third class honours. Used by students across UK universities.",
+ "Free UK university grade calculator. Calculate your degree classification, weighted average, module grades and BTEC results instantly.",
  path: "/",
 });
 

@@ -6,7 +6,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[2];
 
 export const metadata: Metadata = generateSEO({
- title: "St Andrews Grade Calculator - University of St Andrews",
+ title: "St Andrews Grade Calculator - Free",
  description: "Free St Andrews grade calculator. Calculate your University of St Andrews degree classification using the Scottish 4-year degree structure.",
  path: "/universities/st-andrews/",
 });

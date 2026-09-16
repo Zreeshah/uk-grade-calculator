@@ -7,9 +7,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Final Grade Calculator UK - What Grade Do I Need?",
+ title: "Final Grade Calculator UK - Free Tool",
  description:
- "Free final grade calculator for UK students. Find out exactly what grade you need on your remaining modules or exams to achieve your target degree classification.",
+ "Free final grade calculator for UK students. Find what grade you need on remaining modules to hit your target classification.",
  path: "/final-grade-calculator/",
 });
 

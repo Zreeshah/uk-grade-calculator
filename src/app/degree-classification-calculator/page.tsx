@@ -9,9 +9,9 @@ import { degreeClassifications } from "@/lib/grades";
 import { generateSEO, generateToolSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateSEO({
- title: "Degree Classification Calculator UK - Uni Grade Boundaries & Results",
+ title: "Degree Classification Calculator UK",
  description:
- "Free degree classification calculator for UK university students. Check uni grade boundaries, enter your module grades and find your degree results: First, 2:1, 2:2, or Third. Includes borderline policies, HESA statistics, and year weightings.",
+ "Free degree classification calculator for UK students. Check grade boundaries and find your degree result: First, 2:1, 2:2 or Third.",
  path: "/degree-classification-calculator/",
 });
 
