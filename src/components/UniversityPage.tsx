@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
@@ -78,6 +79,23 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  showCredits={true}
  defaultCredits={uni.defaultModuleCredits}
  />
+
+ {uni.visual && (
+ <figure className="my-10">
+ <Image
+ src={uni.visual.src}
+ alt={uni.visual.alt}
+ width={uni.visual.width}
+ height={uni.visual.height}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 896px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ {uni.visual.caption}
+ </figcaption>
+ </figure>
+ )}
 
  <div className="prose-custom mt-12">
  <h2>About {uni.name} Grading</h2>

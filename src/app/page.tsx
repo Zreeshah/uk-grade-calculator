@@ -13,6 +13,7 @@ export const metadata: Metadata = generateSEO({
  description:
  "Free UK university grade calculator. Calculate your degree classification, weighted average, module grades and BTEC results instantly.",
  path: "/",
+ image: "/images/social/uk-grade-calculator-open-graph.jpg",
 });
 
 const faqs = [
@@ -93,6 +94,21 @@ export default function HomePage() {
 
  {/* Calculator */}
  <GradeCalculator type="undergraduate" showTarget={true} showCredits={true} />
+
+ <figure className="my-10">
+ <Image
+ src="/images/infographics/university-grade-calculator-workflow.svg"
+ alt="Diagram showing module marks and credits becoming a credit-weighted average and a provisional UK degree classification"
+ width={1200}
+ height={675}
+ loading="lazy"
+ sizes="(max-width: 768px) 100vw, 896px"
+ className="w-full h-auto rounded-xl border border-slate-200"
+ />
+ <figcaption className="text-sm text-slate-500 text-center mt-3">
+ A quick visual guide to how the university grade calculator uses module marks and credits.
+ </figcaption>
+ </figure>
 
  {/* SEO Content */}
  <div className="prose-custom mt-12">

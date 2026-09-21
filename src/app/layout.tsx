@@ -31,6 +31,21 @@ export const metadata: Metadata = {
  siteName: "UK Grade Calculator",
  locale: "en_GB",
  type: "website",
+ images: [
+ {
+ url: "/images/social/uk-grade-calculator-open-graph.jpg",
+ width: 1200,
+ height: 630,
+ alt: "UK Grade Calculator illustration showing a university grade calculator and degree result bands",
+ },
+ ],
+ },
+ twitter: {
+ card: "summary_large_image",
+ title: "UK Grade Calculator - Free University Grade Calculator",
+ description:
+ "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC grades, GPA, and more.",
+ images: ["/images/social/uk-grade-calculator-open-graph.jpg"],
  },
  robots: {
  index: true,

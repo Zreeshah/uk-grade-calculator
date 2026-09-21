@@ -12,6 +12,7 @@ interface SEOProps {
 
 const SITE_NAME = "UK Grade Calculator";
 const BASE_URL = "https://unigradecalculator.co.uk";
+const DEFAULT_SOCIAL_IMAGE = "/images/social/uk-grade-calculator-open-graph.jpg";
 
 export function generateSEO({
  title,
@@ -20,7 +21,7 @@ export function generateSEO({
  type = "website",
  publishedTime,
  modifiedTime,
- image,
+ image = DEFAULT_SOCIAL_IMAGE,
 }: SEOProps): Metadata {
  const url = `${BASE_URL}${path}`;
  const fullTitle = path === "/" ? title : `${title} | ${SITE_NAME}`;

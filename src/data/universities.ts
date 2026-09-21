@@ -14,6 +14,13 @@ export interface UniversityData {
  specialNotes: string[];
  content: string[];
  faqs: { question: string; answer: string }[];
+ visual?: {
+ src: string;
+ alt: string;
+ caption: string;
+ width: number;
+ height: number;
+ };
 }
 
 export const universities: UniversityData[] = [
@@ -71,6 +78,13 @@ export const universities: UniversityData[] = [
  "Most MMU dissertations are worth 40 credits out of the 120 Level 6 credits, giving them one-third of the final-year weighting. Combined with the 70% year weighting for Level 6, the dissertation contributes approximately 23% of your overall degree average. Some programmes have 60-credit dissertations, which carry even more weight.",
  },
  ],
+ visual: {
+ src: "/images/infographics/mmu-year-weighting-guide.svg",
+ alt: "Diagram showing the MMU calculator's 30 percent Year 2 and 70 percent Year 3 weighting assumption",
+ caption: "The MMU calculator uses a 30/70 Year 2 / Year 3 estimate; check your programme regulations for the rules that apply to you.",
+ width: 1200,
+ height: 675,
+ },
  },
  {
  slug: "open-university",
