@@ -60,6 +60,13 @@ export default function RootLayout({
 }>) {
  return (
  <html lang="en-GB" className={inter.className}>
+ <head>
+ <script
+ async
+ src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6218065184548996"
+ crossOrigin="anonymous"
+ />
+ </head>
  <body className="min-h-screen flex flex-col">
  <Header />
  <main className="flex-1">{children}</main>
