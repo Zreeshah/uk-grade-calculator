@@ -151,7 +151,7 @@ export default function FinalGradeCalculatorPage() {
  </ol>
  <h2>University Final Grade Calculator: What to Enter</h2>
  <p>
- Whether you searched for a university final grade calculator, final uni grade calculator, grade calculator final, or target grade calculator, the inputs are the same: completed marks, the credits those marks represent, credits still available, and the overall percentage you want to reach.
+ This final grade calculator uses the same essentials: completed marks, the credits those marks represent, credits still available, and the overall percentage you want to reach.
  </p>
  <p>
  Update the calculation each time a result is confirmed. For a target that applies across differently weighted academic years, calculate the relevant year average first and use your published course weighting before making decisions about remaining assessments.

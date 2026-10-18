@@ -66,7 +66,7 @@ const relatedLinks = [
  { title: "University Grade Calculator", href: "/", description: "Calculate your degree classification with our free online tool." },
  { title: "UK Degree Classifications Explained", href: "/blog/uk-degree-classifications-explained/", description: "Detailed guide to First, 2:1, 2:2, and Third class degrees." },
  { title: "How to Calculate a Weighted Average", href: "/blog/how-to-calculate-weighted-average/", description: "Step-by-step guide to calculating credit-weighted grade averages." },
- { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Calculate weighted averages with custom year and module weightings." },
+ { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Calculate credit-weighted averages from module grades and credits." },
  { title: "Degree Classification Calculator", href: "/degree-classification-calculator/", description: "Check which classification band your average falls into." },
  { title: "Module Grade Calculator", href: "/module-grade-calculator/", description: "Work out individual module grades from multiple assessments." },
 ];

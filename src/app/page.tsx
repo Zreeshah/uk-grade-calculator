@@ -61,7 +61,7 @@ const faqs = [
 
 const relatedLinks = [
  { title: "Module Grade Calculator", href: "/module-grade-calculator/", description: "Calculate individual module grades with multiple assessments and custom weightings." },
- { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Work out weighted averages with custom year and module weightings." },
+ { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Work out credit-weighted averages from module grades and credits." },
  { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Calculate BTEC grades including Distinction*, Distinction, Merit, and Pass." },
  { title: "Masters Grade Calculator", href: "/masters-grade-calculator/", description: "Calculate postgraduate grades with Distinction, Merit, and Pass boundaries." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what you need on your final exams to reach your target grade." },
@@ -141,17 +141,17 @@ export default function HomePage() {
  <div className="prose-custom">
  <h3>First Class Honours (1st) - 70% and Above</h3>
  <p>
- A First is the highest undergraduate degree classification in the UK. It demonstrates exceptional academic achievement and a deep understanding of your subject. In the 2022/23 academic year, approximately 32% of UK graduates achieved a First Class degree, according to HESA data. A First is highly valued by employers, particularly for competitive graduate schemes, and is typically required for academic research positions and PhD applications. For a complete breakdown of what each classification means and how employers view them, read our guide on <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications explained</Link>.
+ A First is the highest undergraduate degree classification in the UK. It demonstrates exceptional academic achievement and a deep understanding of your subject. In 2022/23, <a href="https://www.hesa.ac.uk/news/08-08-2024/sb269-higher-education-student-statistics/qualifications" target="_blank" rel="noreferrer">HESA reported that 30% of classified first-degree qualifiers</a> were awarded a First. A First is highly valued by employers, particularly for competitive graduate schemes, and is typically required for academic research positions and PhD applications. For a complete breakdown of what each classification means and how employers view them, read our guide on <Link href="/blog/uk-degree-classifications-explained/">UK degree classifications explained</Link>.
  </p>
 
  <h3>Upper Second Class Honours (2:1) - 60% to 69%</h3>
  <p>
- A 2:1 (pronounced &quot;two-one&quot;) is the most common degree classification in the UK, achieved by around 44% of graduates. It is generally considered the minimum requirement for most competitive graduate jobs, management training programmes, and postgraduate study. Many employers list a 2:1 as their minimum entry requirement in job specifications.
+ A 2:1 (pronounced &quot;two-one&quot;) is the most common degree classification in the UK: HESA reported 48% of classified first-degree qualifiers at this level in 2022/23. It is generally considered the minimum requirement for many competitive graduate jobs, management training programmes, and postgraduate study. Requirements vary by employer and course.
  </p>
 
  <h3>Lower Second Class Honours (2:2) - 50% to 59%</h3>
  <p>
- A 2:2 (pronounced &quot;two-two&quot;) is achieved by approximately 18% of graduates. While some graduate schemes require a 2:1, many employers accept a 2:2, particularly in sectors where practical experience is valued over academic grades. A 2:2 still represents a solid academic achievement and opens doors to a wide range of career paths.
+ A 2:2 (pronounced &quot;two-two&quot;) was awarded to 20% of classified first-degree qualifiers in 2022/23, according to HESA. While some graduate schemes require a 2:1, many employers accept a 2:2, particularly in sectors where practical experience is valued over academic grades. A 2:2 still represents a solid academic achievement and opens doors to a wide range of career paths.
  </p>
 
  <h3>Third Class Honours (3rd) - 40% to 49%</h3>
@@ -224,7 +224,7 @@ export default function HomePage() {
  </tbody>
  </table>
  <p>
- Year 1 typically does not count towards your final classification, but you usually need to pass all first-year modules to progress to Year 2. Always check your university&apos;s specific regulations, as policies vary between institutions and even between departments within the same university. We have tailored calculators for specific universities including <Link href="/universities/mmu/">Manchester Metropolitan University</Link>, <Link href="/universities/leeds/">University of Leeds</Link>, <Link href="/universities/open-university/">Open University</Link>, and <Link href="/universities/st-andrews/">University of St Andrews</Link>, each with their exact year weightings.
+ Year 1 typically does not count towards your final classification, but you usually need to pass all first-year modules to progress to Year 2. Always check your university&apos;s specific regulations, as policies vary between institutions and even between departments within the same university. Our university pages, including <Link href="/universities/mmu/">Manchester Metropolitan University</Link>, <Link href="/universities/leeds/">University of Leeds</Link>, <Link href="/universities/open-university/">Open University</Link>, and <Link href="/universities/st-andrews/">University of St Andrews</Link>, provide provisional examples and should be checked against your current programme regulations.
  </p>
 
  <h2>Tips for Improving Your Degree Classification</h2>
@@ -271,18 +271,18 @@ export default function HomePage() {
  </p>
  <table>
  <thead>
- <tr><th>Classification</th><th>Grade Boundary</th><th>Borderline Zone</th></tr>
+ <tr><th>Classification</th><th>Grade Boundary</th><th>Borderline policy</th></tr>
  </thead>
  <tbody>
- <tr><td>First Class (1st)</td><td>70.00% and above</td><td>68.00% - 69.99%</td></tr>
- <tr><td>Upper Second (2:1)</td><td>60.00% - 69.99%</td><td>58.00% - 59.99%</td></tr>
- <tr><td>Lower Second (2:2)</td><td>50.00% - 59.99%</td><td>48.00% - 49.99%</td></tr>
- <tr><td>Third Class (3rd)</td><td>40.00% - 49.99%</td><td>38.00% - 39.99%</td></tr>
+ <tr><td>First Class (1st)</td><td>70.00% and above</td><td>Check your programme regulations</td></tr>
+ <tr><td>Upper Second (2:1)</td><td>60.00% - 69.99%</td><td>Check your programme regulations</td></tr>
+ <tr><td>Lower Second (2:2)</td><td>50.00% - 59.99%</td><td>Check your programme regulations</td></tr>
+ <tr><td>Third Class (3rd)</td><td>40.00% - 49.99%</td><td>Check your programme regulations</td></tr>
  <tr><td>Fail</td><td>Below 40.00%</td><td>N/A</td></tr>
  </tbody>
  </table>
  <p>
- If your average falls in a borderline zone, your university&apos;s exam board will apply its specific borderline policy. Some institutions upgrade students automatically if 50% or more of their final-year credits fall in the higher band. Others use a &quot;best of&quot; calculation or discretionary review.
+ Borderline and rounding rules are not universal. Your university&apos;s exam board applies the policy in your programme regulations, which may use a module profile, a second calculation, or no upgrade route at all.
  </p>
 
  <h2>How This Grade Calculator Compares</h2>
@@ -290,7 +290,7 @@ export default function HomePage() {
  This is not just a basic grade calculator or simple UG calculator. Unlike simple tools that only output a number, this uni grade calculator provides a full breakdown with classification display, visual progress tracking, and a target grade planner. The grade calculator works for all UK universities and supports any combination of credit values.
  </p>
  <p>
- Students at specific universities can use our tailored calculators with pre-loaded year weightings. Our <Link href="/universities/mmu/">MMU grade calculator</Link> uses Manchester Met&apos;s 30/70 split, while the <Link href="/universities/leeds/">Leeds grade calculator</Link> uses 33/67. These university-specific tools remove guesswork about how your institution calculates university grades and uni grades.
+ Students at specific universities can use our tailored calculator pages as a starting point for entering module marks and credits. The assumptions shown on each page are provisional: confirm the weighting, rounding and classification rules in your current programme regulations before relying on an estimate.
  </p>
 
  <h2>Specialist Grade Calculators</h2>
@@ -302,7 +302,7 @@ export default function HomePage() {
  </p>
  <h2>UK Uni Grade Calculator: From Marks to an Overall Result</h2>
  <p>
- Searchers use university grade calculator, uni grade calculator UK, UK uni grade calculator, grade calculator uni, and overall uni grade calculator to describe the same core task: turning confirmed module marks and credits into a provisional degree average. Start with the grades that your course says count, use each module&apos;s actual credit value, and check your final course regulations before treating the result as official.
+ Use this university grade calculator to turn confirmed module marks and credits into a provisional degree average. Start with the grades that your course says count, use each module&apos;s actual credit value, and check your final course regulations before treating the result as official.
  </p>
  <p>
  If you only have raw assessment marks, first use the <Link href="/percentage-grade-calculator/">percentage grade calculator</Link> or <Link href="/module-grade-calculator/">module grade calculator</Link>. If you already have an average and need a required mark, use the <Link href="/final-grade-calculator/">final grade calculator</Link> instead of trying to estimate it manually.
@@ -334,7 +334,7 @@ export default function HomePage() {
  This free UK university grade calculator was built for students who want a fast, accurate, and ad-light way to check their degree classification. Unlike other grade calculators that are cluttered with ads or require registration, this tool is completely free, works instantly in your browser, and does not store any of your data.
  </p>
  <p>
- Whether you are a first-year student planning ahead, a second-year trying to work out what you need for a 2:1, or a finalist checking whether a First is within reach, this calculator gives you the answer in seconds. Use our <Link href="/module-grade-calculator/">module grade calculator</Link> for individual module breakdowns, or the <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> for multi-year calculations with custom year weightings.
+ Whether you are a first-year student planning ahead, a second-year trying to work out what you need for a 2:1, or a finalist checking whether a First is within reach, this calculator gives you a provisional credit-weighted result in seconds. Use our <Link href="/module-grade-calculator/">module grade calculator</Link> for individual module breakdowns, or the <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to calculate a credit-weighted average before applying your programme&apos;s published year weighting.
  </p>
  </div>
  </div>

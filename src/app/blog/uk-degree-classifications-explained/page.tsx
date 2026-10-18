@@ -48,7 +48,7 @@ const faqs = [
  {
  question: "What percentage of students get a First class degree?",
  answer:
- "According to HESA data for the 2022/23 academic year, approximately 32% of UK graduates achieved a First Class Honours degree. This proportion has risen significantly over the past two decades, from around 8% in the early 2000s. The increase has prompted debates about grade inflation in UK higher education, though universities attribute much of the rise to improved teaching quality and student support.",
+ "HESA reports that 30% of classified first-degree qualifiers received a First in 2022/23. HESA excludes unclassified first degrees from this breakdown, so use the figures as national context rather than a prediction for an individual course.",
  },
  {
  question: "How do UK degree classifications compare to international grades?",
@@ -165,12 +165,12 @@ export default function UKDegreeClassificationsPage() {
  In practical terms, a First opens doors to the most competitive career paths. Top-tier graduate schemes in investment banking, management consulting, corporate law, and the civil service fast stream typically require a First or a high 2:1. For students considering academia, a First is usually the minimum expectation for PhD programme entry and research funding applications.
  </p>
  <p>
- According to HESA data, approximately 32% of graduates in 2022/23 achieved a First. This represents a significant increase from around 8% in the early 2000s, which has fuelled ongoing debates about grade inflation in UK higher education.
+ In 2022/23, <a href="https://www.hesa.ac.uk/news/08-08-2024/sb269-higher-education-student-statistics/qualifications" target="_blank" rel="noreferrer">HESA reported that 30% of classified first-degree qualifiers</a> achieved a First. HESA excludes unclassified first degrees from this breakdown.
  </p>
 
  <h2 id="upper-second">Upper Second Class Honours (2:1) &mdash; 60% to 69%</h2>
  <p>
- The Upper Second Class degree, universally known as a &quot;2:1&quot; (pronounced &quot;two-one&quot;), requires an average between 60% and 69%. It is the most commonly awarded UK degree classification, achieved by around 44% of graduates.
+ The Upper Second Class degree, universally known as a &quot;2:1&quot; (pronounced &quot;two-one&quot;), requires an average between 60% and 69%. It is the most commonly awarded UK degree classification: HESA recorded 48% of classified first-degree qualifiers at this level in 2022/23.
  </p>
  <p>
  A 2:1 is widely regarded as the benchmark for graduate employment. The majority of competitive graduate programmes list a 2:1 as their minimum academic requirement. This includes roles in finance, law, engineering, consulting, the NHS graduate management training scheme, and the civil service. Many postgraduate taught programmes (Masters degrees) also require a 2:1 for entry.
@@ -181,7 +181,7 @@ export default function UKDegreeClassificationsPage() {
 
  <h2 id="lower-second">Lower Second Class Honours (2:2) &mdash; 50% to 59%</h2>
  <p>
- A Lower Second Class degree, known as a &quot;2:2&quot; (pronounced &quot;two-two&quot;), requires an average between 50% and 59%. Approximately 18% of UK graduates receive a 2:2.
+ A Lower Second Class degree, known as a &quot;2:2&quot; (pronounced &quot;two-two&quot;), requires an average between 50% and 59%. HESA recorded 20% of classified first-degree qualifiers at this level in 2022/23.
  </p>
  <p>
  While a 2:2 may exclude you from some highly competitive graduate schemes that specify a 2:1 minimum, it remains a solid academic achievement that many employers value. Sectors such as marketing, digital media, retail management, hospitality, creative industries, and technology startups frequently hire 2:2 graduates. Small and medium-sized enterprises (SMEs) often value personality, motivation, and relevant experience above degree classification.
@@ -192,7 +192,7 @@ export default function UKDegreeClassificationsPage() {
 
  <h2 id="third-class">Third Class Honours (3rd) &mdash; 40% to 49%</h2>
  <p>
- A Third Class Honours degree requires an average between 40% and 49%. It is the lowest Honours classification, achieved by approximately 4-5% of graduates.
+ A Third Class Honours degree requires an average between 40% and 49%. It is the lowest Honours classification; HESA recorded 3% of classified first-degree qualifiers as third/pass in 2022/23.
  </p>
  <p>
  A Third is still a university degree and carries value. While it may limit access to some structured graduate programmes, many career paths do not have formal academic entry requirements. Entrepreneurship, sales, property, trades, and many creative fields focus on skills and experience rather than classification. Many highly successful business leaders and public figures graduated with a Third. Students with vocational qualifications like a BTEC can use our <Link href="/btec-grade-calculator/">BTEC grade calculator</Link> to check how their pre-university grades translate.
@@ -269,21 +269,21 @@ export default function UKDegreeClassificationsPage() {
 
  <h2 id="statistics">UK Degree Classification Statistics</h2>
  <p>
- The distribution of UK degree classifications has shifted substantially over the past two decades. According to HESA data:
+ <a href="https://www.hesa.ac.uk/news/08-08-2024/sb269-higher-education-student-statistics/qualifications" target="_blank" rel="noreferrer">HESA&apos;s 2022/23 data</a> gives the following national context for classified first-degree qualifiers. It excludes unclassified first degrees.
  </p>
  <table>
  <thead>
- <tr><th>Classification</th><th>2002/03</th><th>2012/13</th><th>2022/23</th></tr>
+ <tr><th>Classification</th><th>2022/23</th></tr>
  </thead>
  <tbody>
- <tr><td>First</td><td>8%</td><td>19%</td><td>32%</td></tr>
- <tr><td>2:1</td><td>42%</td><td>47%</td><td>44%</td></tr>
- <tr><td>2:2</td><td>37%</td><td>27%</td><td>18%</td></tr>
- <tr><td>Third / Ordinary</td><td>13%</td><td>7%</td><td>6%</td></tr>
+ <tr><td>First</td><td>30%</td></tr>
+ <tr><td>Upper Second (2:1)</td><td>48%</td></tr>
+ <tr><td>Lower Second (2:2)</td><td>20%</td></tr>
+ <tr><td>Third/Pass</td><td>3%</td></tr>
  </tbody>
  </table>
  <p>
- The dramatic rise in Firsts and decline in lower classifications has been a major topic of discussion in UK higher education. Contributing factors include improved teaching, better student support, changes to assessment methods, increased use of coursework (where students tend to score higher than in exams), and, critics argue, institutional pressure to inflate grades.
+ These figures describe national outcomes, not the classification method for any individual programme. Check your own university regulations for the calculation and borderline rules that apply to you.
  </p>
 
  <h2 id="international-equivalents">International Equivalents</h2>
@@ -338,7 +338,7 @@ export default function UKDegreeClassificationsPage() {
 
  <h2 id="grade-inflation">The Grade Inflation Debate</h2>
  <p>
- The proportion of Firsts awarded has quadrupled since 2002, from 8% to 32%. This trend has prompted serious questions about whether standards are being maintained. The Office for Students (OfS) has flagged &quot;unexplained grade inflation&quot; as a regulatory concern and has required universities to explain increases in top grades that cannot be attributed to improvements in student intake or teaching quality.
+ National classification data can change over time and should be interpreted with care. The current HESA breakdown is useful context, but it does not establish how an individual course awards marks or classifications.
  </p>
  <p>
  Universities argue that several legitimate factors contribute to higher grades: better teaching, improved learning technology, more effective student support services, increased use of formative assessment, and changes to module structures that allow students to play to their strengths. Critics counter that institutional rankings and student satisfaction surveys create perverse incentives to award higher grades.

@@ -18,6 +18,7 @@ const guides = [
 ];
 
 const universities = [
+ { label: "All University Calculators", href: "/universities/" },
  { label: "MMU Grade Calculator", href: "/universities/mmu/" },
  { label: "Open University", href: "/universities/open-university/" },
  { label: "Leeds", href: "/universities/leeds/" },

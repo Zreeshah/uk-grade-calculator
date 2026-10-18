@@ -18,16 +18,16 @@ export const metadata: Metadata = generateSEO({
 const faqs = [
  { question: "What is a degree classification?", answer: "A degree classification is the grading system used for UK undergraduate degrees. It categorises your academic achievement into bands: First Class Honours (1st) at 70%+, Upper Second Class (2:1) at 60-69%, Lower Second Class (2:2) at 50-59%, Third Class (3rd) at 40-49%, and Fail below 40%. Your classification appears on your degree certificate and transcript." },
  { question: "How is degree classification decided?", answer: "Degree classification is determined by calculating the credit-weighted average of your module marks, usually from Year 2 and Year 3 only. Year 3 is typically weighted more heavily (e.g., 67%) than Year 2 (33%). Some universities also apply borderline rules that may upgrade your classification if you are close to a boundary." },
- { question: "What percentage of students get a First?", answer: "According to HESA data for the 2022/23 academic year, approximately 32% of UK graduates achieved a First Class degree, up from around 16% a decade earlier. About 44% achieved a 2:1, 18% a 2:2, and 6% a Third or below." },
+ { question: "What percentage of students get a First?", answer: "HESA reports that 30% of classified first-degree qualifiers received a First in 2022/23. In the same year, 48% received an upper second, 20% a lower second and 3% a third/pass. HESA excludes unclassified first degrees from this breakdown." },
  { question: "Does my degree classification matter for employers?", answer: "Yes, particularly for graduate schemes and competitive roles. Most large employers and graduate programmes require a minimum of a 2:1. Some sectors (consulting, investment banking, law) strongly prefer or require a First. However, many roles value experience, skills, and personality alongside academic grades." },
- { question: "What happens if I am on a borderline?", answer: "If your average falls within 1-2% of a classification boundary (e.g., 68-69% near the First/2:1 border), many universities apply borderline policies. These may include: checking if 50%+ of your credits fall in the higher band, a preponderance calculation, or discretionary upgrade by the exam board." },
+ { question: "What happens if I am on a borderline?", answer: "Borderline treatment is set by your university and programme. Some policies assess a module profile or run a second calculation; others do not provide an upgrade route. Check your current academic regulations rather than assuming a standard range or rule." },
  { question: "Can I improve my degree classification after graduating?", answer: "No. Once your degree is awarded, your classification is final. Some universities allow you to top up an Ordinary degree to Honours, but you cannot change the classification of an existing Honours degree. This is why tracking your grades throughout your studies is important." },
 ];
 
 const relatedLinks = [
  { title: "University Grade Calculator", href: "/", description: "Full-featured calculator with target grade and credit weighting support." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Calculate what you need on remaining modules to reach your target classification." },
- { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Apply custom year and module weightings to your grade calculation." },
+ { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Calculate a credit-weighted average from module grades and credits." },
  { title: "UK Degree Classifications Explained", href: "/blog/uk-degree-classifications-explained/", description: "Complete guide to what each classification means." },
 ];
 
@@ -75,7 +75,7 @@ export default function DegreeClassificationCalculatorPage() {
 
  <h3>Step 3: Year Weightings Are Applied</h3>
  <p>
- Most universities weight your final year more heavily. The most common split is 33% for Year 2 and 67% for Year 3. First-year marks typically do not count toward classification. This means a strong final year can compensate for a weaker second year.
+ Many programmes weight the final year more heavily than earlier years. First-year marks often do not count toward classification, but year weighting varies by university and programme. Check your academic regulations before relying on an estimate.
  </p>
 
  <h3>Step 4: Borderline Rules Are Checked</h3>
@@ -85,19 +85,19 @@ export default function DegreeClassificationCalculatorPage() {
 
  <h2>Degree Classification Statistics in the UK</h2>
  <p>
- Understanding how degree classifications are distributed nationally provides useful context for your own performance. According to HESA (Higher Education Statistics Agency) data:
+ Understanding how degree classifications are distributed nationally provides useful context for your own performance. <a href="https://www.hesa.ac.uk/news/08-08-2024/sb269-higher-education-student-statistics/qualifications" target="_blank" rel="noreferrer">HESA&apos;s 2022/23 classification data</a> excludes unclassified first degrees:
  </p>
  <table>
- <thead><tr><th>Classification</th><th>2022/23</th><th>2018/19</th><th>2013/14</th></tr></thead>
+ <thead><tr><th>Classification</th><th>2022/23</th></tr></thead>
  <tbody>
- <tr><td>First</td><td>32%</td><td>28%</td><td>22%</td></tr>
- <tr><td>2:1</td><td>44%</td><td>47%</td><td>49%</td></tr>
- <tr><td>2:2</td><td>18%</td><td>19%</td><td>22%</td></tr>
- <tr><td>Third/Pass</td><td>6%</td><td>6%</td><td>7%</td></tr>
+ <tr><td>First</td><td>30%</td></tr>
+ <tr><td>Upper Second (2:1)</td><td>48%</td></tr>
+ <tr><td>Lower Second (2:2)</td><td>20%</td></tr>
+ <tr><td>Third/Pass</td><td>3%</td></tr>
  </tbody>
  </table>
  <p>
- The proportion of Firsts has increased significantly over the past decade, a trend that has generated debate about grade inflation in UK higher education. However, universities point to improved teaching, better learning resources, and more continuous assessment as contributing factors.
+ National proportions are context only. Your official classification depends on your own programme&apos;s published rules.
  </p>
 
  <h2>UK Uni Grade Boundaries Explained</h2>
@@ -149,10 +149,10 @@ export default function DegreeClassificationCalculatorPage() {
  Here is a quick-reference summary of how degree grades work in the UK honours degree classifications system:
  </p>
  <ul>
- <li><strong>First Class Honours (1st):</strong> 70%+ overall. The highest honours degree classification. Around 32% of graduates achieve this.</li>
- <li><strong>Upper Second Class (2:1):</strong> 60-69% overall. The most common degree result, achieved by approximately 44% of graduates. Required by most graduate employers.</li>
- <li><strong>Lower Second Class (2:2):</strong> 50-59% overall. A solid result that opens doors to many careers. Around 18% of graduates.</li>
- <li><strong>Third Class Honours (3rd):</strong> 40-49% overall. The minimum for an honours degree. About 5-6% of graduates.</li>
+ <li><strong>First Class Honours (1st):</strong> 70%+ overall. The highest honours degree classification; HESA reported 30% of classified first-degree qualifiers at this level in 2022/23.</li>
+ <li><strong>Upper Second Class (2:1):</strong> 60-69% overall. The most common degree result, with 48% of classified first-degree qualifiers in 2022/23.</li>
+ <li><strong>Lower Second Class (2:2):</strong> 50-59% overall. A solid result that opens doors to many careers; 20% of classified first-degree qualifiers received one in 2022/23.</li>
+ <li><strong>Third Class Honours (3rd):</strong> 40-49% overall. HESA recorded 3% of classified first-degree qualifiers as third/pass in 2022/23.</li>
  <li><strong>Ordinary Degree / Pass:</strong> Some universities award an ordinary (unclassified) degree to students who pass but do not meet honours requirements.</li>
  <li><strong>Fail:</strong> Below 40% overall. No degree awarded.</li>
  </ul>
@@ -194,7 +194,7 @@ export default function DegreeClassificationCalculatorPage() {
  </ul>
  <h2>How to Calculate Degree Classification</h2>
  <p>
- A degree classification calculator is useful once you have the right average. Students also search for a degree calculator, uni classification calculator, UK degree classification, or degree grades. The terminology varies, but your final result normally depends on the credit-weighted marks and the classification rules in your programme regulations.
+ A degree classification calculator is useful once you have the right average. Your final result normally depends on credit-weighted marks and the classification rules in your programme regulations.
  </p>
  <p>
  For a reliable estimate, calculate each module first, include only the levels and credits your course counts, and then compare the result with the relevant uni grade boundaries. If your result is close to a boundary, your university&apos;s exam board applies the official borderline policy.

@@ -61,7 +61,7 @@ const faqs = [
 
 const relatedLinks = [
  { title: "University Grade Calculator", href: "/", description: "Calculate your overall degree classification from all module grades." },
- { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Work out weighted averages with custom year and module weightings." },
+ { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Work out credit-weighted averages from module grades and credits." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what you need on your final assessments to reach your target." },
  { title: "Degree Classification Calculator", href: "/degree-classification-calculator/", description: "Determine your degree classification based on your overall percentage." },
 ];
@@ -231,7 +231,7 @@ export default function ModuleGradeCalculatorPage() {
  </ul>
  <h2>Module Calculator: From Assessment Marks to a Module Result</h2>
  <p>
- Students also search for a uni module calculator, university module calculator, module mark calculator, or module percentage calculator. They all describe the same first step: combine the weighted marks for coursework, exams, presentations, and practicals into one module percentage. Use this tool before adding that result to your wider degree calculation.
+ Use this module grade calculator to combine coursework, exams, presentations, and practicals into one module percentage. Add that confirmed module result to your wider degree calculation afterwards.
  </p>
  <p>
  Keep assessment weighting separate from module credits. An exam worth 60% changes the mark inside one module; a 40-credit module changes how much that completed module affects your degree average. Once you have a confirmed module grade, use the <Link href="/weighted-grade-calculator/">weighted average calculator</Link> for the credit-weighted stage.

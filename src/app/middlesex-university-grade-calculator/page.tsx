@@ -90,10 +90,10 @@ export default function MiddlesexUniversityGradeCalculatorPage() {
 
  <h2>Check Your Programme Regulations</h2>
  <p>
- University degree calculations can vary by programme, including which levels count, the treatment of placement or dissertation modules, rounding and borderline decisions. This page intentionally does not assume one university-wide year weighting. Your course handbook and the relevant Middlesex University academic regulations remain the source for the rules that apply to your award.
+ Middlesex&apos;s <a href="https://www.mdx.ac.uk/media/middlesex-university/about-us-pdfs/academic-quality/University-Regulations-for-Undergraduate-Taught-Programmes-2025-26.pdf" target="_blank" rel="noreferrer">2025/26 undergraduate regulations</a> use a grade-profile method across graded FHEQ Level 5 and Level 6 credit, rather than one assumed percentage year split. They also set rules for borderline and discretionary cases.
  </p>
  <p>
- If your course supplies a Year 2 and Year 3 split, use the <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to model that exact split. If you are planning remaining assessments, the <Link href="/final-grade-calculator/">final grade calculator</Link> can help you work out the average you need.
+ This source normally applies across undergraduate programmes, but approved programme variations are published in course documentation. Use the calculator here for a credit-weighted planning estimate, then confirm your classification with your current regulations. If you are planning remaining assessments, the <Link href="/final-grade-calculator/">final grade calculator</Link> can help you work out the average you need.
  </p>
 
  <h2>UK Degree Classification Bands</h2>

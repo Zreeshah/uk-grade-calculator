@@ -18,6 +18,8 @@ export default function FAQ({ items, title = "Frequently Asked Questions" }: { i
  <div key={i} className="border border-slate-200 rounded-xl overflow-hidden">
  <button
  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+ aria-expanded={openIndex === i}
+ aria-controls={`faq-answer-${i}`}
  className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-slate-50 transition-colors"
  >
  <span className="font-medium text-slate-900 pr-4">{item.question}</span>
@@ -31,11 +33,17 @@ export default function FAQ({ items, title = "Frequently Asked Questions" }: { i
  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
  </svg>
  </button>
- {openIndex === i && (
+ <div
+ id={`faq-answer-${i}`}
+ className={`grid transition-[grid-template-rows] duration-200 ${openIndex === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+ aria-hidden={openIndex !== i}
+ >
+ <div className="overflow-hidden">
  <div className="px-5 pb-4 text-slate-600 text-sm leading-relaxed">
  {item.answer}
  </div>
- )}
+ </div>
+ </div>
  </div>
  ))}
  </div>

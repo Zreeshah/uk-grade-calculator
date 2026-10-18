@@ -10,6 +10,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { degreeClassifications } from "@/lib/grades";
 import type { UniversityData } from "@/data/universities";
 import { universities } from "@/data/universities";
+import { universitySources } from "@/data/universitySources";
 
 const regionGroups: Record<string, string[]> = {
   "Northern England": ["mmu", "leeds", "sheffield-hallam", "uclan"],
@@ -48,18 +49,20 @@ function getRelatedUnis(slug: string): { name: string; href: string }[] {
 const relatedLinks = [
  { title: "University Grade Calculator", href: "/", description: "General UK university grade calculator for any institution." },
  { title: "Module Grade Calculator", href: "/module-grade-calculator/", description: "Calculate individual module grades from multiple assessments." },
- { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Apply custom year weightings to calculate your overall average." },
+ { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Calculate a credit-weighted average for one year or a set of modules." },
  { title: "UK Degree Classifications Explained", href: "/blog/uk-degree-classifications-explained/", description: "Understand First, 2:1, 2:2, and Third class degrees in detail." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what marks you need on remaining assessments." },
  { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Calculate BTEC Distinction, Merit, and Pass grades." },
 ];
 
 export default function UniversityPage({ uni }: { uni: UniversityData }) {
+ const source = universitySources[uni.slug];
+
  return (
  <div className="container-main py-8">
  <Breadcrumb
  items={[
- { label: "Universities", href: "/" },
+ { label: "Universities", href: "/universities/" },
  { label: `${uni.shortName} Grade Calculator` },
  ]}
  />
@@ -98,42 +101,15 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  )}
 
  <div className="prose-custom mt-12">
- <h2>About {uni.name} Grading</h2>
- {uni.content.map((para, i) => (
- <p key={i}>{para}</p>
- ))}
-
- <h2>{uni.shortName} Year Weighting</h2>
+ <h2>Official {uni.shortName} regulations</h2>
+ <p>{source.summary}</p>
  <p>
- {uni.name} uses a <strong>{uni.yearWeighting}</strong> year weighting for most programmes.
- This means Year 2 (Level 5) contributes {uni.yearWeightY2}% and Year 3 (Level 6) contributes {uni.yearWeightY3}% to your final degree average.
+ <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>. Checked 19 October 2026. {source.scope}
  </p>
- <table>
- <thead>
- <tr>
- <th>Detail</th>
- <th>Value</th>
- </tr>
- </thead>
- <tbody>
- <tr><td>Credit Framework</td><td>{uni.framework}</td></tr>
- <tr><td>Credits per Year</td><td>{uni.creditsPerYear}</td></tr>
- <tr><td>Degree Length</td><td>{uni.degreeLength}</td></tr>
- <tr><td>Year Weighting</td><td>{uni.yearWeighting}</td></tr>
- <tr><td>Standard Module Size</td><td>{uni.defaultModuleCredits} credits</td></tr>
- </tbody>
- </table>
-
- <h2>Important Notes for {uni.shortName} Students</h2>
- <ul>
- {uni.specialNotes.map((note, i) => (
- <li key={i}>{note}</li>
- ))}
- </ul>
 
  <h2>Degree Classification Boundaries</h2>
  <p>
- {uni.name} uses the standard UK degree classification boundaries:
+ These are the usual UK honours classification boundaries. Your programme regulations remain authoritative:
  </p>
  </div>
 
@@ -148,9 +124,8 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  <li>Use the target grade feature to find out what you need on remaining modules.</li>
  </ol>
  <p>
- For a more detailed calculation with year weightings, use our{" "}
- <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> where you can set
- custom Year 2/Year 3 weightings to match {uni.shortName}&apos;s {uni.yearWeighting} split.
+ Use our{" "}
+ <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to calculate each year&apos;s credit-weighted average. Apply your programme&apos;s published year weighting separately; this calculator does not yet model programme-specific classification algorithms.
  </p>
 
  <h2>When to Use This {uni.shortName} Grade Calculator</h2>
@@ -192,7 +167,7 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  </div>
  </section>
 
- <FAQ items={uni.faqs} />
+ <FAQ items={source.faqs} />
  <InternalLinks links={relatedLinks} />
  </div>
  );
