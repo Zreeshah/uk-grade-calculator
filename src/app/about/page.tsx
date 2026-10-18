@@ -63,7 +63,7 @@ export default function AboutPage() {
 
  <h2>Privacy and Data</h2>
  <p>
- We do not collect, store, or transmit any of your grade data. All calculations are performed entirely in your browser using JavaScript. When you close the page, your data is gone. We do not use cookies for tracking, and we do not sell data to third parties.
+ We do not collect, store, or transmit the grade data you enter into the calculators. All calculations are performed in your browser. Optional analytics and advertising technologies are only loaded after you make a choice in the privacy panel. Read our <Link href="/privacy/">privacy and cookie information</Link> for the categories we use and how to change your choice.
  </p>
 
  <h2>Accuracy Disclaimer</h2>
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
  <h2>Contact</h2>
  <p>
- If you have suggestions for improving our calculators, notice an error, or want to request a university-specific calculator, please get in touch. We are continually improving and expanding our tools based on student feedback.
+ If you have suggestions for improving our calculators, notice an error, or want to request a university-specific calculator, use our <Link href="/contact/">contact and feedback route</Link>. We are continually improving and expanding our tools based on student feedback.
  </p>
  </div>
 

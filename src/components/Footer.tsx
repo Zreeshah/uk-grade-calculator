@@ -77,6 +77,8 @@ export default function Footer() {
  <p className="text-sm text-slate-400">&copy; {new Date().getFullYear()} UK Grade Calculator. All rights reserved.</p>
  <div className="flex gap-6">
  <Link href="/about/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">About</Link>
+ <Link href="/privacy/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Privacy</Link>
+ <Link href="/contact/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Contact</Link>
  </div>
  </div>
  </div>

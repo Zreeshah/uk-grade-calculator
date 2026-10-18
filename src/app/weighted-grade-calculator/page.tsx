@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
+import YearWeightingCalculator from "@/components/YearWeightingCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -50,6 +51,7 @@ export default function WeightedGradeCalculatorPage() {
  </div>
 
  <GradeCalculator type="undergraduate" showTarget={true} showCredits={true} defaultCredits="20" />
+ <YearWeightingCalculator />
 
  <div className="prose-custom mt-12">
  <h2>What Is a Weighted Average?</h2>

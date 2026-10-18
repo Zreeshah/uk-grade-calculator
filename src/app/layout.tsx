@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ConsentManager from "@/components/ConsentManager";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -61,24 +61,8 @@ export default function RootLayout({
 }>) {
  return (
  <html lang="en-GB" className={inter.className}>
- <head>
- <script
- async
- src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6218065184548996"
- crossOrigin="anonymous"
- />
- <Script
- src="https://www.googletagmanager.com/gtag/js?id=G-CQY69SX742"
- strategy="afterInteractive"
- />
- <Script id="ga4" strategy="afterInteractive">
- {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-CQY69SX742');`}
- </Script>
- </head>
  <body className="min-h-screen flex flex-col">
+ <ConsentManager />
  <Header />
  <main className="flex-1">{children}</main>
  <Footer />
