@@ -63,7 +63,7 @@ export default function AboutPage() {
 
  <h2>Privacy and Data</h2>
  <p>
- We do not collect, store, or transmit the grade data you enter into the calculators. All calculations are performed in your browser. Optional analytics and advertising technologies are only loaded after you make a choice in the privacy panel. Read our <Link href="/privacy/">privacy and cookie information</Link> for the categories we use and how to change your choice.
+ We do not collect, store, or transmit the grade data you enter into the calculators. All calculations are performed in your browser. Read our <Link href="/privacy/">privacy and cookie information</Link> for details of the analytics and advertising technologies used on the site.
  </p>
 
  <h2>Accuracy Disclaimer</h2>
