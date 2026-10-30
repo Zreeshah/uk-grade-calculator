@@ -61,13 +61,6 @@ export function getMastersClassification(average: number): { classification: str
  return { classification: "Fail", classColor: "text-red-700" };
 }
 
-export function getBTECClassification(average: number): { classification: string; classColor: string } {
- if (average >= 85) return { classification: "Distinction* (D*)", classColor: "grade-first" };
- if (average >= 70) return { classification: "Distinction (D)", classColor: "grade-first" };
- if (average >= 60) return { classification: "Merit (M)", classColor: "grade-two-one" };
- if (average >= 40) return { classification: "Pass (P)", classColor: "grade-two-two" };
- return { classification: "Fail", classColor: "text-red-700" };
-}
 
 export function getGPAFromPercentage(percentage: number): number {
  if (percentage >= 70) return 4.0;
@@ -113,12 +106,4 @@ export const mastersClassifications = [
  { classification: "Merit", range: "60% - 69%", color: "grade-two-one" },
  { classification: "Pass", range: "50% - 59%", color: "grade-two-two" },
  { classification: "Fail", range: "Below 50%", color: "text-red-700" },
-];
-
-export const btecClassifications = [
- { classification: "Distinction* (D*)", range: "85% and above", color: "grade-first" },
- { classification: "Distinction (D)", range: "70% - 84%", color: "grade-first" },
- { classification: "Merit (M)", range: "60% - 69%", color: "grade-two-one" },
- { classification: "Pass (P)", range: "40% - 59%", color: "grade-two-two" },
- { classification: "Fail", range: "Below 40%", color: "text-red-700" },
 ];

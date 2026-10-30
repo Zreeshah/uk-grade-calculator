@@ -11,7 +11,7 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 export const metadata: Metadata = generateSEO({
  title: "University Grade Calculator UK | Free Online Tool",
  description:
- "Free UK university grade calculator. Calculate your degree classification, weighted average, module grades and BTEC results instantly.",
+ "Free UK university grade calculator. Calculate your degree classification, weighted average, module grades and BTEC UCAS tariff points.",
  path: "/",
  image: "/images/social/uk-grade-calculator-open-graph.jpg",
 });
@@ -62,7 +62,7 @@ const faqs = [
 const relatedLinks = [
  { title: "Module Grade Calculator", href: "/module-grade-calculator/", description: "Calculate individual module grades with multiple assessments and custom weightings." },
  { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Work out credit-weighted averages from module grades and credits." },
- { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Calculate BTEC grades including Distinction*, Distinction, Merit, and Pass." },
+ { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Find Pearson's qualification-specific calculator and look up final Extended Diploma UCAS tariff points." },
  { title: "Masters Grade Calculator", href: "/masters-grade-calculator/", description: "Calculate postgraduate grades with Distinction, Merit, and Pass boundaries." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what you need on your final exams to reach your target grade." },
  { title: "GPA Calculator UK", href: "/gpa-calculator/", description: "Convert UK percentage grades to GPA scale for international applications." },
@@ -295,7 +295,7 @@ export default function HomePage() {
 
  <h2>Specialist Grade Calculators</h2>
  <p>
- Beyond the standard undergraduate grade calculator, we offer tools for every qualification type. BTEC students can use the <Link href="/btec-grade-calculator/">BTEC grade calculator</Link> with Distinction*, Distinction, Merit, and Pass boundaries. Postgraduate students can calculate their masters classification with the <Link href="/masters-grade-calculator/">masters grade calculator</Link>. For international applications, the <Link href="/gpa-calculator/">GPA calculator</Link> converts UK percentages to the 4.0 GPA scale.
+ Beyond the standard undergraduate grade calculator, we offer tools for every qualification type. BTEC students can use the <Link href="/btec-grade-calculator/">BTEC grade page</Link> to find Pearson&apos;s qualification-specific calculator and look up a final Extended Diploma UCAS tariff. Postgraduate students can calculate their masters classification with the <Link href="/masters-grade-calculator/">masters grade calculator</Link>. For international applications, the <Link href="/gpa-calculator/">GPA calculator</Link> converts UK percentages to the 4.0 GPA scale.
  </p>
  <p>
  For a deep understanding of how the entire UK grading system works, from assessment types to external examiners, read our comprehensive guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
  title: "UK Grade Calculator - Free University Grade Calculator",
  description:
- "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC grades, GPA, and more. Trusted by thousands of UK students.",
+ "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC UCAS tariff points, GPA, and more. Trusted by thousands of UK students.",
  metadataBase: new URL("https://unigradecalculator.co.uk"),
  alternates: {
  canonical: "https://unigradecalculator.co.uk",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
  openGraph: {
  title: "UK Grade Calculator - Free University Grade Calculator",
  description:
- "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC grades, GPA, and more.",
+ "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC UCAS tariff points, GPA, and more.",
  siteName: "UK Grade Calculator",
  locale: "en_GB",
  type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
  card: "summary_large_image",
  title: "UK Grade Calculator - Free University Grade Calculator",
  description:
- "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC grades, GPA, and more.",
+ "Free UK university grade calculator. Calculate your module grades, degree classification, weighted average, BTEC UCAS tariff points, GPA, and more.",
  images: ["/images/social/uk-grade-calculator-open-graph.jpg"],
  },
  robots: {

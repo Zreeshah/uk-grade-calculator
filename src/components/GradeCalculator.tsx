@@ -7,12 +7,11 @@ import {
  calculateWeightedAverage,
  getClassification,
  getMastersClassification,
- getBTECClassification,
  calculateTargetGrade,
  getGPAFromPercentage,
 } from "@/lib/grades";
 
-type CalcType = "undergraduate" | "masters" | "btec" | "module" | "gpa";
+type CalcType = "undergraduate" | "masters" | "module" | "gpa";
 
 interface GradeCalculatorProps {
  type?: CalcType;
@@ -66,8 +65,6 @@ export default function GradeCalculator({
  const getClassFn =
  type === "masters"
  ? getMastersClassification
- : type === "btec"
- ? getBTECClassification
  : getClassification;
 
  const result = average !== null ? getClassFn(average) : null;
@@ -136,7 +133,7 @@ export default function GradeCalculator({
  <thead>
  <tr className="border-b border-slate-200">
  <th className="text-left text-sm font-medium text-slate-500 pb-3 pr-3">
- {type === "btec" ? "Unit Name" : "Module Name"}
+ Module Name
  </th>
  <th className="text-left text-sm font-medium text-slate-500 pb-3 pr-3 w-28">
  Grade (%)
@@ -155,7 +152,7 @@ export default function GradeCalculator({
  <td className="py-2 pr-3">
  <input
  type="text"
- placeholder={`${type === "btec" ? "Unit" : "Module"} ${idx + 1}`}
+ placeholder={`Module ${idx + 1}`}
  value={mod.name}
  onChange={(e) => updateModule(mod.id, "name", e.target.value)}
  className="input-field text-sm"
@@ -207,7 +204,7 @@ export default function GradeCalculator({
  <svg className="w-4 h-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
  </svg>
- Add {type === "btec" ? "Unit" : "Module"}
+ Add Module
  </button>
  <button onClick={resetAll} className="btn-secondary text-sm">
  Reset All

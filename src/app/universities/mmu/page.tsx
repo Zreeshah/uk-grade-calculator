@@ -7,7 +7,7 @@ const uni = universities[0];
 
 export const metadata: Metadata = generateSEO({
  title: "MMU Grade Calculator - Free Tool",
- description: "Free MMU grade calculator for Manchester Metropolitan University students. Calculate your degree classification using MMU's 30/70 year weighting system.",
+ description: "Free MMU grade calculator for Manchester Metropolitan University students. Estimate your classification with MMU's current Level 5 and Level 6 rules.",
  path: "/universities/mmu/",
 });
 

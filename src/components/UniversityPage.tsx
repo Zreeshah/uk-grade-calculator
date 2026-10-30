@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
+import MmuClassificationCalculator from "@/components/MmuClassificationCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
@@ -52,7 +53,7 @@ const relatedLinks = [
  { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Calculate a credit-weighted average for one year or a set of modules." },
  { title: "UK Degree Classifications Explained", href: "/blog/uk-degree-classifications-explained/", description: "Understand First, 2:1, 2:2, and Third class degrees in detail." },
  { title: "Final Grade Calculator", href: "/final-grade-calculator/", description: "Find out what marks you need on remaining assessments." },
- { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Calculate BTEC Distinction, Merit, and Pass grades." },
+ { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Find Pearson's official calculator and look up final Extended Diploma UCAS tariff points." },
 ];
 
 export default function UniversityPage({ uni }: { uni: UniversityData }) {
@@ -76,12 +77,16 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  </p>
  </div>
 
+ {uni.slug === "mmu" ? (
+ <MmuClassificationCalculator />
+ ) : (
  <GradeCalculator
  type="undergraduate"
  showTarget={true}
  showCredits={true}
  defaultCredits={uni.defaultModuleCredits}
  />
+ )}
 
  {uni.visual && (
  <figure className="my-10">
@@ -104,7 +109,7 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  <h2>Official {uni.shortName} regulations</h2>
  <p>{source.summary}</p>
  <p>
- <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>. Checked 19 October 2026. {source.scope}
+ <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>. {uni.slug === "mmu" ? "Checked 30 October 2026." : "Checked 19 October 2026."} {source.scope}
  </p>
 
  <h2>Degree Classification Boundaries</h2>
@@ -117,16 +122,29 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
 
  <div className="prose-custom">
  <h2>How to Calculate Your {uni.shortName} Grade</h2>
+ {uni.slug === "mmu" ? (
+ <ol>
+ <li>Select the Level 5 cohort that matches your study history.</li>
+ <li>Enter completed Level 5 and Level 6 unit marks with their credit values.</li>
+ <li>Use exactly 120 credits at each level for this standard-route estimate.</li>
+ <li>Review the displayed main method and, where eligible, the additional Level 6 profiling result.</li>
+ </ol>
+ ) : (
  <ol>
  <li>Enter each module name, percentage grade, and credit value in the calculator above.</li>
  <li>Set credits to {uni.defaultModuleCredits} for standard modules. Adjust for dissertations or double modules.</li>
  <li>The calculator automatically computes your credit-weighted average and shows your classification.</li>
  <li>Use the target grade feature to find out what you need on remaining modules.</li>
  </ol>
+ )}
+ {uni.slug === "mmu" ? (
+ <p>This MMU calculator models the current standard 25/75 route and, for the eligible 2025/26 Level 5 cohort, the additional Level 6 profiling route. It deliberately stops for unsupported cohorts or non-standard credit structures.</p>
+ ) : (
  <p>
  Use our{" "}
  <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to calculate each year&apos;s credit-weighted average. Apply your programme&apos;s published year weighting separately; this calculator does not yet model programme-specific classification algorithms.
  </p>
+ )}
 
  <h2>When to Use This {uni.shortName} Grade Calculator</h2>
  <p>

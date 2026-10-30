@@ -14,7 +14,7 @@ export const metadata: Metadata = generateSEO({
 const links = [
  { title: "University Grade Calculator", href: "/", description: "Calculate your overall degree classification." },
  { title: "Module Grade Calculator", href: "/module-grade-calculator/", description: "Calculate individual module grades." },
- { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Calculate BTEC grades and UCAS points." },
+ { title: "BTEC Grade Calculator", href: "/btec-grade-calculator/", description: "Find Pearson's official calculator and look up final Extended Diploma UCAS tariff points." },
  { title: "Masters Grade Calculator", href: "/masters-grade-calculator/", description: "Calculate postgraduate degree classifications." },
   { title: "Weighted Grade Calculator", href: "/weighted-grade-calculator/", description: "Apply credit and year weightings to your grades." },
   { title: "GPA Calculator UK", href: "/gpa-calculator/", description: "Convert UK grades to GPA for international applications." },

@@ -8,13 +8,14 @@ export interface UniversitySource {
 
 export const universitySources: Record<string, UniversitySource> = {
  mmu: {
-  title: "Manchester Metropolitan University Undergraduate Assessment Regulations 2024/25",
+  title: "Manchester Metropolitan University Undergraduate Assessment Regulations 2026/27",
   url: "https://www.mmu.ac.uk/legal/policies/undergraduate-assessment-regulations-24-25",
-  summary: "MMU's regulations use a 25:75 Level 5 to Level 6 weighting for the main undergraduate classification method. Cohort rules and programme requirements can change the method.",
-  scope: "The regulation applies across MMU undergraduate provision, subject to approved programme or professional-body variations. Check the version and cohort rules that apply to you.",
+  summary: "MMU's 2026/27 regulations use a 25:75 Level 5 to Level 6 weighting for the main undergraduate classification method. Students who were in Level 5 in 2025/26 may also be eligible for the additional Level 6 profiling method.",
+  scope: "The standard route applies to 120-credit Level 5 and Level 6 study. Repeat years, interruptions, Integrated Masters, extra-credit rules and programme or professional-body variations can require a different calculation.",
   faqs: [
-   { question: "What weighting does MMU use?", answer: "The main MMU undergraduate method uses 25% from Level 5 and 75% from Level 6. The applicable method can depend on your cohort and programme." },
+   { question: "What weighting does MMU use?", answer: "The main MMU undergraduate method uses 25% from Level 5 and 75% from Level 6. The cohort rules decide whether an additional method may also apply." },
    { question: "Can MMU rules differ by course?", answer: "Yes. Programme and professional-body requirements can vary, so your current course regulations remain the authoritative source." },
+   { question: "Does MMU round degree classifications?", answer: "No. The current MMU regulations state that rounding is not used to determine an award classification." },
   ],
  },
  "open-university": {

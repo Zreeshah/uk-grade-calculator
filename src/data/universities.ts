@@ -30,61 +30,42 @@ export const universities: UniversityData[] = [
  shortName: "MMU",
  keyword: "mmu grade calculator",
  description:
- "Free MMU grade calculator for Manchester Metropolitan University students. Calculate your degree classification using MMU's 30/70 year weighting system. Works for all MMU undergraduate programmes.",
- yearWeighting: "30/70 (Year 2 / Year 3)",
- yearWeightY2: 30,
- yearWeightY3: 70,
+ "Free MMU grade calculator for Manchester Metropolitan University students. Estimate your classification from Level 5 and Level 6 results using current MMU rules.",
+ yearWeighting: "25/75 (Level 5 / Level 6)",
+ yearWeightY2: 25,
+ yearWeightY3: 75,
  creditsPerYear: 120,
  defaultModuleCredits: "20",
  framework: "FHEQ (England)",
  degreeLength: "3 years (or 4 with placement)",
  specialNotes: [
- "MMU typically uses a 30/70 year weighting, though some programmes may differ.",
- "Standard modules are 20 credits, with dissertations typically 40 credits.",
- "MMU has a borderline policy where students within 2% of a boundary may be upgraded if 50% or more of their Level 6 credits fall in the higher band.",
- "Year 1 marks do not count towards the final classification but you must pass all Level 4 modules.",
+ "The main MMU undergraduate method uses 25% from Level 5 and 75% from Level 6.",
+ "Students who were in Level 5 during 2025/26 may also have an additional Level 6 profiling method, if they remained on schedule.",
+ "MMU does not round to determine degree classification.",
  ],
  content: [
- "Manchester Metropolitan University (MMU) is one of the largest universities in the UK, with over 35,000 students. Located across multiple campuses in Manchester, MMU offers a wide range of undergraduate and postgraduate programmes spanning arts, sciences, business, education, and health.",
- "MMU uses the standard UK degree classification system (First, 2:1, 2:2, Third) with the Framework for Higher Education Qualifications (FHEQ) credit structure. Each academic year consists of 120 credits, with most individual modules worth 20 credits.",
- "The university typically applies a 30/70 year weighting for degree classification, where Year 2 (Level 5) contributes 30% and Year 3 (Level 6) contributes 70% to your final average. This means your final-year performance is significantly more important than your second year. However, some programmes may use different weightings, so always check your specific programme handbook.",
- "MMU operates a borderline classification policy. If your weighted average falls within 2 percentage points below a classification boundary (e.g., 68-69.99% for a First), the university may upgrade your classification if at least 50% of your Level 6 (final-year) credits achieve marks in the higher classification band. This policy provides a safety net for students who demonstrate strong performance in their final year despite a slightly lower overall average.",
- "To use this calculator for your MMU degree, enter your module grades and credit values. Set credits to 20 for standard modules, 40 for dissertations or double modules, and adjust if your programme uses non-standard credit values. The calculator uses the standard classification boundaries (70% for First, 60% for 2:1, 50% for 2:2, 40% for Third).",
+ "Manchester Metropolitan University (MMU) classifies standard undergraduate honours awards using published Assessment Regulations. The current main method combines credit-weighted Level 5 and Level 6 averages.",
+ "For the standard route, Level 5 contributes 25% and Level 6 contributes 75%. The calculation must use the applicable cohort rules and the Assessment Board confirms the final award.",
+ "Students who were enrolled on Level 5 in 2025/26, and did not fall behind because of repeat years or interruptions, can also receive the more favourable outcome from an additional Level 6 profiling method. Students enrolled on Level 5 from 2026/27 onwards use the main 25/75 method only.",
+ "Use the calculator with completed units and credits. It is an indicative tool for the standard 120-credit Level 5 and Level 6 route, not a substitute for your programme specification or Assessment Board.",
  ],
  faqs: [
  {
- question: "What year weighting does MMU use for degree classification?",
+ question: "What weighting does MMU use for degree classification?",
  answer:
- "MMU typically uses a 30/70 year weighting, where Year 2 (Level 5) counts for 30% and Year 3 (Level 6) counts for 70% of your final classification. Some programmes may use different weightings, so check your programme handbook or speak to your programme leader for confirmation.",
+ "Under MMU's current main undergraduate method, the credit-weighted Level 5 average contributes 25% and the Level 6 average contributes 75%.",
  },
  {
- question: "Does my first year count at MMU?",
+ question: "Can MMU apply another method?",
  answer:
- "No, first-year (Level 4) marks do not count towards your final degree classification at MMU. However, you must pass all Level 4 modules to progress to Level 5. First-year modules are designed to build foundational knowledge and skills for your later years.",
+ "Students who were in Level 5 in 2025/26 and remained on schedule can also be considered under the additional Level 6 profiling method. MMU applies the more favourable eligible outcome.",
  },
  {
- question: "What is MMU's borderline policy?",
+ question: "Does MMU round classification averages?",
  answer:
- "MMU has a borderline policy for students whose weighted average falls within 2 percentage points below a classification boundary. If at least 50% of your Level 6 credits achieve marks in the higher classification band, you may be upgraded. For example, if your average is 68.5% and 60 or more of your 120 Level 6 credits are above 70%, you could be awarded a First instead of a 2:1.",
- },
- {
- question: "How many credits do I need for an MMU degree?",
- answer:
- "A standard MMU Honours degree requires 360 credits: 120 at Level 4 (Year 1), 120 at Level 5 (Year 2), and 120 at Level 6 (Year 3). If you complete a sandwich year (placement), that adds an additional year but typically contributes pass/fail rather than a graded mark towards your classification.",
- },
- {
- question: "How is the MMU dissertation weighted?",
- answer:
- "Most MMU dissertations are worth 40 credits out of the 120 Level 6 credits, giving them one-third of the final-year weighting. Combined with the 70% year weighting for Level 6, the dissertation contributes approximately 23% of your overall degree average. Some programmes have 60-credit dissertations, which carry even more weight.",
+ "No. MMU's current regulations state that rounding is not used to determine the classification of an award.",
  },
  ],
- visual: {
- src: "/images/infographics/mmu-year-weighting-guide.svg",
- alt: "Diagram showing the MMU calculator's 30 percent Year 2 and 70 percent Year 3 weighting assumption",
- caption: "The MMU calculator uses a 30/70 Year 2 / Year 3 estimate; check your programme regulations for the rules that apply to you.",
- width: 1200,
- height: 675,
- },
  },
  {
  slug: "open-university",
