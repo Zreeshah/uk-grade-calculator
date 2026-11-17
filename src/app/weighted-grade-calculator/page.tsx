@@ -16,12 +16,12 @@ export const metadata: Metadata = generateSEO({
 });
 
 const faqs = [
- { question: "What is a weighted grade calculator?", answer: "A weighted grade calculator computes your overall grade by considering that different modules or assessments carry different weights or credit values. Instead of a simple average, it multiplies each grade by its weight, sums the products, and divides by the total weight. This gives a more accurate representation of your academic performance." },
- { question: "How do I calculate a weighted average by hand?", answer: "Multiply each grade by its credit or weight value, add up all the products, then divide by the total credits or weights. For example: Module A (65%, 20 credits) + Module B (72%, 40 credits) = (65x20 + 72x40) / (20+40) = (1300 + 2880) / 60 = 69.67%." },
- { question: "Why is a weighted average different from a simple average?", answer: "A simple average treats all modules equally regardless of their credit value. A weighted average gives proportionally more influence to higher-credit modules. Since a 40-credit dissertation represents more work and academic weight than a 20-credit module, the weighted average reflects your true overall performance more accurately." },
- { question: "Do UK universities use weighted or simple averages?", answer: "All UK universities use credit-weighted averages for calculating degree classifications. This is a fundamental principle of the UK credit framework. A simple average would not account for the varying academic weight of different modules." },
- { question: "How do year weightings work?", answer: "Year weightings determine how much each academic year contributes to your final degree classification. For example, a common weighting is Year 2 at 33% and Year 3 at 67%. This means your final year counts twice as much as your second year. First-year grades typically do not count toward classification." },
- { question: "Can I weight different years differently?", answer: "Yes. Enter your Year 2 modules with their credit values, calculate the Year 2 average, then do the same for Year 3. To apply year weightings, multiply each year's average by its weight percentage: (Year 2 avg x 0.33) + (Year 3 avg x 0.67) = final overall average." },
+ { question: "What is a weighted grade calculator?", answer: "A weighted calculation gives each mark influence in proportion to a weight, such as the credits attached to a module. The result is different from a simple average when the weights differ." },
+ { question: "How do I calculate a credit-weighted average?", answer: "Multiply each confirmed mark by the relevant credit value, add the results, then divide by the total relevant credits. For example, (65 × 20 + 72 × 40) ÷ 60 = 69.67%." },
+ { question: "Does every course use the same calculation?", answer: "No. A course may use credit weighting, year weighting, a best-credit rule, capped marks, rounding, a module profile or another published method. Your programme regulations determine which marks and credits count." },
+ { question: "How do year weightings work?", answer: "If your course combines year averages, calculate the relevant average for each year first, then apply the weighting published for your programme. Do not assume a 33/67, 30/70 or 40/60 split without checking it." },
+ { question: "Should I include a dissertation?", answer: "Include it only where it counts under your programme regulations, using its actual credit value and the mark that appears on your record. A higher-credit dissertation can have more influence than a standard module." },
+ { question: "How should I enter a capped resit mark?", answer: "Use the mark that your university says counts for progression or classification. Resit and late-penalty rules are institution- and programme-specific." },
 ];
 
 const relatedLinks = [
@@ -56,7 +56,7 @@ export default function WeightedGradeCalculatorPage() {
  <div className="prose-custom mt-12">
  <h2>What Is a Weighted Average?</h2>
  <p>
- A weighted average is a calculation method where each value contributes to the final result in proportion to its assigned weight, rather than all values counting equally. In the context of UK universities, a credit-weighted average means your 40-credit dissertation has twice the influence on your overall grade as a standard 20-credit module. This is the foundation of how every UK university calculates degree classifications, and it is the reason a simple average of your marks will almost never match your official result.
+ A weighted average is a calculation method where each value contributes to the final result in proportion to its assigned weight, rather than all values counting equally. In the context of UK universities, a credit-weighted average means your 40-credit dissertation has twice the influence on your overall grade as a standard 20-credit module. Where a programme uses credit weighting, a simple average can differ from its published calculation. Check which modules and rules your programme includes before treating this result as official.
  </p>
  <p>
  The concept matters because UK degrees are built on credits. Each module carries a credit value that reflects its academic weight and study hours. When you use a weighted average calculator, you are applying the same formula your university uses to determine whether you graduate with a First, 2:1, 2:2, or Third.
@@ -64,7 +64,7 @@ export default function WeightedGradeCalculatorPage() {
 
  <h2>How This Weighted Grade Calculator Works</h2>
  <p>
- This grade weight calculator uses the standard credit-weighted average formula used by UK universities. Unlike a simple grade average calculator that treats every module the same, our weighted average calculator multiplies each grade by its credit value, sums the products, and divides by total credits. The result is your true credit-weighted average.
+ This calculator multiplies each mark by the credit value you enter, sums the products and divides by total credits. It gives you a credit-weighted average for the modules you include; it does not apply course-specific rules that are not represented in the inputs.
  </p>
  <p>The formula is:</p>
  <p><strong>Weighted Average = (Grade₁ x Credits₁ + Grade₂ x Credits₂ + ... + Gradeₙ x Creditsₙ) / Total Credits</strong></p>
@@ -124,17 +124,19 @@ export default function WeightedGradeCalculatorPage() {
  </ul>
  <p>This shows why strong final-year performance is so important. Even though the student averaged only 62% in Year 2, their 71% in Year 3 (weighted at 67%) pulled their overall average up to a comfortable 2:1.</p>
 
- <h2>Common Year Weighting Patterns Across UK Universities</h2>
+ <h2>Illustrative Year-Weighting Patterns</h2>
+ <p>
+ Programmes can combine year averages in different ways. The examples below are illustrations only, not a directory of university rules. Use the percentage published for your programme.
+ </p>
  <table>
- <thead><tr><th>University</th><th>Year 2</th><th>Year 3</th></tr></thead>
+ <thead><tr><th>Illustrative pattern</th><th>Earlier-year average</th><th>Later-year average</th></tr></thead>
  <tbody>
- <tr><td>Most Russell Group universities</td><td>33%</td><td>67%</td></tr>
- <tr><td>Manchester Met, Portsmouth</td><td>30%</td><td>70%</td></tr>
- <tr><td>Some arts/humanities programmes</td><td>40%</td><td>60%</td></tr>
- <tr><td>Scottish 4-year degrees (Yr 3/4)</td><td>25-33%</td><td>67-75%</td></tr>
+ <tr><td>Two-to-one split</td><td>33%</td><td>67%</td></tr>
+ <tr><td>Thirty–seventy split</td><td>30%</td><td>70%</td></tr>
+ <tr><td>Forty–sixty split</td><td>40%</td><td>60%</td></tr>
  </tbody>
  </table>
- <p>Always verify your specific programme&apos;s year weighting in your student handbook or academic regulations. Even within the same university, different departments may use different weightings. Check our <Link href="/universities/portsmouth/">Portsmouth</Link>, <Link href="/universities/sheffield-hallam/">Sheffield Hallam</Link>, or <Link href="/universities/exeter/">Exeter</Link> calculator pages for more examples.</p>
+  <p>Always verify the weighting, included credits, rounding and any borderline method in your student handbook or academic regulations. Even within one university, programmes can use different rules.</p>
 
  <h2>Strategic Implications of Weighted Grades</h2>
  <p>Understanding how weighting works gives you a strategic advantage in managing your academic performance:</p>
@@ -159,7 +161,7 @@ export default function WeightedGradeCalculatorPage() {
  </tbody>
  </table>
  <p>
- When all your modules have the same credit value, a simple average grade calculator produces the same result as a weighted one. But the moment you have a dissertation, double module, or any mix of credit values, the weighted average is the only accurate method. Since almost every UK degree includes modules of varying credit sizes, you should always use a credit-weighted average for your calculations.
+ When all your modules have the same credit value, a simple average grade calculator produces the same result as a weighted one. But the moment you have a dissertation, double module, or any mix of credit values, the weighted average is the only accurate method. When the relevant modules carry different credit values, use a credit-weighted average rather than a simple average.
  </p>
 
  <h2>How to Calculate Your Grade Average Step by Step</h2>
@@ -181,7 +183,7 @@ export default function WeightedGradeCalculatorPage() {
  <h2>Common Mistakes in Weighted Calculations</h2>
  <ul>
  <li><strong>Treating all modules equally.</strong> This is the most common error. A 20-credit and a 40-credit module do not have the same influence on your average. Always use a grade weight calculator that accounts for credits.</li>
- <li><strong>Forgetting to include all modules.</strong> Every credited module in the relevant year contributes to your average. Do not leave out modules you did poorly on.</li>
+ <li><strong>Forgetting to include all modules.</strong> Include the modules your programme says are relevant, including any marks that count even if you are unhappy with the result.</li>
  <li><strong>Using wrong credit values.</strong> Check your transcript for the exact credit value of each module. Our <Link href="/module-grade-calculator/">module grade calculator</Link> can help you break down individual module marks. Do not assume all modules are 20 credits.</li>
  <li><strong>Not applying year weightings.</strong> If you calculate Year 2 and Year 3 averages separately, remember to apply the year weighting before comparing to classification boundaries.</li>
  <li><strong>Rounding intermediate results.</strong> Keep full decimal precision throughout. Rounding after each step can shift your final credit-weighted average by enough to cross a classification boundary.</li>

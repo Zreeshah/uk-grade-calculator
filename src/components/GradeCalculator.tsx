@@ -93,8 +93,9 @@ export default function GradeCalculator({
  </div>
  {type === "gpa" && gpa !== null && (
  <div className="text-right">
- <p className="text-sm text-slate-500 mb-1">GPA Equivalent</p>
+ <p className="text-sm text-slate-500 mb-1">Illustrative 4.0-scale estimate</p>
  <p className="text-xl font-bold text-indigo-600">{gpa.toFixed(1)}</p>
+ <p className="text-xs text-slate-500 mt-1">Check the receiving institution&apos;s method.</p>
  </div>
  )}
  </div>
