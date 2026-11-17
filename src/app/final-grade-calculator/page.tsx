@@ -14,12 +14,12 @@ export const metadata: Metadata = generateSEO({
 });
 
 const faqs = [
- { question: "How do I calculate what final grade I need?", answer: "Enter your completed module grades and their credit values into the calculator. Then enable the target grade feature, set your desired overall percentage (e.g., 70% for a First), and enter your remaining credits. The calculator will tell you the exact average you need across those remaining credits." },
- { question: "What if the required grade is over 100%?", answer: "If the calculator shows you need more than 100% on your remaining modules, your target is mathematically impossible to achieve with the credits you have left. You may need to adjust your target classification or check whether your university has borderline policies that could help." },
- { question: "Should I include Year 1 grades?", answer: "At most UK universities, Year 1 grades do not count toward your final degree classification. Only include Year 2 and Year 3 grades unless your university explicitly states that Year 1 contributes." },
- { question: "How do I account for year weightings?", answer: "If your university weights years differently (e.g., 33/67 for Year 2/Year 3), calculate each year separately. For example, if your Year 2 average is 62%, multiply by 0.33 to get Year 2's contribution (20.46%). Then calculate what Year 3 average you need for your target: (Target - 20.46) / 0.67." },
- { question: "What is the minimum grade I need to pass?", answer: "For UK undergraduate degrees, the minimum pass mark is typically 40%. For postgraduate degrees, it is usually 50%. However, some modules or programmes have higher pass thresholds, and you may need to pass all modules to progress or graduate." },
- { question: "Can this calculator account for resit caps?", answer: "If you have resit marks that were capped (usually at 40%), enter the capped mark rather than your original resit score. The capped mark is what counts toward your classification." },
+ { question: "How do I calculate what final grade I need?", answer: "Enter the confirmed marks and credits that count under your course rules. Enable the target feature, set a target percentage and enter the remaining relevant credits. The calculator shows the average needed across those remaining credits." },
+ { question: "What if the required grade is over 100%?", answer: "That target cannot be reached using the marks and credits entered. Recheck the inputs and your course rules, then model a different target if needed." },
+ { question: "Should I include Year 1 grades?", answer: "Include only the years and modules that your programme says count toward its classification. Do not assume that a year is excluded or included without checking the regulations for your course." },
+ { question: "How do I account for year weightings?", answer: "Calculate each relevant year average first, then apply the exact weighting published for your programme. The 33/67 example on this page is illustrative only." },
+ { question: "What is the minimum grade I need to pass?", answer: "Pass thresholds and progression requirements vary by programme and assessment. Check your module handbook or academic regulations for the requirement that applies to you." },
+ { question: "Can this calculator account for resit caps?", answer: "Enter the mark that your university says counts. Resit caps, penalties, compensation and classification treatment are course-specific and are not calculated automatically here." },
 ];
 
 const relatedLinks = [
@@ -58,7 +58,7 @@ export default function FinalGradeCalculatorPage() {
  <ol>
  <li><strong>Enter your completed modules.</strong> Add every module you have received a mark for, including their percentage grade and credit value.</li>
  <li><strong>Enable the target grade feature.</strong> Tick the checkbox labelled &quot;Calculate what I need on remaining modules.&quot;</li>
- <li><strong>Set your target percentage.</strong> For a First, enter 70. For a 2:1, enter 60. You can also enter borderline values like 68 or 69 if your university has borderline upgrade policies.</li>
+ <li><strong>Set your target percentage.</strong> For a First, enter 70. For a 2:1, enter 60. You can enter any target percentage, but a final classification is determined only by the rules your programme applies.</li>
  <li><strong>Enter your remaining credits.</strong> This is the total credit value of all modules you have not yet completed. A typical year has 120 credits, so if you have completed 60 credits, enter 60 for remaining.</li>
  <li><strong>Read the result.</strong> The calculator tells you the average percentage you need across your remaining credits to achieve your target.</li>
  </ol>
@@ -106,13 +106,13 @@ export default function FinalGradeCalculatorPage() {
 
  <h2>What If My Target Is Unreachable?</h2>
  <p>
- If the calculator shows you need more than 100% on your remaining modules, your target classification is mathematically impossible with the credits you have left. Do not panic. Here are your options:
+ If the calculator shows a result above 100%, the target cannot be reached from the marks and credits entered. First recheck the marks, credits and target. Then read your programme regulations to understand the published classification and assessment process that applies to you.
  </p>
  <ul>
- <li><strong>Check borderline policies.</strong> If you are within 2% of a boundary, your university&apos;s borderline rules may still upgrade you. Many universities look at the proportion of credits in the higher band rather than just the overall average.</li>
- <li><strong>Adjust your target.</strong> If a First is unreachable, focus on securing a strong 2:1 (65%+). A 2:1 from a good university with strong extracurricular activities is still highly competitive.</li>
- <li><strong>Focus on the modules that matter most.</strong> Prioritise high-credit modules like dissertations, which have the greatest impact on your overall average.</li>
- <li><strong>Consider extenuating circumstances.</strong> If external factors affected your earlier grades, speak to your university about whether any adjustments can be made.</li>
+ <li><strong>Model a realistic target.</strong> Use a target that is mathematically available with the remaining relevant credits.</li>
+ <li><strong>Prioritise by credit value.</strong> Where your programme counts a higher-credit module, a change in that mark can have more influence on the model.</li>
+ <li><strong>Check the formal rules.</strong> Rounding, borderline, capped-resit, compensation and extenuating-circumstances procedures are not universal and cannot be inferred from this tool.</li>
+ <li><strong>Seek course-specific guidance.</strong> Your handbook, regulations or academic support team can explain the rules that apply to your record.</li>
  </ul>
 
  <h2>Strategic Grade Planning by Year</h2>
