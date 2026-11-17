@@ -35,7 +35,7 @@ const faqs = [
  {
  question: "How are year weightings applied in degree calculations?",
  answer:
- "Most UK universities weight final-year marks more heavily. A common split is Year 2 counting for 33% and Year 3 for 67%. Some universities use 40/60 or 30/70 splits. First-year marks typically do not count towards the final classification but you usually need to pass all first-year modules to progress.",
+ "Year weightings, the treatment of Year 1 and any borderline method are set by your programme. Use the weighting in your current regulations rather than assuming a 33/67, 30/70 or 40/60 split.",
  },
  {
  question: "What is a credit-weighted average?",
@@ -55,7 +55,7 @@ const faqs = [
  {
  question: "Is this calculator accurate for my university?",
  answer:
- "This calculator uses the standard UK degree classification boundaries that apply to the majority of UK universities. However, some institutions have specific rules such as borderline rounding, module capping, or alternative classification algorithms. Check your university's academic regulations for their exact method.",
+ "This calculator shows a provisional credit-weighted result against common UK classification bands. Your programme may use different boundaries, included credits, rounding, caps or classification methods, so check its current academic regulations before relying on an estimate.",
  },
 ];
 
@@ -94,6 +94,17 @@ export default function HomePage() {
 
  {/* Calculator */}
  <GradeCalculator type="undergraduate" showTarget={true} showCredits={true} />
+
+ <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+ <h2 className="text-2xl font-bold text-slate-900">Choose the calculation that matches your question</h2>
+ <p className="mt-3 text-slate-600">Use confirmed marks, credits and the rules in your programme regulations. These tools model different parts of a calculation; none replaces your university&apos;s official outcome.</p>
+ <ul className="mt-5 grid gap-3 text-slate-700 sm:grid-cols-2">
+ <li><Link className="font-semibold text-indigo-700 hover:underline" href="/module-grade-calculator/">Module grade calculator</Link> — combine assessments within one module.</li>
+ <li><Link className="font-semibold text-indigo-700 hover:underline" href="/weighted-grade-calculator/">Weighted grade calculator</Link> — model modules with different credit values or published year averages.</li>
+ <li><Link className="font-semibold text-indigo-700 hover:underline" href="/final-grade-calculator/">Final grade calculator</Link> — model the average needed across remaining relevant credits.</li>
+ <li><Link className="font-semibold text-indigo-700 hover:underline" href="/degree-classification-calculator/">Degree classification calculator</Link> — check the usual classification band for an average.</li>
+ </ul>
+ </section>
 
  <figure className="my-10">
  <Image
@@ -267,7 +278,7 @@ export default function HomePage() {
 
  <h2>Uni Grade Boundaries: Quick Reference</h2>
  <p>
- Uni grade boundaries determine which classification band your overall percentage falls into. These boundaries are standardised across most UK universities, making it straightforward to check where you stand:
+ Uni grade boundaries determine which classification band your overall percentage falls into. These bands are a useful starting point, but your programme&apos;s published rules determine the result:
  </p>
  <table>
  <thead>
@@ -287,7 +298,7 @@ export default function HomePage() {
 
  <h2>How This Grade Calculator Compares</h2>
  <p>
- This is not just a basic grade calculator or simple UG calculator. Unlike simple tools that only output a number, this uni grade calculator provides a full breakdown with classification display, visual progress tracking, and a target grade planner. The grade calculator works for all UK universities and supports any combination of credit values.
+ This is not just a basic grade calculator or simple UG calculator. Unlike simple tools that only output a number, this uni grade calculator provides a full breakdown with classification display, visual progress tracking, and a target grade planner. The calculator supports the credit values you enter. It cannot apply course-specific rules that are not represented in its inputs.
  </p>
  <p>
  Students at specific universities can use our tailored calculator pages as a starting point for entering module marks and credits. The assumptions shown on each page are provisional: confirm the weighting, rounding and classification rules in your current programme regulations before relying on an estimate.
@@ -295,7 +306,7 @@ export default function HomePage() {
 
  <h2>Specialist Grade Calculators</h2>
  <p>
- Beyond the standard undergraduate grade calculator, we offer tools for every qualification type. BTEC students can use the <Link href="/btec-grade-calculator/">BTEC grade page</Link> to find Pearson&apos;s qualification-specific calculator and look up a final Extended Diploma UCAS tariff. Postgraduate students can calculate their masters classification with the <Link href="/masters-grade-calculator/">masters grade calculator</Link>. For international applications, the <Link href="/gpa-calculator/">GPA calculator</Link> converts UK percentages to the 4.0 GPA scale.
+ Alongside the undergraduate tool, we provide a <Link href="/btec-grade-calculator/">BTEC grade page</Link> for the scoped Pearson Extended Diploma tariff lookup, a <Link href="/masters-grade-calculator/">masters grade calculator</Link>, and a <Link href="/gpa-calculator/">GPA calculator</Link> that produces an illustrative 4.0-scale estimate for planning rather than an official conversion.
  </p>
  <p>
  For a deep understanding of how the entire UK grading system works, from assessment types to external examiners, read our comprehensive guide on <Link href="/blog/how-university-grading-works-uk/">how university grading works in the UK</Link>.
