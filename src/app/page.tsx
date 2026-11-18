@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
+import { PlannerHomepageBanner } from "@/components/PlannerCta";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
@@ -94,6 +95,8 @@ export default function HomePage() {
 
  {/* Calculator */}
  <GradeCalculator type="undergraduate" showTarget={true} showCredits={true} />
+
+ <PlannerHomepageBanner />
 
  <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
  <h2 className="text-2xl font-bold text-slate-900">Choose the calculation that matches your question</h2>

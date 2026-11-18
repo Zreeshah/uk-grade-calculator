@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { PlannerStickyBar } from "@/components/PlannerCta";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -82,6 +83,7 @@ gtag('config', 'G-CQY69SX742');`}
  <Header />
  <main className="flex-1">{children}</main>
  <Footer />
+ <PlannerStickyBar />
  </body>
  </html>
  );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { PlannerResultCta } from "@/components/PlannerCta";
 import {
  Module,
  createModule,
@@ -127,6 +128,8 @@ export default function GradeCalculator({
  </div>
  </div>
  )}
+
+ {type === "undergraduate" && average !== null && result && <PlannerResultCta />}
 
  {/* Module table */}
  <div className="overflow-x-auto -mx-6 px-6">
