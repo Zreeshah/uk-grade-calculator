@@ -19,6 +19,8 @@ const faqs = [
  { question: "How does Pearson calculate a BTEC overall grade?", answer: "For the relevant qualification, Pearson converts eligible unit outcomes to points, checks the required units and valid combination, then applies the specification's grade thresholds. Use Pearson's official grade calculator and your current specification for a result estimate." },
  { question: "Does Distinction star apply to every BTEC unit?", answer: "No. In several Pearson RQF qualifications, Distinction star is an aggregated qualification grade rather than an individual unit grade. The available grades and rules vary by qualification." },
  { question: "Are BTEC UCAS points always accepted by a university?", answer: "Tariff points are only one part of an application. Check the course's entry requirements, accepted qualification titles and entry year directly with the provider." },
+ { question: "What is the difference between a BTEC National Extended Diploma and a Diploma?", answer: "They are different sizes of the same qualification family. The Extended Diploma is the largest, with more guided learning hours and more units than the Diploma, and it carries a higher maximum UCAS tariff. The lookup on this page is for the Extended Diploma only; use Pearson's calculator for other sizes." },
+ { question: "Can I retake a BTEC external assessment?", answer: "Resit and retake rules are set by Pearson for each qualification and specification. Confirm in your current specification whether a retake replaces the earlier grade, whether a cap applies, and how it affects the overall points total — and ask your school or college to confirm the rules for your cohort." },
 ];
 
 const relatedLinks = [
@@ -69,6 +71,35 @@ export default function BTECGradeCalculatorPage() {
  <li>Check the resulting points total and qualification threshold against the current specification.</li>
  </ol>
  <p>Pearson presents its own calculator as a modelling tool only. Your final grade remains subject to the qualification&apos;s certification rules and Pearson&apos;s final result process.</p>
+
+ <h2>BTEC Nationals, Firsts and Tech Awards Are Different Qualifications</h2>
+ <p>
+ &ldquo;BTEC&rdquo; is a family of qualifications, not one grading system. BTEC Nationals (including the Extended Diploma covered by the lookup above) are Level 3 qualifications aimed at progression to university or employment. BTEC Firsts are generally Level 2, and BTEC Tech Awards are Key Stage 4 qualifications for 14- to 16-year-olds. Each family has its own specifications, unit structures, grading scales, and calculators on Pearson&apos;s site, so a rule that applies to one BTEC does not automatically apply to another.
+ </p>
+ <p>
+ Even within BTEC Nationals, the qualification size matters: an Extended Diploma, a Diploma, a Foundation Diploma, and a Certificate differ in guided learning hours, the number of units, and the grades available. The lookup on this page is limited to the 2016-RQF BTEC National Extended Diploma precisely because its tariff mapping is fixed for a final awarded grade. For any other size or family, use Pearson&apos;s calculator for your exact qualification title.
+ </p>
+
+ <h2>How Unit Grades Become a Qualification Grade</h2>
+ <p>
+ For the relevant Pearson qualification, eligible unit outcomes are converted to points, the required units and valid combination are checked, and the specification&apos;s grade thresholds are applied. Internal units are graded by your school or college against Pearson&apos;s criteria; external units are assessed by Pearson and carry points capped by the unit&apos;s guided-learning-hours size. A unit grade on its own therefore does not translate directly into a qualification grade — the points total and the thresholds decide the outcome.
+ </p>
+ <p>
+ This is also why Distinction star (D*) needs care. In several Pearson RQF qualifications, D* is an aggregated qualification grade rather than a grade you can earn on an individual unit. Whether D* is available, and at what points threshold, depends on the qualification. Check your specification rather than assuming D* works the same way across BTECs.
+ </p>
+
+ <h2>External Assessment, Resits and Retakes</h2>
+ <p>
+ Many BTEC Nationals include externally assessed units alongside internally assessed ones. External assessment rules, resit opportunities, and retake limits are set by Pearson for each qualification and can change between specifications. If you are retaking an external unit or an internally assessed unit, confirm in your current specification whether the retake replaces the earlier grade, whether a cap applies, and whether the retake affects the overall points total. Your school or college can confirm the rules for your cohort.
+ </p>
+
+ <h2>BTEC Grades and UCAS Tariff: What Universities Actually Look At</h2>
+ <p>
+ UCAS tariff points are a shorthand that lets universities compare different qualifications, but they are only one part of an application. A course&apos;s entry requirements usually name the accepted qualification titles and grades — for example, &ldquo;DDD in a BTEC National Extended Diploma&rdquo; — and may also require specific subjects, a particular unit combination, or GCSE grades. A tariff total that matches the points requirement does not establish that the university accepts your BTEC title, subject, or entry profile.
+ </p>
+ <p>
+ Some competitive courses also look beyond the tariff: personal statements, references, interviews, admissions tests, and portfolios can all matter. If a course lists BTEC requirements, compare your exact qualification title and grade against that list, and contact the university&apos;s admissions team if your combination is unusual. The <Link href="/blog/uk-degree-classifications-explained/">degree classifications guide</Link> explains what happens to grading once you start university, where percentages and credit weightings replace BTEC points entirely.
+ </p>
 
  <h2>Moving from a BTEC to university</h2>
  <p>A BTEC tariff result is used for university applications, while a degree classification is calculated from university-level assessment. If you already study at university, use our <Link href="/">university grade calculator</Link> or <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> instead.</p>

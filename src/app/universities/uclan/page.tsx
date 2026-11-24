@@ -6,8 +6,8 @@ import { generateSEO, generateToolSchema } from "@/lib/seo";
 const uni = universities[8];
 
 export const metadata: Metadata = generateSEO({
- title: "UCLan Grade Calculator - Free Tool",
- description: "Free UCLan grade calculator. Calculate your University of Central Lancashire degree classification with customisable year weightings.",
+ title: "University of Lancashire Grade Calculator",
+ description: "Free University of Lancashire grade calculator (formerly UCLan). Calculate your degree classification with the Award Percentage Mark: best of the 2:8 method, the best-100-Level-6 method, or the profile method.",
  path: "/universities/uclan/",
 });
 

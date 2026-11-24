@@ -8,11 +8,25 @@ function numberOrNull(value: string): number | null {
  return value.trim() !== "" && Number.isFinite(number) ? number : null;
 }
 
-export default function YearWeightingCalculator() {
+export default function YearWeightingCalculator({
+ defaultYearTwoWeight = "33",
+ defaultYearThreeWeight = "67",
+ yearTwoLabel = "Year 2 average (%)",
+ yearThreeLabel = "Year 3 average (%)",
+ yearTwoWeightLabel = "Year 2 weighting (%)",
+ yearThreeWeightLabel = "Year 3 weighting (%)",
+}: {
+ defaultYearTwoWeight?: string;
+ defaultYearThreeWeight?: string;
+ yearTwoLabel?: string;
+ yearThreeLabel?: string;
+ yearTwoWeightLabel?: string;
+ yearThreeWeightLabel?: string;
+} = {}) {
  const [yearTwoAverage, setYearTwoAverage] = useState("");
  const [yearThreeAverage, setYearThreeAverage] = useState("");
- const [yearTwoWeight, setYearTwoWeight] = useState("33");
- const [yearThreeWeight, setYearThreeWeight] = useState("67");
+ const [yearTwoWeight, setYearTwoWeight] = useState(defaultYearTwoWeight);
+ const [yearThreeWeight, setYearThreeWeight] = useState(defaultYearThreeWeight);
 
  const result = useMemo(() => {
   const yearTwo = numberOrNull(yearTwoAverage);
@@ -55,19 +69,19 @@ export default function YearWeightingCalculator() {
 
    <div className="mt-6 grid gap-4 sm:grid-cols-2">
     <label className="block">
-     <span className="mb-1.5 block text-sm font-medium text-slate-700">Year 2 average (%)</span>
+     <span className="mb-1.5 block text-sm font-medium text-slate-700">{yearTwoLabel}</span>
      <input className="input-field" inputMode="decimal" min="0" max="100" type="number" placeholder="e.g. 64.5" value={yearTwoAverage} onChange={(event) => setYearTwoAverage(event.target.value)} />
     </label>
     <label className="block">
-     <span className="mb-1.5 block text-sm font-medium text-slate-700">Year 3 average (%)</span>
+     <span className="mb-1.5 block text-sm font-medium text-slate-700">{yearThreeLabel}</span>
      <input className="input-field" inputMode="decimal" min="0" max="100" type="number" placeholder="e.g. 70.5" value={yearThreeAverage} onChange={(event) => setYearThreeAverage(event.target.value)} />
     </label>
     <label className="block">
-     <span className="mb-1.5 block text-sm font-medium text-slate-700">Year 2 weighting (%)</span>
+     <span className="mb-1.5 block text-sm font-medium text-slate-700">{yearTwoWeightLabel}</span>
      <input className="input-field" inputMode="decimal" min="0" max="100" type="number" value={yearTwoWeight} onChange={(event) => setYearTwoWeight(event.target.value)} />
     </label>
     <label className="block">
-     <span className="mb-1.5 block text-sm font-medium text-slate-700">Year 3 weighting (%)</span>
+     <span className="mb-1.5 block text-sm font-medium text-slate-700">{yearThreeWeightLabel}</span>
      <input className="input-field" inputMode="decimal" min="0" max="100" type="number" value={yearThreeWeight} onChange={(event) => setYearThreeWeight(event.target.value)} />
     </label>
    </div>

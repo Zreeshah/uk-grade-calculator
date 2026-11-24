@@ -14,7 +14,7 @@ export const metadata: Metadata = generateSEO({
  "Complete guide to how UK university grading works. Covers credit frameworks, assessment types, moderation and degree classification.",
  path: "/blog/how-university-grading-works-uk/",
  type: "article",
- image: "/images/blog/how-university-grading-works-uk.webp",
+ image: "/images/blog/how-university-grading-works-uk.jpg",
  publishedTime: "2025-02-10T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });

@@ -89,7 +89,7 @@ export const universitySources: Record<string, UniversitySource> = {
   ],
  },
  uclan: {
-  title: "University of Lancashire Academic Regulations for Taught Programmes 2025/26",
+  title: "University of Lancashire Academic Regulations for Taught Programmes 2025/26 (formerly University of Central Lancashire)",
   url: "https://www.lancashire.ac.uk/assets/student-contracts/2025-26/academic-regulations-taught-2526.pdf",
   summary: "The University of Lancashire regulations use an Award Percentage Mark with a Level 5 to Level 6 weighting of 2:8, alongside alternative best-credit and profile methods.",
   scope: "The calculation is framework dependent, including whether a course uses 20- or 30-credit modules. The source applies from September 2025; use your programme's current regulations.",

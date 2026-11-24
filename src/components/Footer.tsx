@@ -35,6 +35,12 @@ export default function Footer() {
  <p className="text-sm text-slate-500 leading-relaxed">
  Free tools for UK university students to calculate module grades, degree classifications, weighted averages, and more.
  </p>
+ <p className="text-sm text-slate-500 leading-relaxed mt-3">
+  Contact:{" "}
+  <a href="mailto:contact@unigradecalculator.co.uk" className="text-slate-500 hover:text-indigo-600 transition-colors">
+   contact@unigradecalculator.co.uk
+  </a>
+ </p>
  </div>
  <div>
  <h4 className="font-semibold text-slate-900 mb-4 text-sm uppercase tracking-wider">Calculators</h4>
@@ -78,6 +84,8 @@ export default function Footer() {
  <div className="flex gap-6">
  <Link href="/about/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">About</Link>
  <Link href="/our-partners/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Our Partners</Link>
+ <Link href="/terms/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Terms</Link>
+ <Link href="/cookies/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Cookies</Link>
  <Link href="/privacy/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Privacy</Link>
  <Link href="/contact/" className="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Contact</Link>
  </div>

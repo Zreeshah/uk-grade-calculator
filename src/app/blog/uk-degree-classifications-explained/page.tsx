@@ -14,7 +14,7 @@ export const metadata: Metadata = generateSEO({
  "UK degree classifications explained: First, 2:1, 2:2 and Third. Learn grade boundaries, how they are calculated and what employers think.",
  path: "/blog/uk-degree-classifications-explained/",
  type: "article",
- image: "/images/blog/uk-degree-classifications-explained.webp",
+ image: "/images/blog/uk-degree-classifications-explained.jpg",
  publishedTime: "2025-01-15T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });

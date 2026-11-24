@@ -7,7 +7,7 @@ import { generateSEO } from "@/lib/seo";
 export const metadata: Metadata = generateSEO({
  title: "About - Free Grade Tools for Students",
  description:
- "About UK Grade Calculator, free grade tools for UK university and college students. No ads, no registration, no data collection.",
+ "About UK Grade Calculator, free grade tools for UK university and college students. Operated by Connie D Johnson. No registration required; grade data is calculated in your browser.",
  path: "/about/",
 });
 
@@ -33,6 +33,22 @@ export default function AboutPage() {
  <div className="prose-custom">
  <p>
  UK Grade Calculator is a free suite of university grade calculator tools for UK students who want a clear, provisional way to calculate grades. The site is designed to make common calculations easier without requiring an account or asking you to enter personal identity details.
+ </p>
+
+ <h2>Who Runs This Site</h2>
+ <p>
+ UK Grade Calculator is operated by <strong>Connie D Johnson</strong>, 130 General Nelson Dr, Richmond, Kentucky, 40475. She is responsible for the content on this site, including the calculator logic, the grade-boundary tables, and the guides on UK university grading.
+ </p>
+ <p>
+ The site is an independent educational resource. It is not affiliated with, endorsed by, or operated on behalf of any university, UCAS, or Pearson. Where a page refers to a university&apos;s regulations or a Pearson specification, it links to that official source so you can verify the rule yourself. If you find an error, please tell us through the <Link href="/contact/">contact page</Link> — corrections are checked against the official source and fixed promptly.
+ </p>
+
+ <h2>How Our Calculators Are Checked</h2>
+ <p>
+ Every calculator on this site is built around published rules, not guesses. The degree-classification boundaries (First at 70%, 2:1 at 60%, 2:2 at 50%, Third at 40%) are the standard UK honours bands. The university-specific calculators use each university&apos;s published method where one is available — for example, the <Link href="/universities/mmu/">Manchester Metropolitan calculator</Link> uses MMU&apos;s published year weightings, and the <Link href="/middlesex-university-grade-calculator/">Middlesex calculator</Link> reflects the grade-profile method in Middlesex University&apos;s undergraduate regulations.
+ </p>
+ <p>
+ BTEC results work differently from university grades, so the <Link href="/btec-grade-calculator/">BTEC page</Link> does not pretend a percentage average can produce a BTEC overall grade. It points you to Pearson&apos;s official grade calculators and provides only a UCAS tariff lookup for an already-awarded Extended Diploma grade. When a rule cannot be verified from an official source, the page says so instead of presenting an estimate as fact.
  </p>
 
  <h2>Why We Built This</h2>
@@ -71,9 +87,17 @@ export default function AboutPage() {
  While the calculators use common UK degree-classification boundaries and credit-weighted formulas, individual universities and programmes can use rules that affect the result. These include borderline rules, module capping, year-weighting variations, and alternative classification algorithms. Always verify a final classification with your university&apos;s published regulations or student records team.
  </p>
 
+ <h2>What the Calculators Cannot Do</h2>
+ <p>
+ A grade calculator can only work with the numbers you enter and the rules you select. It cannot know about programme variations, approved exceptions, extenuating circumstances, or discretionary decisions by an exam board. Two students with identical averages can receive different classifications if their programmes apply different borderline or capping rules. Treat every result here as a planning estimate and confirm the official outcome with your university.
+ </p>
+ <p>
+ The tools also cannot replace your module handbook. Credit values, year weightings, and resit rules differ between courses, and a calculator set to the wrong weighting will give a confident-looking wrong answer. If a result surprises you, check the inputs first — a mistyped credit value is the most common cause — then check the regulations for your programme.
+ </p>
+
  <h2>Contact</h2>
  <p>
- If you have suggestions for improving our calculators, notice an error, or want to request a university-specific calculator, use our <Link href="/contact/">contact and feedback route</Link>. We are continually improving and expanding our tools based on student feedback.
+ If you have suggestions for improving our calculators, notice an error, or want to request a university-specific calculator, use our <Link href="/contact/">contact page</Link> or email <a href="mailto:contact@unigradecalculator.co.uk">contact@unigradecalculator.co.uk</a>. We aim to reply within 48 hours on working days. We are continually improving and expanding our tools based on student feedback.
  </p>
  </div>
 

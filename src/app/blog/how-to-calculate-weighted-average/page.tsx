@@ -12,7 +12,7 @@ export const metadata: Metadata = generateSEO({
  "Learn how to calculate weighted averages for UK university grades. Includes formulas, credit-based examples and a free calculator.",
  path: "/blog/how-to-calculate-weighted-average/",
  type: "article",
- image: "/images/blog/how-to-calculate-weighted-average.webp",
+ image: "/images/blog/how-to-calculate-weighted-average.jpg",
  publishedTime: "2025-03-05T00:00:00Z",
  modifiedTime: "2025-08-24T00:00:00Z",
 });

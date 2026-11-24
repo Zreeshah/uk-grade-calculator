@@ -1,0 +1,5 @@
+# Consolidated university page (301 to the universities hub).
+# Used by Netlify and Cloudflare Pages; Vercel uses vercel.json.
+# NOTE: Middlesex is NOT redirected — see report (conflicts with the parallel core-fix expansion of that page).
+/universities/portsmouth/  /universities/  301
+/universities/portsmouth  /universities/  301

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import GradeCalculator from "@/components/GradeCalculator";
 import MmuClassificationCalculator from "@/components/MmuClassificationCalculator";
+import YearWeightingCalculator from "@/components/YearWeightingCalculator";
 import FAQ from "@/components/FAQ";
 import InternalLinks from "@/components/InternalLinks";
 import ClassificationTable from "@/components/ClassificationTable";
@@ -88,6 +89,39 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  />
  )}
 
+ <section className="card mt-8" aria-labelledby="method-heading">
+  <h2 id="method-heading" className="text-xl font-bold text-slate-900">
+   How {uni.shortName} classification works
+  </h2>
+  <p className="mt-3 text-slate-700">{uni.methodNote}</p>
+  <p className="mt-3 text-sm text-slate-600">
+   Published weighting: <strong>{uni.yearWeighting}</strong>. Framework: {uni.framework}. Standard route: {uni.degreeLength}.
+  </p>
+  <ul className="mt-3 list-disc pl-5 text-slate-700 space-y-1">
+   {uni.specialNotes.map((note) => (
+    <li key={note}>{note}</li>
+   ))}
+  </ul>
+ </section>
+
+ {uni.splitMethod && uni.slug !== "mmu" && (
+ <YearWeightingCalculator
+ defaultYearTwoWeight={String(uni.yearWeightY2)}
+ defaultYearThreeWeight={String(uni.yearWeightY3)}
+ yearTwoLabel="Level 5 average (%)"
+ yearThreeLabel="Level 6 average (%)"
+ yearTwoWeightLabel="Level 5 weighting (%)"
+ yearThreeWeightLabel="Level 6 weighting (%)"
+ />
+ )}
+
+ <div className="prose-custom mt-12">
+ <h2>{uni.shortName} classification in detail</h2>
+ {uni.content.map((paragraph, index) => (
+ <p key={index}>{paragraph}</p>
+ ))}
+ </div>
+
  {uni.visual && (
  <figure className="my-10">
  <Image
@@ -122,36 +156,17 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
 
  <div className="prose-custom">
  <h2>How to Calculate Your {uni.shortName} Grade</h2>
- {uni.slug === "mmu" ? (
  <ol>
- <li>Select the Level 5 cohort that matches your study history.</li>
- <li>Enter completed Level 5 and Level 6 unit marks with their credit values.</li>
- <li>Use exactly 120 credits at each level for this standard-route estimate.</li>
- <li>Review the displayed main method and, where eligible, the additional Level 6 profiling result.</li>
+ {uni.howToSteps.map((step) => (
+ <li key={step}>{step}</li>
+ ))}
  </ol>
- ) : (
- <ol>
- <li>Enter each module name, percentage grade, and credit value in the calculator above.</li>
- <li>Set credits to {uni.defaultModuleCredits} for standard modules. Adjust for dissertations or double modules.</li>
- <li>The calculator automatically computes your credit-weighted average and shows your classification.</li>
- <li>Use the target grade feature to find out what you need on remaining modules.</li>
- </ol>
- )}
- {uni.slug === "mmu" ? (
- <p>This MMU calculator models the current standard 25/75 route and, for the eligible 2025/26 Level 5 cohort, the additional Level 6 profiling route. It deliberately stops for unsupported cohorts or non-standard credit structures.</p>
- ) : (
- <p>
- Use our{" "}
- <Link href="/weighted-grade-calculator/">weighted grade calculator</Link> to calculate each year&apos;s credit-weighted average. Apply your programme&apos;s published year weighting separately; this calculator does not yet model programme-specific classification algorithms.
- </p>
- )}
+ <p>{uni.calculatorNote}</p>
 
  <h2>When to Use This {uni.shortName} Grade Calculator</h2>
+ <p>{uni.whenToUse}</p>
  <p>
- Use this {uni.shortName} grade calculator, also described as a {uni.name} grade calculator, when you have module percentages and credit values and want a clear, provisional view of your current average. It is most useful after a set of results has been released, before choosing how to prioritise remaining assessments, or when you are checking a target for your final year. Your university&apos;s exam board and academic regulations remain the source of your official classification.
- </p>
- <p>
- Start by calculating each module from its coursework, practical and exam components if needed. Then add the module result here with its credit value. If you are still waiting for results, use the target option to model a range of marks rather than relying on a single prediction. This gives {uni.shortName} students a practical route from individual assessment marks to an overall degree-classification estimate.
+ Start by calculating each module from its coursework, practical and exam components if needed. Then add the module result here with its credit value. If you are still waiting for results, use the target option to model a range of marks rather than relying on a single prediction. This gives {uni.shortName} students a practical route from individual assessment marks to an overall degree-classification estimate. Your university&apos;s exam board and academic regulations remain the source of your official classification.
  </p>
 
  <h2>Useful Tools for {uni.shortName} Students</h2>
@@ -185,7 +200,7 @@ export default function UniversityPage({ uni }: { uni: UniversityData }) {
  </div>
  </section>
 
- <FAQ items={source.faqs} />
+ <FAQ items={uni.faqs} />
  <InternalLinks links={relatedLinks} />
  </div>
  );
